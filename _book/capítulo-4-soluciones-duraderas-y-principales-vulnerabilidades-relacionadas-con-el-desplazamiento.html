@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 10 CAPÍTULO 4. SOLUCIONES DURADERAS Y PRINCIPALES VULNERABILIDADES RELACIONADAS CON EL DESPLAZAMIENTO | A Minimal Book Example</title>
+  <meta name="description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 10 CAPÍTULO 4. SOLUCIONES DURADERAS Y PRINCIPALES VULNERABILIDADES RELACIONADAS CON EL DESPLAZAMIENTO | A Minimal Book Example" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 10 CAPÍTULO 4. SOLUCIONES DURADERAS Y PRINCIPALES VULNERABILIDADES RELACIONADAS CON EL DESPLAZAMIENTO | A Minimal Book Example" />
+  
+  <meta name="twitter:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  
+
+<meta name="author" content="Yihui Xie" />
+
+
+<meta name="date" content="2021-06-23" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="capítulo-3-desarrollo-de-un-marco-estadístico.html"/>
+<link rel="next" href="capítulo-5-variables-y-tabulaciones.html"/>
+<script src="libs/header-attrs-2.7/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A Minimal Book Example</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Prerequisites</a></li>
+<li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> Introduction</a></li>
+<li class="chapter" data-level="3" data-path="literature.html"><a href="literature.html"><i class="fa fa-check"></i><b>3</b> Literature</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="literature.html"><a href="literature.html#recomendaciones-internacionales-para-la-generación-de-estadísticas-sobre-pdi-iris"><i class="fa fa-check"></i><b>3.1</b> <strong>Recomendaciones internacionales para la generación de estadísticas sobre PDI (IRIS)</strong></a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="section.html"><a href="section.html"><i class="fa fa-check"></i><b>4</b> </a></li>
+<li class="chapter" data-level="5" data-path="section-1.html"><a href="section-1.html"><i class="fa fa-check"></i><b>5</b> </a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="section-1.html"><a href="section-1.html#agradecimientos"><i class="fa fa-check"></i><b>5.1</b> AGRADECIMIENTOS</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="section-2.html"><a href="section-2.html"><i class="fa fa-check"></i><b>6</b> </a></li>
+<li class="chapter" data-level="7" data-path="capítulo-1-introducción.html"><a href="capítulo-1-introducción.html"><i class="fa fa-check"></i><b>7</b> CAPÍTULO 1 INTRODUCCIÓN</a></li>
+<li class="chapter" data-level="8" data-path="capítulo-2-políticas-públicas-y-marco-jurídico.html"><a href="capítulo-2-políticas-públicas-y-marco-jurídico.html"><i class="fa fa-check"></i><b>8</b> CAPÍTULO 2. POLÍTICAS PÚBLICAS Y MARCO JURÍDICO</a></li>
+<li class="chapter" data-level="9" data-path="capítulo-3-desarrollo-de-un-marco-estadístico.html"><a href="capítulo-3-desarrollo-de-un-marco-estadístico.html"><i class="fa fa-check"></i><b>9</b> CAPÍTULO 3. DESARROLLO DE UN MARCO ESTADÍSTICO</a></li>
+<li class="chapter" data-level="10" data-path="capítulo-4-soluciones-duraderas-y-principales-vulnerabilidades-relacionadas-con-el-desplazamiento.html"><a href="capítulo-4-soluciones-duraderas-y-principales-vulnerabilidades-relacionadas-con-el-desplazamiento.html"><i class="fa fa-check"></i><b>10</b> CAPÍTULO 4. SOLUCIONES DURADERAS Y PRINCIPALES VULNERABILIDADES RELACIONADAS CON EL DESPLAZAMIENTO</a>
+<ul>
+<li class="chapter" data-level="10.0.1" data-path="capítulo-4-soluciones-duraderas-y-principales-vulnerabilidades-relacionadas-con-el-desplazamiento.html"><a href="capítulo-4-soluciones-duraderas-y-principales-vulnerabilidades-relacionadas-con-el-desplazamiento.html#section-4"><i class="fa fa-check"></i><b>10.0.1</b> </a></li>
+<li class="chapter" data-level="10.0.2" data-path="capítulo-4-soluciones-duraderas-y-principales-vulnerabilidades-relacionadas-con-el-desplazamiento.html"><a href="capítulo-4-soluciones-duraderas-y-principales-vulnerabilidades-relacionadas-con-el-desplazamiento.html#usos-de-la-medida-del-progreso"><i class="fa fa-check"></i><b>10.0.2</b> Usos de la medida del progreso</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="capítulo-5-variables-y-tabulaciones.html"><a href="capítulo-5-variables-y-tabulaciones.html"><i class="fa fa-check"></i><b>11</b> CAPÍTULO 5. VARIABLES Y TABULACIONES</a></li>
+<li class="chapter" data-level="12" data-path="capítulo-6-fuentes-de-datos-para-la-recopilación-de-estadísticas-sobre-las-pdi.html"><a href="capítulo-6-fuentes-de-datos-para-la-recopilación-de-estadísticas-sobre-las-pdi.html"><i class="fa fa-check"></i><b>12</b> CAPÍTULO 6. FUENTES DE DATOS PARA LA RECOPILACIÓN DE ESTADÍSTICAS SOBRE LAS PDI</a>
+<ul>
+<li class="chapter" data-level="12.0.1" data-path="capítulo-6-fuentes-de-datos-para-la-recopilación-de-estadísticas-sobre-las-pdi.html"><a href="capítulo-6-fuentes-de-datos-para-la-recopilación-de-estadísticas-sobre-las-pdi.html#el-censo-de-población-y-vivienda"><i class="fa fa-check"></i><b>12.0.1</b> El censo de población y vivienda</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="section-5.html"><a href="section-5.html"><i class="fa fa-check"></i><b>13</b> 130</a></li>
+<li class="chapter" data-level="14" data-path="capítulo-7-coordinación-de-las-estadísticas-sobre-pdi.html"><a href="capítulo-7-coordinación-de-las-estadísticas-sobre-pdi.html"><i class="fa fa-check"></i><b>14</b> CAPÍTULO 7 COORDINACIÓN DE LAS ESTADÍSTICAS SOBRE PDI</a></li>
+<li class="chapter" data-level="15" data-path="methods.html"><a href="methods.html"><i class="fa fa-check"></i><b>15</b> Methods</a></li>
+<li class="chapter" data-level="16" data-path="applications.html"><a href="applications.html"><i class="fa fa-check"></i><b>16</b> Applications</a>
+<ul>
+<li class="chapter" data-level="16.1" data-path="applications.html"><a href="applications.html#example-one"><i class="fa fa-check"></i><b>16.1</b> Example one</a></li>
+<li class="chapter" data-level="16.2" data-path="applications.html"><a href="applications.html#example-two"><i class="fa fa-check"></i><b>16.2</b> Example two</a></li>
+</ul></li>
+<li class="chapter" data-level="17" data-path="final-words.html"><a href="final-words.html"><i class="fa fa-check"></i><b>17</b> Final Words</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">A Minimal Book Example</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="capítulo-4.-soluciones-duraderas-y-principales-vulnerabilidades-relacionadas-con-el-desplazamiento" class="section level1" number="10">
+<h1><span class="header-section-number">Chapter 10</span> CAPÍTULO 4. SOLUCIONES DURADERAS Y PRINCIPALES VULNERABILIDADES RELACIONADAS CON EL DESPLAZAMIENTO</h1>
+<ol style="list-style-type: decimal">
+<li><h2 id="introducción-2">Introducción</h2></li>
+<li><p>En el capítulo 3 se especificaron las condiciones para convertirse en una PDI en términos estadísticos y en términos de flujos y población estadística. Este capítulo presenta los criterios e indicadores que deben utilizarse para medir los avances que las PDI han hecho para lograr una solución duradera y para determinar cuándo se han superado las principales vulnerabilidades relacionadas con el desplazamiento. Describe los criterios que deben cumplirse para que todas las PDI (las que se encuentran en lugares de desplazamiento, en lugares de retorno y las que se han asentado en otros lugares) sean eliminadas estadísticamente de la lista de personas que tienen necesidades de protección y vulnerabilidades relacionadas con el desplazamiento (
+# 100
+). En este capítulo se exponen en primer lugar los recursos pertinentes que han servido de base a las recomendaciones, se detallan los diferentes criterios (y subcriterios) de vulnerabilidad relacionados con el desplazamiento, y se evalúan las razones y las posibilidades de llevar a cabo un análisis comparativo con otros grupos de población (parte B). En la parte C se describe cómo deberían utilizarse para medir el progreso hacia soluciones duraderas en contextos de PDI, y en la parte D se describe el alcance y la metodología de una medida compuesta para identificar cuándo se han superado las vulnerabilidades clave relacionadas con el desplazamiento. Por último, la parte E presenta un resumen de las recomendaciones.</p></li>
+<li><h2 id="definición-de-criterios-para-las-dos-medidas">Definición de criterios para las dos medidas</h2>
+<ol style="list-style-type: decimal">
+<li><h3 id="recursos-relevantes">Recursos relevantes</h3></li>
+</ol></li>
+<li><p>El Marco IASC y sus ocho criterios constituyen el documento de orientación clave que aborda los principales aspectos de las vulnerabilidades relacionadas con el desplazamiento forzado. La Biblioteca de Indicadores de Soluciones Duraderas (
+# 101
+), que operacionaliza estos criterios en indicadores mensurables (y la experiencia del proceso de desarrollo de la biblioteca), proporciona más orientación para dar forma a estas recomendaciones. Además, la especificación del desglose propuesto de los indicadores de los ODS también proporciona una orientación preliminar sobre el desarrollo de estas recomendaciones.</p></li>
+<li><h4 id="marco-de-soluciones-duraderas-para-las-pdi-del-iasc">Marco de soluciones duraderas para las PDI del IASC</h4></li>
+<li><p>El <em>Marco de soluciones duraderas para las PDI del IASC</em> es el punto de partida para el seguimiento de los avances hacia las soluciones duraderas y, por tanto, también de los elementos clave de las vulnerabilidades relacionadas con el desplazamiento (
+# 102
+). Proporciona orientación sobre las características que determinan el grado de consecución de soluciones duraderas para las PDI y una definición de solución duradera (capítulo 2, párrafo 68).</p></li>
+<li><p>Según el Marco IASC, el desplazamiento termina cuando las PDI han conseguido una solución duradera a su desplazamiento. Se alcanza una solución duradera cuando “los desplazados internos dejan de necesitar asistencia o protección específicas vinculadas con su situación de desplazamiento y pueden disfrutar de sus derechos humanos sin ser discriminados por esa condición.” Además, esto puede lograrse mediante:</p></li>
+<li><p>retorno a su lugar de residencia habitual y reintegración en la comunidad;</p></li>
+<li><p>integración local en su nuevo lugar de residencia usual; o</p></li>
+<li><p>asentamiento en otros lugares del país de manera sostenible.</p></li>
+</ol>
+<p>La ‘reintegración,’ la ‘integración’ y la ‘sostenibilidad’ implican que las PDI no sean discriminadas ni tengan necesidades específicas de protección o asistencia en relación con su desplazamiento. Se espera que puedan ejercer sus derechos de la misma manera que la población residente usual, independientemente de la opción de asentamiento (es decir, la ubicación física) elegida. Cuando esto ocurra, dejarán de ser consideradas PDI.</p>
+<ol style="list-style-type: decimal">
+<li><p>El Marco IASC también esboza un conjunto de ocho criterios que deberían utilizarse para determinar y medir los avances hacia las soluciones duraderas (ver la figura 4.1). Los criterios proporcionan un punto de partida útil para definir estas características de forma específica para cada contexto. Sin embargo, en la práctica, son complejas la operacionalización de estos ocho criterios en términos estadísticos y la medición concreta de si se ha logrado una solución duradera y cuándo; además, la práctica ha variado significativamente.</p></li>
+<li><h4 id="biblioteca-de-indicadores-de-soluciones-duraderas-y-guía-de-análisis">Biblioteca de indicadores de soluciones duraderas y guía de análisis</h4></li>
+<li><p>En 2015, se estableció un proceso interagencial para hacer operativo el Marco IASC. Bajo el liderazgo de la Representación de la Relatoría Especial sobre los Derechos Humanos de los Desplazados Internos, un grupo de agentes de desarrollo, humanitarios y de consolidación de la paz comenzó a trabajar en el desarrollo y la puesta a prueba de indicadores y guías para el análisis exhaustivo de soluciones duraderas en situaciones de desplazamiento interno y para medir el progreso en el tiempo (
+# 103
+). El trabajo, coordinado por JIPS, dio como resultado una biblioteca de indicadores estandarizados y una guía para la operacionalización de los ocho criterios del IASC, que pueden servir como punto de partida unificado para el análisis estadístico de varias características de las vulnerabilidades relacionadas con el desplazamiento.</p></li>
+<li><p>Cada uno de los ocho criterios se desglosa en varios indicadores. Por ejemplo, el acceso a un nivel de vida adecuado incluye indicadores sobre seguridad alimentaria, acceso al agua, energía, atención sanitaria, saneamiento y educación. El enfoque para la selección de indicadores se ilustra en la Figura 4.1 e incluye:</p></li>
+<li><p>Seleccionar los indicadores que están alineados con los indicadores de los ODS y que son relevantes para la población de PDI en el contexto en cuestión. Esto reduce la carga de los institutos de estadística y aumenta la probabilidad de que se puedan recabar los datos.</p></li>
+<li><p>Garantizar que se tienen en cuenta los ocho criterios, aunque algunos elementos sean adicionales a los ODS.</p></li>
+<li><p>Reflexionar sobre el contexto nacional/local y, en la medida de lo posible, seleccionar los indicadores junto con las comunidades desplazadas, así como con los gobiernos y otras partes interesadas que trabajan para apoyar soluciones duraderas.</p></li>
+</ol>
+<p>_Figura 0.1__Criterios del IASC para soluciones duraderas: proceso propuesto para identificar indicadores básicos específicos para cada contexto_</p>
+<table>
+<colgroup>
+<col width="12%" />
+<col width="12%" />
+<col width="12%" />
+<col width="12%" />
+<col width="12%" />
+<col width="12%" />
+<col width="12%" />
+<col width="12%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Ocho criterios para soluciones duraderas</strong></th>
+<th>Incluye indicadores de soluciones duraderas priorizados por PDI</th>
+<th><strong>+</strong></th>
+<th>Incluye indicadores de soluciones duraderas priorizados por actores que apoyan las soluciones duraderas</th>
+<th><strong>+</strong></th>
+<th>Incluye indicadores con un ODS cuando se incluye en informes nacionales</th>
+<th><strong>=</strong></th>
+<th>Indicadores priorizados por ser específicos del contexto</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1. seguridad personal y pública</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>2. nivel de vida adecuado</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>3. acceso a los medios de subsistencia</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>4. restitución de vivienda, tierra y propiedad</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>5. acceso a la documentación</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>6. reunificación familiar</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>7. participación en asuntos públicos</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>8. acceso a recursos efectivos y a una justicia eficaz.</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Incluye indicadores demográficos relevantes (edad, sexo, ubicación y diversidad)</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<ol style="list-style-type: decimal">
+<li><h4 id="indicadores-de-los-objetivos-de-desarrollo-sostenible-ods">Indicadores de los Objetivos de Desarrollo Sostenible (ODS)</h4></li>
+<li>En los años que quedan para llegar al 2030, los ODS desempeñarán un papel importante en los debates políticos. Durante la revisión exhaustiva del marco de indicadores de los ODS en 2020, se incluyó en el marco un indicador específico sobre las personas refugiadas, pero no hay ninguna especificación para otras poblaciones desplazadas por la fuerza, incluidas las PDI. Sin embargo, el tema es transversal a muchos ODS, y se pueden desglosar múltiples indicadores por situación migratoria y, más concretamente, por situación de desplazamiento. Cuando los indicadores de los ODS se recojan como parte de las estadísticas sobre el desplazamiento forzado, se recomienda que los países utilicen el marco de los ODS y los metadatos para elaborar las estadísticas.</li>
+<li>El Grupo Interagencial y de Expertos sobre los Indicadores de los ODS aceptó la recomendación de los miembros del EGRIS de proponer el desglose de los 12 indicadores prioritarios de los ODS por categoría de desplazamiento forzado, como se muestra en Tabla 0.1, así como de recomendar su desglose por edad y sexo siempre que sea posible (
+# 104
+). Para garantizar la disponibilidad de estadísticas de calidad mínima sobre las personas refugiadas y las PDI, se recomienda que los proveedores de estadísticas nacionales incluyan estadísticas sobre estos indicadores prioritarios en los planes de presentación de informes para la Agenda 2030 para el Desarrollo Sostenible. Sin embargo, los gobiernos no deben sentirse limitados a esta lista de prioridades, y se alienta la recopilación de datos sobre indicadores adicionales.</li>
+</ol>
+<p><em>Tabla 0.1Se recomienda desglosar los indicadores de los ODS por categoría de desplazamiento forzado según el ámbito político prioritario</em></p>
+<div class="line-block"><strong>Ámbito político 1: necesidades básicas y condiciones de vida</strong> |<br />
+— |<br />
+2.2.1 | Prevalencia de retraso en el crecimiento (estatura para la edad ≤ 2 desviaciones estándar de la media del Patrón de Crecimiento Infantil de la Organización Mundial de la Salud) entre niñas y niños menores de 5 años |<br />
+3.1.2 | Proporción de partos atendidos por personal sanitario calificado |<br />
+6.1.1 | Proporción de la población que utiliza servicios de agua potable gestionados de forma segura |<br />
+11.1.1 | Proporción de la población urbana que vive en barrios marginales, asentamientos informales o viviendas inadecuadas |<br />
+<strong>Ámbito político 2: medios de vida y autosuficiencia económica</strong> |<br />
+1.2.1 | Proporción de la población que vive por debajo del umbral de pobreza nacional, por sexo y edad |<br />
+4.1.1 | Proporción de niños, niñas y jóvenes (a) en los grados 2/3, (b) al final de la primaria y (c) al final del primer ciclo de secundaria que alcanzan al menos un nivel mínimo de competencia en (i) lectura y (ii) matemáticas, por sexo |<br />
+7.1.1 | Proporción de la población con acceso a la electricidad |<br />
+8.3.1 | Proporción de empleo informal en empleos no agrícolas, por sexo |<br />
+8.5.2 | Tasa de desempleo, por sexo, edad y personas con discapacidad |<br />
+<strong>Ámbito político 3: derechos civiles, políticos y jurídicos</strong> |<br />
+1.4.2 | Proporción de la población adulta total con derechos seguros de tenencia de la tierra (a) con documentación legalmente reconocida y (b) que percibe sus derechos a la tierra como seguros, por sexo y tipo de tenencia |<br />
+16.1.4 | Proporción de la población que se siente segura caminando sola por la zona donde vive |<br />
+16.9.1 | Proporción de niños y niñas menores de 5 años cuyo nacimiento se ha registrado ante una autoridad civil, por edad |</div>
+<ol style="list-style-type: decimal">
+<li><p>Una segunda iniciativa, la Reunión del Grupo de Expertos sobre la Mejora de los Datos Migratorios en el Contexto de la Agenda 2030 para el Desarrollo Sostenible (
+# 105
+), ha recomendado que otros 12 indicadores se desglosen por situación migratoria.</p></li>
+<li><p>Ambas listas de indicadores seleccionados de los ODS son un recurso útil para identificar indicadores que midan las características de las PDI dentro de los criterios establecidos por el Marco IASC.</p></li>
+<li><h4 id="indicadores-con-respecto-a-las-recomendaciones-internacionales-para-la-generación-de-estadísticas-sobre-personas-refugiadas-irrs">Indicadores con respecto a las Recomendaciones internacionales para la generación de estadísticas sobre personas refugiadas (IRRS)</h4></li>
+<li><p>La biblioteca de indicadores presentada en las IRRS también puede ser consultada como un recurso relevante para la medición de las necesidades de protección y las vulnerabilidades de las PDI (
+# 106
+). Estos indicadores reflejan la integración y el bienestar de las personas refugiadas y solicitantes de asilo en las dimensiones jurídica, económica, social y cultural. Además, se dividen en variables centrales, periféricas y adicionales, y se alinean con los ODS en la medida de lo posible.</p>
+<ol style="list-style-type: decimal">
+<li><h3 id="criterios-de-vulnerabilidad-relacionados-con-el-desplazamiento">Criterios de vulnerabilidad relacionados con el desplazamiento</h3>
+<ol style="list-style-type: decimal">
+<li><h4 id="criterios-y-subcriterios">Criterios y subcriterios</h4></li>
+</ol></li>
+</ol></li>
+<li><p>Para medir estadísticamente las vulnerabilidades relacionadas con el desplazamiento, se tomaron como punto de partida los ocho criterios del Marco IASC (ver párrafo 126). Para cada uno de ellos, se especificaron subcriterios, como se muestra en la tabla 4.2. Como se indica en el propio Marco IASC, los primeros cuatro criterios son pertinentes en todos los contextos y, por lo tanto, deben incluirse siempre en cualquier evaluación de soluciones duraderas, mientras que los cuatro últimos deben tenerse en cuenta y pueden incluirse si se consideran pertinentes para el contexto específico del desplazamiento (
+# 107
+). Sobre la base de esta orientación, los ocho criterios del IASC se incluyen en las recomendaciones para medir el progreso hacia soluciones duraderas (ver párrafo 146). Sin embargo, en lo que respecta al desarrollo de la medida compuesta para superar las vulnerabilidades <em>clave</em> relacionadas con el desplazamiento, se ha seleccionado un conjunto más reducido de criterios. Esto incluye los primeros cuatro criterios (considerados siempre relevantes en cualquier contexto de desplazamiento) y un quinto criterio sobre el acceso a la documentación personal y de otro tipo. Dada la prevalencia de los problemas relacionados con la falta de documentación en muchos entornos de desplazamiento, este quinto criterio también se ha incluido en las recomendaciones de una medida estadística que puede llevar a no considerar a algunas PDI como parte de la población estadística. Por lo tanto, la medida compuesta da prioridad a cinco de los ocho criterios del IASC (ver párrafo 164).</p></li>
+</ol>
+<p>_Tabla 0.2__Criterios de soluciones duraderas del IASC y subcriterios identificados_</p>
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Criterios</strong></th>
+<th><strong>Subcriterios</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1. Seguridad y protección</td>
+<td>1.1 Víctimas de violencia</td>
+</tr>
+<tr class="even">
+<td>1.2 Libertad de movimiento</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>1.3 Mecanismos de protección</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>1.4 Reducción del riesgo de catástrofes</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>2. Nivel de vida adecuado</td>
+<td>2.1 Seguridad alimentaria</td>
+</tr>
+<tr class="even">
+<td>2.2 Albergue y vivienda</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>2.3 Servicios médicos</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>2.4 Educación</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>3. Acceso a medios de vida</td>
+<td>3.1 Empleo y medios de vida</td>
+</tr>
+<tr class="even">
+<td>3.2 Seguridad financiera</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>4. Restitución de la vivienda, la tierra y la propiedad</td>
+<td>4.1 Restitución de la propiedad e indemnización</td>
+</tr>
+<tr class="even">
+<td>5. Acceso a la documentación</td>
+<td>5.1 Documentación</td>
+</tr>
+<tr class="odd">
+<td>6. Reunificación familiar</td>
+<td>6.1 Reunificación voluntaria</td>
+</tr>
+<tr class="even">
+<td>6.2 Servicios de reunificación y localización</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>7. Participación en asuntos públicos</td>
+<td>7.1 Asuntos públicos</td>
+</tr>
+<tr class="even">
+<td>7.2 Derecho al voto</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>7.3 Derecho a ejercer el servicio público</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>8. Acceso a recursos efectivos y a la justicia</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<ol style="list-style-type: decimal">
+<li>Recursos y justicia
+|</li>
+</ol>
+<div id="section-3" class="section level4" number="10.0.0.1">
+<h4><span class="header-section-number">10.0.0.1</span> </h4>
+<ol style="list-style-type: decimal">
+<li><h4 id="selección-de-indicadores">Selección de indicadores</h4></li>
+<li><p>Para cada subcriterio pueden elegirse muchos indicadores diferentes, aunque todavía no se ha acordado una lista definitiva. Los indicadores seleccionados en cada contexto nacional deberían, en la medida de lo posible, ajustarse a indicadores ya probados y estandarizados. La Biblioteca de Indicadores de Soluciones Duraderas a la que se ha hecho referencia anteriormente ofrece una visión completa de las posibles opciones (ver párrafos 127 y 128). Cuando sea pertinente, también deberían reflejar los indicadores de los ODS que se ha recomendado desglosar por diferentes categorías de desplazamiento. Los indicadores seleccionados deben ser elegidos cuidadosamente para asegurar que son relevantes para el desplazamiento interno y para las tres subcategorías de la población desplazada: PDI en lugares de desplazamiento, PDI en lugares de retorno y PDI en otros lugares de asentamiento.</p></li>
+<li><p>A efectos de medición estadística y para garantizar que el proceso sea lo más imparcial y rentable posible, deben tenerse en cuenta los siguientes aspectos a la hora de seleccionar los indicadores:</p></li>
+<li><p><em>De uso común.</em> Es una ventaja que el indicador en cuestión se recoja también con otros fines, para facilitar las comparaciones entre grupos de población y permitir que el análisis de los desplazamientos se incorpore a los procesos ya existentes de recogida de datos más amplios. Los indicadores de los ODS son un buen ejemplo, ya que la mayoría de las encuestas y censos cubrirán varios de ellos, al menos hasta el 2030.</p></li>
+<li><p><em>Probados y evaluados</em>. En relación con el punto anterior, también es una ventaja seleccionar indicadores o preguntas que hayan sido probados y que satisfagan criterios de calidad. Este es el caso de la mayoría de los indicadores y las preguntas relacionadas que se hacen en las encuestas estándar de hogares; por ejemplo, sobre educación, seguridad alimentaria y empleo.</p></li>
+<li><p><em>Cubren a la población en cuestión</em>. Hay varios indicadores potenciales que pueden ser relevantes en el contexto, pero que no cubren a toda la población en cuestión. Por ejemplo, la matrícula escolar está ampliamente reconocida como un buen indicador para medir el acceso a la educación, pero no daría ninguna información sobre los hogares de PDI que no tienen descendencia.</p></li>
+<li><p>El subgrupo de PDI del EGRIS ha desarrollado un conjunto preliminar de indicadores para los subcriterios, teniendo en cuenta los aspectos anteriores. El objetivo de este trabajo era proporcionar una lista corta y manejable de uno o dos indicadores por subcriterio. Sin embargo, dada la limitada disponibilidad de datos, en particular para los subcriterios que los expertos determinaron como específicos para el desplazamiento, no es posible recomendar una lista final de indicadores para cada subcriterio en esta etapa. Es necesario realizar más pruebas para poder ofrecer más detalles. A medida que este trabajo avance, se añadirá información al Manual de Compiladores, incluidas las implicaciones para el establecimiento de objetivos basados en diferentes tipos de indicadores (ver párrafo 166). Cuando finalice, podría considerarse una versión actualizada de estas recomendaciones. Mientras tanto, los países y las organizaciones internacionales deberían utilizar la Biblioteca de Indicadores de Soluciones Duraderas como referencia y punto de partida para la selección de indicadores y deberían, en la medida de lo posible, seguir los principios aquí descritos (ver párrafos 135–137).</p></li>
+<li><h4 id="análisis-comparativo-con-otros-grupos-de-población">Análisis comparativo con otros grupos de población</h4></li>
+<li><p>Dado que la definición de soluciones duraderas se centra en las necesidades de protección y las vulnerabilidades ‘relacionadas con el desplazamiento,’ es fundamental realizar un análisis comparativo de otras recopilaciones de datos y procesos de análisis en cada contexto de desplazamiento. En teoría, para determinar si una vulnerabilidad específica está relacionada con el desplazamiento, la situación actual de las PDI debe compararse con su situación antes de que el desplazamiento forzado afectara sus vidas. Sin embargo, en muchos casos esto será muy difícil o incluso imposible debido a la limitada disponibilidad de datos, entre otras razones. De igual manera, se consideró un enfoque de derechos, según el cual los niveles de vulnerabilidad se compararían con una norma/objetivo basado en ellos. Sin embargo, no se optó por este enfoque, ya que no toma en cuenta la situación de otros grupos de población, que es clave para la (re)integración sostenible de las PDI. Era necesario un enfoque diferente.</p></li>
+<li><p>Una opción alternativa, recomendada aquí, es comparar la situación de las PDI con la de otros grupos de población del país para evaluar si las vulnerabilidades que sufren las PDI están o no relacionadas con su desplazamiento (a través de la discriminación, por ejemplo). Esto podría suponer un análisis comparativo que incluya a la población general/nacional (ver párrafo 140) o a un subconjunto de esta (ver los párrafos 141-143).</p></li>
+<li><p>En la mayoría de los casos, para efectos estadísticos oficiales, el grupo de población específico en cuestión se compara con la población general/nacional del país (es decir, los datos recogidos se comparan con el promedio nacional). Suponiendo que se hagan esfuerzos para seleccionar indicadores que faciliten esto (ver párrafo 137), se puede suponer que es probable que los datos estén disponibles para la población general/nacional a través del sistema estadístico nacional (SEN). En los países más grandes, la comparación con la media regional podría considerarse más adecuada.</p></li>
+<li><p>A menudo, en la práctica estadística oficial, el grupo en cuestión se compara no solo con el promedio nacional, sino también con un subgrupo de la población general que tiene características opuestas. Por ejemplo, se comparan las personas desempleadas con las personas empleadas, y las familias monoparentales con las biparentales. La incorporación de esta práctica en el trabajo sobre las estadísticas de las PDI sugiere que esta población debe compararse con todas las personas que no han sido desplazadas. De este modo, no se hacen suposiciones sobre la situación socioeconómica previa al desplazamiento, y el objetivo es sencillo y fácil de entender; sin embargo, podría ser difícil desglosar los datos nacionales disponibles en consecuencia.</p></li>
+<li><p>Dadas las especificidades de los diferentes contextos de desplazamiento, también puede ser valioso comparar la situación de vulnerabilidad de las PDI con la de un subconjunto diferente de la población general, comúnmente denominada ‘comunidad de acogida’ por los gobiernos y las organizaciones humanitarias y de desarrollo que responden al desplazamiento interno. Esto puede proporcionar un análisis valioso para la toma de decisiones a nivel local y el diseño de programas; sin embargo, para los fines de las estadísticas oficiales hay algunos desafíos asociados a este método.</p></li>
+<li><p>El primer reto es que hasta ahora no se ha definido la población de acogida y en la práctica se adoptan diferentes enfoques. Aunque recientemente se han realizado algunos esfuerzos para elaborar una definición de la población de acogida, estos no se han orientado a fines estadísticos y, por lo tanto, siguen siendo deficientes en este sentido (
+# 108
+). Los enfoques más comunes incluyen la identificación de los hogares no desplazados que viven cerca de las PDI o dentro de la zona geográfica donde residen las PDI; la identificación de los hogares no desplazados dentro de estas zonas geográficas que tienen condiciones de vida similares a las de las PDI; la especificación de un significado más literal de acogida mediante la identificación de los hogares no desplazados que acogen físicamente a las PDI en sus propios hogares; o la identificación de las poblaciones que viven en los alrededores de los campos y asentamientos de PDI. La definición de población de acogida se complica aún más en las situaciones de desplazamiento fluido en las que, debido al propio movimiento de la población, la población de acogida también está sujeta a cambios. Otros retos se refieren a las consideraciones metodológicas en torno al muestreo, como el tamaño de la muestra y la selección.</p></li>
+</ol>
+<p><em>Figura 0.2 Ilustración de los pros y los contras de la identificación de grupos de población comparativos</em></p>
+<p><img src="RackMultipart20210623-4-1m1d3f_html_7ab0a96405993c63.png" /></p>
+<ol style="list-style-type: decimal">
+<li><p>En general, a efectos de las estadísticas oficiales, se recomienda a la población general/nacional como grupo de comparación al analizar las vulnerabilidades relacionadas con el desplazamiento de las PDI. Este enfoque también se recomienda para establecer objetivos y umbrales que se incorporen a la aplicación de los esfuerzos para medir el progreso hacia las soluciones duraderas, así como la medida compuesta para superar las vulnerabilidades clave relacionadas con el desplazamiento, como se indica a continuación (ver los párrafos 146-169). Las razones principales son que es más probable que se disponga de información sobre la población general, lo que simplifica la recogida y el análisis de datos. En circunstancias específicas, también puede considerarse la comparación con un subconjunto diferente de la población nacional con características opuestas (por ejemplo, la población no desplazada o ‘población de acogida’ en una zona determinada), aunque para ello será necesario elaborar y compartir definiciones claras y coherentes, así como aclarar otras cuestiones metodológicas. Este último enfoque suele considerarse el más pertinente y viable a efectos operativos (ver capítulo 6, parte C, y el capítulo 7, párrafos 330 a 347). La figura 4.2 ilustra estas opciones.</p></li>
+<li><h2 id="medida-del-progreso-hacia-soluciones-duraderas">Medida del progreso hacia soluciones duraderas</h2></li>
+<li><p>Como se describe en el capítulo 2 (párrafos 65-70), las soluciones duraderas a los desplazamientos internos son complejas y, por tanto, también son difíciles de medir (
+# 109
+). En la actualidad no existe una metodología o práctica normalizada, pero hay un reconocimiento claro y creciente de la necesidad de establecerla. Un aspecto central de la definición de soluciones duraderas es que su consecución pasa por un proceso que requiere tiempo y la participación de una multitud de partes interesadas. Por lo tanto, es de vital importancia desarrollar un conjunto común de recomendaciones para que los países y las organizaciones internacionales midan los progresos realizados haciasoluciones duraderas.</p></li>
+<li><h3 id="esquema-de-la-medida-del-progreso">Esquema de la medida del progreso</h3></li>
+<li><p>La espina dorsal de la medida del progreso recomendada aquí reside en los ocho criterios y 18 subcriterios del IASC que se describen en la Tabla 4.2. Pueden utilizarse para supervisar la situación de los desplazamientos en un país a lo largo del tiempo e identificar los progresos realizados hacia soluciones duraderas. Si se considerara pertinente en contextos específicos de desplazamiento, también pueden incluirse otros elementos. Como se ha mencionado anteriormente, aún no se ha acordado una lista definitiva de indicadores; sin embargo, se recomienda que el número de indicadores por subcriterio se mantenga al mínimo, teniendo en cuenta la probable carga en los sistemas nacionales de estadística.</p></li>
+<li><p>De acuerdo con el Marco IASC, la medida se aplica a las PDI en zonas de desplazamiento (midiendo la integración local), a las PDI en zonas de retorno (midiendo la reintegración) y a las PDI en otras zonas (midiendo la integración en otros lugares de asentamiento).</p></li>
+<li><p>El progreso de la población con respecto a cada subcriterio (o indicadores asociados) debe medirse con respecto a un objetivo y a lo largo del tiempo. Sobre la base del análisis descrito anteriormente (ver los párrafos 138-144), se propone que el objetivo utilizado sea la situación media de la población general/nacional en relación con cada subcriterio (o indicadores asociados) en un momento dado. Cuando el contexto nacional determina que se adopte un enfoque alternativo, se puede utilizar en su lugar un subconjunto de la población general que vive en la misma zona geográfica que la población desplazada.</p></li>
+<li><p>Después de establecer estos objetivos, que serán diferentes por país y por subcriterio, la medida puede utilizarse para evaluar la proporción de la población de PDI que ha superado la vulnerabilidad específica descrita por cada subcriterio o demostrar en qué aspectos de la vulnerabilidad están mejor o peor. Esto debería aplicarse utilizando una metodología por capas en la que los valores de los indicadores, igualmente ponderados, se combinan para calcular las puntuaciones de los subcriterios individuales, que a su vez se combinan para calcular una puntuación para cada criterio. El resultado analítico global es, por tanto, una medida del progreso de la población cubierta con respecto a cada uno de los ocho criterios a lo largo del tiempo.</p></li>
+<li><p>Para demostrar los posibles resultados analíticos de esta medida del progreso, se presenta un ejemplo ficticio en la figura 4.3.</p></li>
+</ol>
+<p><img src="RackMultipart20210623-4-1m1d3f_html_d3b998c554768718.gif" /></p>
+<p><em>Figura 0.3 Demostración de los resultados analíticos de la medida del progreso hacia soluciones duraderas</em></p>
+<p><img src="RackMultipart20210623-4-1m1d3f_html_c63ee98270715f0f.gif" /></p>
+<p><img src="RackMultipart20210623-4-1m1d3f_html_66b1b860051c0c8a.png" /></p>
+<p><em>Este gráfico muestra la proporción de PDI en lugares de desplazamiento que han alcanzado el objetivo definido para cada uno de los ocho criterios de soluciones duraderas en un momento determinado.</em></p>
+<p><img src="RackMultipart20210623-4-1m1d3f_html_bf829b1d5dd0f46d.png" /></p>
+<p><em>Esta figura muestra una evaluación del criterio 2, nivel de vida adecuado, de la figura anterior. Representa la proporción de PDI en los lugares de desplazamiento que han alcanzado el objetivo definido para cada uno de los subcriterios del criterio 2 en un momento determinado.</em></p>
+<p><img src="RackMultipart20210623-4-1m1d3f_html_b20e185ee0988295.gif" /></p>
+<p><img src="RackMultipart20210623-4-1m1d3f_html_6dec4ba97217ccb.png" /></p>
+<p><em>Este gráfico muestra la proporción de PDI en lugares de retorno que han alcanzado el objetivo definido para cada uno de los ocho criterios de soluciones entre dos puntos en el tiempo.</em></p>
+<p><img src="RackMultipart20210623-4-1m1d3f_html_53949d467e0c26a6.png" /></p>
+<p><em>Este gráfico muestra la proporción de PDI en otros lugares de asentamiento que han alcanzado el objetivo definido para cada uno de los ocho criterios de soluciones duraderas entre dos puntos en el tiempo.</em></p>
+</div>
+<div id="section-4" class="section level3" number="10.0.1">
+<h3><span class="header-section-number">10.0.1</span> </h3>
+<pre><code>1.</code></pre>
+</div>
+<div id="usos-de-la-medida-del-progreso" class="section level3" number="10.0.2">
+<h3><span class="header-section-number">10.0.2</span> Usos de la medida del progreso</h3>
+<ol style="list-style-type: decimal">
+<li><p>Como se demuestra en la figura 4.3, la visión general que ofrecen estos resultados analíticos puede aportar importantes pruebas a los responsables de la toma de decisiones que trabajan en la elaboración y aplicación de políticas relacionadas con el desplazamiento o en los procesos de planificación del desarrollo sensibles al desplazamiento a nivel nacional o subnacional. La medida permite a los usuarios comprender, de un vistazo, en qué aspectos de la vulnerabilidad las PDI tienen dificultades en comparación con otras personas (lo que tal vez revele indicios de discriminación relacionada con el desplazamiento) y en cuáles les va relativamente bien. Si esta medida se utiliza periódicamente, con el tiempo podrá demostrar los avances y/o los puntos en los que se ha estancado. Sobre la base de cualquiera de los dos resultados (análisis instantáneo o longitudinal), se pueden realizar esfuerzos para priorizar las inversiones y orientar las intervenciones para mejorar las condiciones de las personas desplazadas, teniendo en cuenta el contexto más amplio/las comunidades en las que viven. De este modo, la medida puede convertirse en una herramienta útil para el seguimiento de los avances hacia soluciones duraderas para las PDI.</p></li>
+<li><p>Se han hecho varios esfuerzos en diferentes contextos para aplicar enfoques similares, pero los métodos utilizados han variado y no suelen estar integrados en los SEN. Al utilizar el enfoque más estandarizado que aquí se propone, se prevé mejorar el análisis y reforzar el uso de los resultados para las políticas y prácticas.</p></li>
+<li><p>Cuando se apliquen a nivel nacional, los resultados también ayudarán a complementar las estadísticas de población sobre las PDI para proporcionar una base de pruebas más matizada para las políticas y el diálogo internacional sobre las PDI. Al mostrar los progresos realizados en un grupo estandarizado de vulnerabilidades relacionadas con el desplazamiento a lo largo del tiempo, incluso en contextos en los que la cifra de PDI ha aumentado, los resultados de la medición del progreso serán valiosos para informar tanto los procesos políticos como de la acción.</p></li>
+<li><p>Sin embargo, es importante subrayar que mientras la elección de los indicadores para los subcriterios siga sin estar alineada ni estandarizada, la comparación directa de los resultados entre países no es posible ni recomendable. El interés por desarrollar una lista recomendada de indicadores estandarizados para cada subcriterio sigue siendo alto entre los miembros del EGRIS; por lo tanto, como se ha mencionado anteriormente (ver párrafo 137), está previsto incorporarlo al Manual de Compiladores y a la futura revisión prevista de estas recomendaciones.</p></li>
+<li><h4 id="desagregación-de-datos">Desagregación de datos</h4></li>
+<li><p>Como se ha mencionado anteriormente (ver párrafo 147), la medida del progreso hacia las soluciones duraderas puede aplicarse a las tres subcategorías/clasificaciones de PDI: PDI en zonas de desplazamiento (midiendo la integración local), PDI en zonas de retorno (midiendo la reintegración) y PDI en otras zonas (midiendo la integración en otros lugares de asentamiento).</p></li>
+<li><p>Dependiendo del tipo de fuente de datos utilizada, también se recomienda un mayor desglose por características demográficas relevantes para permitir el análisis de la situación de los diferentes subgrupos, y así poder tomar decisiones más matizadas y fundamentadas. El desglose por sexo y edad, por ejemplo, puede indicar qué grupos de la población desplazada en general son más vulnerables. De ser posible, el análisis de los datos con respecto a otras características, como región geográfica, tipo de zona (urbana/rural), tipo de alojamiento (campamento/asentamiento/casa propia/alojamiento alquilado/acogido por amigos/familiares), origen étnico, religión, discapacidad, nivel educativo, causa del desplazamiento y/o duración de este, también podría proporcionar información adicional valiosa.</p></li>
+<li><p>Cuando la disponibilidad de datos lo permita, la comparación entre subgrupos relevantes de la población desplazada y sus equivalentes en la población general también puede proporcionar información útil; por ejemplo, al considerar las diferencias entre los hombres y las mujeres de la población desplazada, y los hombres y las mujeres de la población general, respectivamente. El capítulo 5 ofrece una lista sugerida de variables y tabulaciones, que cubren algunos de los elementos de desagregación que se discuten aquí. Como se analiza más adelante en el capítulo 6 (Tabla 0.1 y párrafos 200 y 221-223), hay que tomar en cuenta la cobertura de la población y los problemas de confidencialidad, sobre todo cuando se analizan estos desgloses.</p></li>
+<li><h2 id="medida-compuesta-para-superar-las-principales-vulnerabilidades-relacionadas-con-el-desplazamiento">Medida compuesta para superar las principales vulnerabilidades relacionadas con el desplazamiento</h2></li>
+<li><p>Además de la medida del progreso descrita anteriormente, el Marco IASC también proporciona una base para determinar el ‘logro de soluciones duraderas,’ es decir, cuando se han superado todas las necesidades de protección y las vulnerabilidades relacionadas con el desplazamiento (detalladas en los ocho criterios). Como se ha descrito anteriormente (párrafo 125), el desplazamiento físico por sí solo —ya sea el retorno o el asentamiento en otro lugar—, no constituye una solución duradera; en su lugar, habría que llevar a cabo un análisis de vulnerabilidad que abarque los ocho criterios para hacer una determinación de ese tipo.</p></li>
+<li><p>En la actualidad, no existen orientaciones definitivas para identificar el fin del desplazamiento. Debido a que no existe una definición operativa o estadística internacionalmente aceptada para que las personas que alcanzan una solución duradera dejen de formar parte de la población estadística de PDI, la práctica es variada. En algunos casos, los retornos o las salidas de los campamentos se eliminan de la población estadística; en otros casos, se publican los datos de los flujos de retorno, se utiliza un amplio análisis de vulnerabilidad o la población estadística de PDI no se reduce nunca. Las siguientes recomendaciones parten de la base de que la ausencia de una orientación sencilla y metodológicamente sólida sobre cómo medir la consecución de soluciones duraderas ha contribuido a que se desarrollen diferentes enfoques <em>ad hoc</em> y a que aumente la confusión sobre el asunto.</p></li>
+<li><p>Estas recomendaciones reconocen que desarrollar una medida estadística para un fenómeno tan complejo es complicado. La medida debe abordar los asuntos relevantes de fondo, seguir siendo globalmente relevante para una amplia gama de contextos de desplazamiento y ser realista en términos de aplicación para minimizar el posible sesgo en las cifras reportadas de la población estadística de PDI, resultante del hecho de que el aumento de tales cifras es más fácil de medir que la disminución de las mismas. A la luz de esto, en lugar de desarrollar una medida global de soluciones duraderas, estas recomendaciones proponen una medida compuesta preliminar para evaluar si se han superado o no las vulnerabilidades clave relacionadas con el desplazamiento. Esta medida debe utilizarse para todas las PDI (es decir, PDI en lugares de desplazamiento, PDI en lugares de retorno y PDI en otros lugares de asentamiento) con el fin de eliminar de la población total a aquellas cuyas necesidades de protección y vulnerabilidades clave relacionadas con el desplazamiento han sido superadas. Los siguientes párrafos contienen más información sobre esta medida, que requerirá más pruebas, análisis y perfeccionamiento en los próximos años.</p></li>
+<li><h3 id="alcance-de-la-medida-compuesta">Alcance de la medida compuesta</h3></li>
+<li><p>La medida compuesta pretende evaluar si se han superado las principales vulnerabilidades relacionadas con el desplazamiento. Sobre la base del análisis resultante, el número total de PDI puede reducirse. La medida también puede utilizarse para a evaluar las poblaciones relacionadas con PDI</p></li>
+<li><p>Para recomendar la medida estadística se han tenido en cuenta los siguientes aspectos:</p></li>
+</ol>
+<ul>
+<li>En consonancia con la naturaleza de las medidas estadísticas para los fenómenos sociales complejos, la medida estadística pretende proporcionar una evaluación práctica que se relacione estrechamente con el fenómeno que pretende medir, incorporando características clave y aspectos estadísticamente medibles de dicho fenómeno. Por lo tanto, la medida compuesta recomendada pretende capturar el avance hacia soluciones duraderas midiendo el grado en que una población de PDI ha superado las vulnerabilidades clave relacionadas con el desplazamiento, es decir, midiendo estadísticamente una disminución importante. Para limitar el alcance y lograr una medida práctica, se seleccionaron cinco de los ocho criterios del IASC para el desarrollo de la medida.</li>
+<li>La medida evalúa la situación general de la población de PDI y no pretende evaluar la ‘situación de desplazamiento’ de los individuos, aunque se basa en la información proporcionada por estos y por los hogares. Esto significa que los resultados deben presentarse solo a nivel agregado o por categorías principales, como por sexo, edad o geografía, respetando todas las normas pertinentes de protección de datos y confidencialidad. Esto significa también que los resultados no deben utilizarse con fines de programación a nivel individual, sino que deben utilizarse para informar sobre la elaboración de políticas y la asignación de recursos a nivel nacional y subnacional. Aunque los resultados de la medida pueden dar lugar a cambios en la programación y el apoyo a las PDI en general, no deberían afectar directamente el apoyo a las personas que proporcionaron la información.</li>
+<li>Dadas las limitaciones de recursos y de capacidad que afectan a muchas oficinas de estadística, la medida es sencilla y al mismo tiempo cubre las principales vulnerabilidades relacionadas con el desplazamiento.</li>
+<li>Como medida estadística, se espera que la principal fuente de información sea la información cuantitativa recogida mediante métodos que cubran de forma representativa a la población en cuestión. Los datos cualitativos pueden considerarse en algunos casos en los que no se disponga de otras opciones o en los que la selección de esta opción suponga una ganancia sustancial. Sin embargo, hay que tener en cuenta los aspectos relacionados con la calidad de los datos.</li>
+<li>La objetividad de la medida es fundamental, por lo que se han minimizado los elementos subjetivos en la medida de lo posible. Esto no significa que no deban tenerse en cuenta las medidas subjetivas, sino que son más adecuadas para los esfuerzos de análisis complementarios realizados por los socios operativos y los investigadores.</li>
+</ul>
+<ol style="list-style-type: decimal">
+<li><p>Dada la falta de datos disponibles para su comprobación y perfeccionamiento, no se han comprobado adecuadamente todos los aspectos de la medida compuesta en su forma actual. Hasta que no se complete, no se espera que la medida sea comparable entre países. Se necesitarán más pruebas, consultas, desarrollo y análisis para completar y perfeccionar la medida; los miembros del EGRIS decidieron presentar la medida en su forma preliminar principalmente porque el desarrollo se estancó debido a la falta de datos disponibles para las pruebas. Tras la aceptación de estas recomendaciones por parte de la UNSC y el trabajo a nivel nacional para ponerlas en práctica, se espera que se disponga de datos adicionales procedentes de diversos contextos de desplazamiento, que puedan contribuir al perfeccionamiento previsto de la medida. Esto, a su vez, permitirá una mejor comparabilidad internacional de los resultados. Estas mejoras se incorporarán a las futuras revisiones de estas recomendaciones y del Manual de Compiladores asociado.</p></li>
+<li><h3 id="esquema-de-la-medida-compuesta">Esquema de la medida compuesta</h3></li>
+<li><h4 id="criterios-y-subcriterios-priorizados">Criterios y subcriterios priorizados</h4></li>
+<li><p>Mientras que la columna vertebral de la medida del progreso son los ocho criterios de soluciones duraderas (párrafo 146), la medida compuesta para evaluar las vulnerabilidades clave relacionadas con el desplazamiento tiene un alcance más estrecho y se basa en un subconjunto de cinco de estos criterios, determinados como relevantes en cada contexto de desplazamiento. Entre ellos se encuentran los cuatro criterios priorizados por el propio Marco IASC (seguridad y protección, nivel de vida adecuado, acceso a los medios de subsistencia y restablecimiento de las tierras y propiedades de las viviendas) y un criterio adicional (acceso a la documentación) (ver párrafo 134). Para estructurar la medida se desarrollaron un total de 10 subcriterios (ver la tabla 4.3).</p></li>
+</ol>
+<p>_Tabla 0.3__Criterios y subcriterios incluidos en la medida compuesta_</p>
+<table>
+<thead>
+<tr class="header">
+<th><strong>Criterios</strong></th>
+<th><strong>Subcriterios</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1. Seguridad y protección</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>1.2 Libertad de movimiento</td>
+</tr>
+<tr class="odd">
+<td>2. Nivel de vida adecuado</td>
+<td>3</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>2.2 Albergue y vivienda</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>2.3 Servicios médicos</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>2.4 Educación</td>
+</tr>
+<tr class="odd">
+<td>3. Acceso a medios de vida</td>
+<td>7</td>
+</tr>
+<tr class="even">
+<td>8</td>
+<td>3.2 Seguridad financiera</td>
+</tr>
+<tr class="odd">
+<td>4. Restitución de la vivienda, la tierra y la propiedad</td>
+<td>9</td>
+</tr>
+<tr class="even">
+<td>5. Acceso a la documentación</td>
+<td>10</td>
+</tr>
+</tbody>
+</table>
+<ol style="list-style-type: decimal">
+<li><p>Documentación
+|</p></li>
+<li><p>Dependiendo de la situación (relevancia, contexto y disponibilidad de datos), los tres criterios restantes del IASC y los ocho subcriterios relacionados (
+# 110
+) pueden incluirse en la medida; sin embargo, se recomienda restringir el alcance para evitar complicar demasiado la medida.</p></li>
+<li><h4 id="una-metodología-sencilla-y-por-capas">Una metodología sencilla y por capas</h4></li>
+<li><p>La metodología utilizada para el cálculo de la medida compuesta es un simple escenario de aprobado/no aprobado (o binario) a nivel de subcriterios, que luego se suma para obtener una puntuación a nivel de criterios y, en última instancia, una puntuación global para la medida. Este cálculo debe realizarse a nivel de hogar para evaluar la situación de vulnerabilidad de un hogar concreto (según los cinco criterios de vulnerabilidad). Para determinar si se ha superado o no un subcriterio, es necesario establecer un objetivo para cada hogar, lo que requiere tener en cuenta el tipo de indicador utilizado (es decir, binario, continuo o categórico). Se espera que la fijación de objetivos sea más compleja en el caso de los indicadores categóricos o binarios, dependiendo de los diferentes contextos nacionales. Si todos los subcriterios de un criterio reciben un ‘aprobado,’ entonces ese criterio (o la vulnerabilidad asociada al desplazamiento) se ha superado. Las cinco vulnerabilidades clave relacionadas con los desplazamientos (los cinco criterios) deben alcanzar una nota de ‘aprobado’ para que se cumpla la medida compuesta.</p></li>
+<li><p>Los resultados a nivel de hogar se agregan o extrapolan, según la fuente de datos utilizada, para obtener resultados a nivel de población. Para evaluar adecuadamente cuántas personas han cumplido con los cinco (o más) criterios, lo ideal es que los datos de los distintos criterios procedan de la misma fuente de datos o que puedan vincularse entre sí, con un identificador único que permita captar a las mismas personas u hogares en todos los criterios. Aunque existen métodos de probabilidad que pueden ayudar a analizar situaciones en las que esto no es factible, son complicados; y, en la mayoría de los casos, están fuera del alcance de los SEN. Las implicaciones asociadas a las fuentes de datos utilizadas para evaluar cuándo se han superado las vulnerabilidades clave relacionadas con el desplazamiento se analizan con más detalle en el capítulo 6 (ver los párrafos 209, 210, 232-237, 255 y 256) y en el Manual de Compiladores.</p></li>
+<li><p>Puede haber situaciones en las que no se disponga de datos para todos los criterios o subcriterios. En este caso, la medida compuesta no puede aplicarse en su totalidad y no se puede realizar una evaluación completa sobre si la población ha superado las vulnerabilidades clave relacionadas con el desplazamiento. La parte de las personas que se encuentran en esta situación debe especificarse de manera que quede claro que existe la incertidumbre de que puedan haber superado las vulnerabilidades.</p></li>
+</ol>
+<p>La metodología descrita en los párrafos 166-168 se visualiza en la figura 4.4.</p>
+<p><em>Figura 0.4 Metodología para la medida compuesta</em></p>
+<p><img src="RackMultipart20210623-4-1m1d3f_html_3736d6548188e055.png" /></p>
+<ol style="list-style-type: decimal">
+<li><h4 id="fijación-de-objetivos">Fijación de objetivos</h4></li>
+<li><p>Para utilizar la medida compuesta, es necesario establecer objetivos para identificar cuándo asignar un ‘aprobado’ o ‘no aprobado’ a un subcriterio o indicador, como se ha descrito anteriormente (ver párrafo 166). En general, a efectos de las estadísticas oficiales, y porque es el enfoque que se suele adoptar en este contexto, se recomienda utilizar la población general/nacional como grupo de comparación a la hora de decidir los objetivos o umbrales de puntuación de cada subcriterio y utilizar como objetivo la media de la población general/nacional. Las razones principales son que la información sobre la población general está disponible con mayor frecuencia, lo que simplifica la recogida y el análisis de datos (ver los párrafos 138 y 144). En circunstancias específicas, los umbrales pueden establecerse mediante la comparación con la situación media de un subconjunto de la población general con características opuestas, ya que esto puede considerarse más pertinente y factible a efectos operativos en un contexto concreto, aunque (como en el caso de la medida del progreso) esto deberá ir acompañado de una definición clara y coherente de la metodología utilizada.</p></li>
+<li><h2 id="resumen-de-recomendaciones-1">Resumen de recomendaciones</h2></li>
+<li><p>Este capítulo ha esbozado un enfoque estadístico para medir los avances hacia soluciones duraderas, y si se han superado o no las vulnerabilidades clave relacionadas con el desplazamiento. Se han propuesto dos medidas:</p></li>
+<li><p>La medida del progreso hacia soluciones duraderas está diseñada para mostrar el cambio en la proporción de PDI que han superado las vulnerabilidades a lo largo del tiempo, vinculado a los criterios del <em>Marco de soluciones duraderas para los desplazados internos del IASC.</em> Por lo tanto, esta medida mostrará si se está avanzando o no en la superación de las diferentes vulnerabilidades y, de forma acumulativa, los progresos realizados hacia la consecución de soluciones duraderas.</p></li>
+<li><p>La medida compuesta está diseñada para especificar si se han superado todas las vulnerabilidades clave relacionadas con el desplazamiento y, por lo tanto, si las personas con necesidades de protección y vulnerabilidades relacionadas con el desplazamiento pueden ser retiradas de la población estadística total de PDI.</p></li>
+<li><p>Un elemento crítico de ambas medidas se refiere a cómo se definen los objetivos de cada subcriterio. Como se ha señalado anteriormente, se recomienda un enfoque comparativo con la población general/nacional. Si se determina que es pertinente en el contexto nacional, se puede utilizar un subconjunto de la población general/nacional para este fin.</p></li>
+<li><p>En el futuro, se recomienda utilizar estas dos medidas para la elaboración de estadísticas oficiales sobre el desplazamiento interno. Con el tiempo, a medida que se recaben nuevos datos y se realicen más pruebas en diferentes contextos nacionales, se podrán perfeccionar las medidas de progreso y compuestas recomendadas, lo que incluye la incorporación de una lista de indicadores, metodologías y otras orientaciones pertinentes.</p></li>
+</ol>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="capítulo-3-desarrollo-de-un-marco-estadístico.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="capítulo-5-variables-y-tabulaciones.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["irises.pdf", "irises.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

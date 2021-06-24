@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 13 130 | A Minimal Book Example</title>
+  <meta name="description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 13 130 | A Minimal Book Example" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 13 130 | A Minimal Book Example" />
+  
+  <meta name="twitter:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  
+
+<meta name="author" content="Yihui Xie" />
+
+
+<meta name="date" content="2021-06-23" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="capítulo-6-fuentes-de-datos-para-la-recopilación-de-estadísticas-sobre-las-pdi.html"/>
+<link rel="next" href="capítulo-7-coordinación-de-las-estadísticas-sobre-pdi.html"/>
+<script src="libs/header-attrs-2.7/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A Minimal Book Example</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Prerequisites</a></li>
+<li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> Introduction</a></li>
+<li class="chapter" data-level="3" data-path="literature.html"><a href="literature.html"><i class="fa fa-check"></i><b>3</b> Literature</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="literature.html"><a href="literature.html#recomendaciones-internacionales-para-la-generación-de-estadísticas-sobre-pdi-iris"><i class="fa fa-check"></i><b>3.1</b> <strong>Recomendaciones internacionales para la generación de estadísticas sobre PDI (IRIS)</strong></a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="section.html"><a href="section.html"><i class="fa fa-check"></i><b>4</b> </a></li>
+<li class="chapter" data-level="5" data-path="section-1.html"><a href="section-1.html"><i class="fa fa-check"></i><b>5</b> </a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="section-1.html"><a href="section-1.html#agradecimientos"><i class="fa fa-check"></i><b>5.1</b> AGRADECIMIENTOS</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="section-2.html"><a href="section-2.html"><i class="fa fa-check"></i><b>6</b> </a></li>
+<li class="chapter" data-level="7" data-path="capítulo-1-introducción.html"><a href="capítulo-1-introducción.html"><i class="fa fa-check"></i><b>7</b> CAPÍTULO 1 INTRODUCCIÓN</a></li>
+<li class="chapter" data-level="8" data-path="capítulo-2-políticas-públicas-y-marco-jurídico.html"><a href="capítulo-2-políticas-públicas-y-marco-jurídico.html"><i class="fa fa-check"></i><b>8</b> CAPÍTULO 2. POLÍTICAS PÚBLICAS Y MARCO JURÍDICO</a></li>
+<li class="chapter" data-level="9" data-path="capítulo-3-desarrollo-de-un-marco-estadístico.html"><a href="capítulo-3-desarrollo-de-un-marco-estadístico.html"><i class="fa fa-check"></i><b>9</b> CAPÍTULO 3. DESARROLLO DE UN MARCO ESTADÍSTICO</a></li>
+<li class="chapter" data-level="10" data-path="capítulo-4-soluciones-duraderas-y-principales-vulnerabilidades-relacionadas-con-el-desplazamiento.html"><a href="capítulo-4-soluciones-duraderas-y-principales-vulnerabilidades-relacionadas-con-el-desplazamiento.html"><i class="fa fa-check"></i><b>10</b> CAPÍTULO 4. SOLUCIONES DURADERAS Y PRINCIPALES VULNERABILIDADES RELACIONADAS CON EL DESPLAZAMIENTO</a>
+<ul>
+<li class="chapter" data-level="10.0.1" data-path="capítulo-4-soluciones-duraderas-y-principales-vulnerabilidades-relacionadas-con-el-desplazamiento.html"><a href="capítulo-4-soluciones-duraderas-y-principales-vulnerabilidades-relacionadas-con-el-desplazamiento.html#section-4"><i class="fa fa-check"></i><b>10.0.1</b> </a></li>
+<li class="chapter" data-level="10.0.2" data-path="capítulo-4-soluciones-duraderas-y-principales-vulnerabilidades-relacionadas-con-el-desplazamiento.html"><a href="capítulo-4-soluciones-duraderas-y-principales-vulnerabilidades-relacionadas-con-el-desplazamiento.html#usos-de-la-medida-del-progreso"><i class="fa fa-check"></i><b>10.0.2</b> Usos de la medida del progreso</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="capítulo-5-variables-y-tabulaciones.html"><a href="capítulo-5-variables-y-tabulaciones.html"><i class="fa fa-check"></i><b>11</b> CAPÍTULO 5. VARIABLES Y TABULACIONES</a></li>
+<li class="chapter" data-level="12" data-path="capítulo-6-fuentes-de-datos-para-la-recopilación-de-estadísticas-sobre-las-pdi.html"><a href="capítulo-6-fuentes-de-datos-para-la-recopilación-de-estadísticas-sobre-las-pdi.html"><i class="fa fa-check"></i><b>12</b> CAPÍTULO 6. FUENTES DE DATOS PARA LA RECOPILACIÓN DE ESTADÍSTICAS SOBRE LAS PDI</a>
+<ul>
+<li class="chapter" data-level="12.0.1" data-path="capítulo-6-fuentes-de-datos-para-la-recopilación-de-estadísticas-sobre-las-pdi.html"><a href="capítulo-6-fuentes-de-datos-para-la-recopilación-de-estadísticas-sobre-las-pdi.html#el-censo-de-población-y-vivienda"><i class="fa fa-check"></i><b>12.0.1</b> El censo de población y vivienda</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="section-5.html"><a href="section-5.html"><i class="fa fa-check"></i><b>13</b> 130</a></li>
+<li class="chapter" data-level="14" data-path="capítulo-7-coordinación-de-las-estadísticas-sobre-pdi.html"><a href="capítulo-7-coordinación-de-las-estadísticas-sobre-pdi.html"><i class="fa fa-check"></i><b>14</b> CAPÍTULO 7 COORDINACIÓN DE LAS ESTADÍSTICAS SOBRE PDI</a></li>
+<li class="chapter" data-level="15" data-path="methods.html"><a href="methods.html"><i class="fa fa-check"></i><b>15</b> Methods</a></li>
+<li class="chapter" data-level="16" data-path="applications.html"><a href="applications.html"><i class="fa fa-check"></i><b>16</b> Applications</a>
+<ul>
+<li class="chapter" data-level="16.1" data-path="applications.html"><a href="applications.html#example-one"><i class="fa fa-check"></i><b>16.1</b> Example one</a></li>
+<li class="chapter" data-level="16.2" data-path="applications.html"><a href="applications.html#example-two"><i class="fa fa-check"></i><b>16.2</b> Example two</a></li>
+</ul></li>
+<li class="chapter" data-level="17" data-path="final-words.html"><a href="final-words.html"><i class="fa fa-check"></i><b>17</b> Final Words</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">A Minimal Book Example</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="section-5" class="section level1" number="13">
+<h1><span class="header-section-number">Chapter 13</span> 130</h1>
+<p>) | Basado en la zona; posibilidad de buena cobertura para la zona monitoreada | Parcialmente, ya que cubre los movimientos, pero puede ser inexacto en cuanto a las cifras y los motivos de la migración | Por lo general, no, ya que las preguntas clave sobre la vulnerabilidad relacionada con el desplazamiento no se plantearán a una muestra representativa | Generalmente, no, pero en algunas situaciones difíciles puede utilizarse para estimar la población estadística |</p>
+<ol style="list-style-type: decimal">
+<li><p>Como se muestra en la tabla 6.3, varias de las fuentes tienen el potencial de proporcionar información sobre los flujos y la población estadística de PDI. La fuente de datos más flexible es la encuesta de hogares, que, si se puede establecer un marco de muestreo suficientemente bueno y se incluyen los aspectos necesarios del desplazamiento, puede proporcionar una buena visión general de la población de PDI por subcategorías y vulnerabilidades clave relacionadas con el desplazamiento.</p></li>
+<li><p>Los censos y los registros específicos de las PDI tienen un potencial similar, pero es más costoso y requiere más tiempo incluir todos los aspectos del desplazamiento en estas fuentes. Un reto adicional en los registros específicos de las PDI es mantener actualizada toda la información sobre ellas. El sistema de seguimiento de los movimientos de la población y otras fuentes de datos más operativas y nuevas también tienen potencial, dependiendo de la metodología y el enfoque utilizados, sobre todo si se integran con otras fuentes de datos.</p></li>
+<li><h3 id="cómo-superar-las-vulnerabilidades-relacionadas-con-los-desplazamientos">Cómo superar las vulnerabilidades relacionadas con los desplazamientos</h3></li>
+</ol>
+<p>La tabla 6.4 ofrece una visión más detallada de las diferentes fuentes de datos clave y su cobertura de los diferentes elementos de las vulnerabilidades clave relacionadas con el desplazamiento. También incluye las tres vulnerabilidades relacionadas con el desplazamiento para medir el progreso hacia soluciones duraderas. Actualmente, la mayoría de las fuentes de datos no cubren todos estos aspectos. De cara al futuro, existe la posibilidad de recopilar esta información como parte de las encuestas generales y específicas para las PDI. Para que esto ocurra de forma coordinada, es necesario desarrollar un conjunto de indicadores y preguntas relacionadas con ellos, basados en los 10 subcriterios identificados para superar las vulnerabilidades clave relacionadas con el desplazamiento, así como subcriterios relacionados con los tres restantes para medir el progreso hacia soluciones duraderas (ver</p>
+<ol style="list-style-type: decimal">
+<li>Tabla 0.2).</li>
+<li>Como se ha especificado anteriormente, los censos y los registros de PDI pueden abarcar muchos aspectos del desplazamiento, pero puede ser más importante recopilar datos sobre otros elementos del censo, los costes pueden ser demasiado elevados para incluir preguntas sobre el desplazamiento o el mantenimiento puede ser difícil en el caso de los registros específicos de PDI. Un registro no debe establecerse con fines estadísticos, pero, si se establece con fines administrativos, la información también puede utilizarse para evaluaciones estadísticas.</li>
+<li>Las fuentes también pueden combinarse, por ejemplo, para garantizar que el marco de muestreo esté actualizado y sea de suficiente calidad o para evaluar si se han superado o no las principales vulnerabilidades relacionadas con el desplazamiento.</li>
+</ol>
+<p><em>Tabla 0.4 Fuentes de datos y uso en el análisis de las vulnerabilidades relacionadas con el desplazamiento</em></p>
+<p><img src="RackMultipart20210623-4-1m1d3f_html_382811ffbf607edf.jpg" /></p>
+<ol style="list-style-type: decimal">
+<li><h2 id="resumen-de-recomendaciones-3">Resumen de recomendaciones</h2></li>
+<li>Este capítulo ha mostrado que varias fuentes de datos tienen el potencial de ser utilizadas en la generación de estadísticas oficiales sobre PDI. Cada una de las fuentes tiene sus propias ventajas y limitaciones a la hora de identificar a las PDI en los datos y a la hora de identificar quiénes han superado las principales vulnerabilidades relacionadas con el desplazamiento y, por tanto, ya no forman parte de la población estadística.</li>
+<li>En este capítulo se han formulado varias recomendaciones sobre cómo pueden mejorarse los métodos actuales de recogida de datos en los SEN para medir los flujos y la población estadística de PDI en cada una de las fuentes presentadas. Partiendo de los debates que figuran en la parte B, la parte E destaca que la fuente de datos más flexible en este contexto es la encuesta por muestreo de los hogares. Esto puede mejorarse si se incluyen con mayor frecuencia preguntas relacionadas con las PDI en las encuestas generales de hogares.</li>
+<li>También deben tomarse medidas para incluir las variables relacionadas con las PDI en los censos y las fuentes de datos administrativos. Aunque las fuentes de datos censales y administrativos podrían no ser adecuadas o capaces de medir el aumento de PDI en todos los contextos o de captar el final del desplazamiento, estas fuentes tienen el potencial de servir como marcos de muestreo completos para las encuestas de hogares por muestreo sobre el tema.</li>
+<li>Además, se estudió el papel que pueden jugar los datos operativos como fuente de estadísticas oficiales. En las primeras etapas del desplazamiento, los datos operativos pueden ser los únicos disponibles debido a los entornos rápidamente cambiantes y desafiantes que suelen prevalecer en los contextos donde se suscita el fenómeno. En algunos contextos, la falta de un sistema estadístico que funcione o la presencia de un sistema estadístico con grandes limitaciones de recursos y capacidad también puede ser un motivo por el cual los datos operativos sean la única fuente posible para las estadísticas sobre PDI. Para que los datos operativos se consideren una fuente para las estadísticas oficiales, la calidad en todos los procesos y la transparencia en la producción de los datos son clave; además, las ONE u otras unidades estadísticas relevantes dentro de los SEN deberían evaluar la calidad de los datos.</li>
+<li>Aunado a lo anterior, este capítulo ha subrayado la necesidad y el potencial de integrar diferentes fuentes de datos para ofrecer una imagen completa de los flujos y de la población estadística de PDI. Deben tomarse medidas para facilitar la integración, como la introducción de un sistema nacional de NIP como parte de la recogida de datos de las personas, la racionalización de las preguntas en todas las herramientas de recogida de datos y la garantía de que se toman medidas para respetar la confidencialidad de los datos.</li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="capítulo-6-fuentes-de-datos-para-la-recopilación-de-estadísticas-sobre-las-pdi.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="capítulo-7-coordinación-de-las-estadísticas-sobre-pdi.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["irises.pdf", "irises.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 12 CAPÍTULO 6. FUENTES DE DATOS PARA LA RECOPILACIÓN DE ESTADÍSTICAS SOBRE LAS PDI | A Minimal Book Example</title>
+  <meta name="description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 12 CAPÍTULO 6. FUENTES DE DATOS PARA LA RECOPILACIÓN DE ESTADÍSTICAS SOBRE LAS PDI | A Minimal Book Example" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 12 CAPÍTULO 6. FUENTES DE DATOS PARA LA RECOPILACIÓN DE ESTADÍSTICAS SOBRE LAS PDI | A Minimal Book Example" />
+  
+  <meta name="twitter:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  
+
+<meta name="author" content="Yihui Xie" />
+
+
+<meta name="date" content="2021-06-23" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="capítulo-5-variables-y-tabulaciones.html"/>
+<link rel="next" href="section-5.html"/>
+<script src="libs/header-attrs-2.7/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A Minimal Book Example</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Prerequisites</a></li>
+<li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> Introduction</a></li>
+<li class="chapter" data-level="3" data-path="literature.html"><a href="literature.html"><i class="fa fa-check"></i><b>3</b> Literature</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="literature.html"><a href="literature.html#recomendaciones-internacionales-para-la-generación-de-estadísticas-sobre-pdi-iris"><i class="fa fa-check"></i><b>3.1</b> <strong>Recomendaciones internacionales para la generación de estadísticas sobre PDI (IRIS)</strong></a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="section.html"><a href="section.html"><i class="fa fa-check"></i><b>4</b> </a></li>
+<li class="chapter" data-level="5" data-path="section-1.html"><a href="section-1.html"><i class="fa fa-check"></i><b>5</b> </a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="section-1.html"><a href="section-1.html#agradecimientos"><i class="fa fa-check"></i><b>5.1</b> AGRADECIMIENTOS</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="section-2.html"><a href="section-2.html"><i class="fa fa-check"></i><b>6</b> </a></li>
+<li class="chapter" data-level="7" data-path="capítulo-1-introducción.html"><a href="capítulo-1-introducción.html"><i class="fa fa-check"></i><b>7</b> CAPÍTULO 1 INTRODUCCIÓN</a></li>
+<li class="chapter" data-level="8" data-path="capítulo-2-políticas-públicas-y-marco-jurídico.html"><a href="capítulo-2-políticas-públicas-y-marco-jurídico.html"><i class="fa fa-check"></i><b>8</b> CAPÍTULO 2. POLÍTICAS PÚBLICAS Y MARCO JURÍDICO</a></li>
+<li class="chapter" data-level="9" data-path="capítulo-3-desarrollo-de-un-marco-estadístico.html"><a href="capítulo-3-desarrollo-de-un-marco-estadístico.html"><i class="fa fa-check"></i><b>9</b> CAPÍTULO 3. DESARROLLO DE UN MARCO ESTADÍSTICO</a></li>
+<li class="chapter" data-level="10" data-path="capítulo-4-soluciones-duraderas-y-principales-vulnerabilidades-relacionadas-con-el-desplazamiento.html"><a href="capítulo-4-soluciones-duraderas-y-principales-vulnerabilidades-relacionadas-con-el-desplazamiento.html"><i class="fa fa-check"></i><b>10</b> CAPÍTULO 4. SOLUCIONES DURADERAS Y PRINCIPALES VULNERABILIDADES RELACIONADAS CON EL DESPLAZAMIENTO</a>
+<ul>
+<li class="chapter" data-level="10.0.1" data-path="capítulo-4-soluciones-duraderas-y-principales-vulnerabilidades-relacionadas-con-el-desplazamiento.html"><a href="capítulo-4-soluciones-duraderas-y-principales-vulnerabilidades-relacionadas-con-el-desplazamiento.html#section-4"><i class="fa fa-check"></i><b>10.0.1</b> </a></li>
+<li class="chapter" data-level="10.0.2" data-path="capítulo-4-soluciones-duraderas-y-principales-vulnerabilidades-relacionadas-con-el-desplazamiento.html"><a href="capítulo-4-soluciones-duraderas-y-principales-vulnerabilidades-relacionadas-con-el-desplazamiento.html#usos-de-la-medida-del-progreso"><i class="fa fa-check"></i><b>10.0.2</b> Usos de la medida del progreso</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="capítulo-5-variables-y-tabulaciones.html"><a href="capítulo-5-variables-y-tabulaciones.html"><i class="fa fa-check"></i><b>11</b> CAPÍTULO 5. VARIABLES Y TABULACIONES</a></li>
+<li class="chapter" data-level="12" data-path="capítulo-6-fuentes-de-datos-para-la-recopilación-de-estadísticas-sobre-las-pdi.html"><a href="capítulo-6-fuentes-de-datos-para-la-recopilación-de-estadísticas-sobre-las-pdi.html"><i class="fa fa-check"></i><b>12</b> CAPÍTULO 6. FUENTES DE DATOS PARA LA RECOPILACIÓN DE ESTADÍSTICAS SOBRE LAS PDI</a>
+<ul>
+<li class="chapter" data-level="12.0.1" data-path="capítulo-6-fuentes-de-datos-para-la-recopilación-de-estadísticas-sobre-las-pdi.html"><a href="capítulo-6-fuentes-de-datos-para-la-recopilación-de-estadísticas-sobre-las-pdi.html#el-censo-de-población-y-vivienda"><i class="fa fa-check"></i><b>12.0.1</b> El censo de población y vivienda</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="section-5.html"><a href="section-5.html"><i class="fa fa-check"></i><b>13</b> 130</a></li>
+<li class="chapter" data-level="14" data-path="capítulo-7-coordinación-de-las-estadísticas-sobre-pdi.html"><a href="capítulo-7-coordinación-de-las-estadísticas-sobre-pdi.html"><i class="fa fa-check"></i><b>14</b> CAPÍTULO 7 COORDINACIÓN DE LAS ESTADÍSTICAS SOBRE PDI</a></li>
+<li class="chapter" data-level="15" data-path="methods.html"><a href="methods.html"><i class="fa fa-check"></i><b>15</b> Methods</a></li>
+<li class="chapter" data-level="16" data-path="applications.html"><a href="applications.html"><i class="fa fa-check"></i><b>16</b> Applications</a>
+<ul>
+<li class="chapter" data-level="16.1" data-path="applications.html"><a href="applications.html#example-one"><i class="fa fa-check"></i><b>16.1</b> Example one</a></li>
+<li class="chapter" data-level="16.2" data-path="applications.html"><a href="applications.html#example-two"><i class="fa fa-check"></i><b>16.2</b> Example two</a></li>
+</ul></li>
+<li class="chapter" data-level="17" data-path="final-words.html"><a href="final-words.html"><i class="fa fa-check"></i><b>17</b> Final Words</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">A Minimal Book Example</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="capítulo-6.-fuentes-de-datos-para-la-recopilación-de-estadísticas-sobre-las-pdi" class="section level1" number="12">
+<h1><span class="header-section-number">Chapter 12</span> CAPÍTULO 6. FUENTES DE DATOS PARA LA RECOPILACIÓN DE ESTADÍSTICAS SOBRE LAS PDI</h1>
+<ol style="list-style-type: decimal">
+<li><h2 id="introducción-4">Introducción</h2></li>
+<li><p>En este capítulo se analizan las fuentes de datos de las PDI para su uso en las estadísticas oficiales. Los datos sobre las PDI se recogen a menudo en circunstancias difíciles, ya que las personas afectadas se han visto forzadas u obligadas a huir de sus hogares. Después de un acontecimiento que provoque un desplazamiento, los primeros en recopilar datos sobre el mismo pueden ser los organismos humanitarios que forman parte de la primera respuesta. A medida que la situación de los desplazamientos se estabiliza o las personas desplazadas se trasladan a lugares más tranquilos, resulta más fácil recopilar datos que cumplan con las normas que suelen aplicarse a las estadísticas oficiales. En este capítulo se analizan las distintas fuentes de datos disponibles para la recopilación de estadísticas sobre las PDI y se formulan recomendaciones para mejorar el suministro de datos sobre las mismas.</p></li>
+<li><p>La parte B describe y discute las diversas fuentes de datos primarios que pueden estar disponibles para su uso en las estadísticas sobre PDI, mientras que la parte C describe los datos operativos recogidos como parte de las operaciones humanitarias y sus posibles usos para las estadísticas oficiales. La parte D se refiere a la integración de los datos procedentes de varias fuentes para mejorar la calidad y la cantidad de las estadísticas sobre desplazamientos internos. En la parte E se analizan las ventajas e inconvenientes de las distintas fuentes. Por último, la parte F extrae las conclusiones generales del capítulo y sus recomendaciones.</p></li>
+<li><h2 id="panorama-de-las-fuentes-de-datos-sobre-pdi">Panorama de las fuentes de datos sobre PDI</h2></li>
+<li><p>Son diversos los organismos —autoridades nacionales, organizaciones internacionales y organizaciones no gubernamentales (ONG)— que recaban datos sobre PDI mediante fuentes administrativas, encuestas, censos, nuevas fuentes de datos y otros métodos operativos en el terreno. Algunos de los datos pueden servir de base para las estadísticas oficiales sobre PDI, pero cada fuente tiene sus propios retos y ventajas.</p></li>
+<li><p>Las fuentes de datos sobre PDI pueden variar significativamente de un país o contexto a otro. A efectos de las estadísticas oficiales, las principales fuentes de datos son tradicionalmente los censos de población y vivienda, las encuestas por muestreo y las fuentes administrativas. Los sistemas de seguimiento de los movimientos de la población, los ‘grandes datos’ y las fuentes cualitativas también son pertinentes para capturar datos sobre PDI; sin embargo, se utilizan con menos frecuencia para la elaboración de estadísticas oficiales. Estas otras fuentes pueden utilizarse en combinación con los datos cuantitativos más tradicionales y dar lugar a datos más amplios. Los datos de varias fuentes pueden integrarse para proporcionar una mejor cobertura e información más amplia sobre las PDI; esto se discute con más detalle en las IRRS.</p></li>
+<li><p>Las IRRS describen ampliamente las principales fuentes de datos sobre las personas refugiadas, junto con las ventajas y limitaciones de cada una de ellas (
+# 113
+). La mayor parte de lo que se describe en las IRRS también se aplica a los datos sobre las PDI, por lo que las descripciones generales serán más breves en este informe. Cuando hay consideraciones específicas para las poblaciones de PDI, estas se analizan en este capítulo.</p></li>
+<li><p>Los conceptos y las clasificaciones expuestos en los capítulos 3 y 4 se discuten en relación con las fuentes de datos para la identificación, la estimación numérica y el análisis de las características de las PDI y las poblaciones relacionadas. Debido a la complejidad de la definición internacional de las PDI (ver capítulo 2), es necesario simplificarla para llegar a una secuencia de preguntas viable en las encuestas y censos. Sin embargo, en la medida de lo posible, será importante captar a los grupos especialmente vulnerables, por ejemplo, la niñez no acompañada y separada de su familia, las personas con discapacidad y las personas indígenas. Esto se desarrollará y, con el tiempo, se incluirá en el Manual de Compiladores.</p></li>
+<li><p>La calidad en todos los elementos de la producción de las estadísticas oficiales es clave para obtener cifras fiables y de confianza. En el cuadro 6.1 se presenta una visión general y breve de las principales consideraciones sobre la calidad de las estadísticas sobre PDI. En el capítulo 7 se presenta un debate más general sobre las consideraciones de calidad en las estadísticas oficiales.</p></li>
+</ol>
+<p><em>Tabla 0.1 Consideraciones clave sobre la calidad de las estadísticas de PDI</em></p>
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Aspecto sobre la calidad</th>
+<th>Retos específicos de las PDI</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Confidencialidad</td>
+<td>La información sobre las PDI puede ser especialmente delicada en los países o regiones en los que el desplazamiento está relacionado con conflictos o disturbios políticos. Si los datos de personas o grupos identificables se hacen públicos o si se tratan sin las debidas precauciones de seguridad, la información sensible puede exponer a las PDI a más vulnerabilidades o peligros. El acceso a los microdatos puede presentar problemas particulares para los grupos vulnerables. Ver también las IRRS sobre confidencialidad.</td>
+</tr>
+<tr class="even">
+<td>Cobertura</td>
+<td>Cubrir a toda la población de PDI es importante, pero puede ser un reto, especialmente en situaciones en las que el acceso de quienes recaban los datos es limitado o nulo por razones de seguridad o de otro tipo. Es necesario cubrir a la mayor parte de la población posible (ya sea mediante un recuento completo o una muestra representativa); sin embargo, tiene prioridad la seguridad tanto de las PDI como de quienes recaban los datos. Cuando no haya sido posible recabar datos de algunas zonas, los datos publicados deben indicar claramente las limitaciones.</td>
+</tr>
+<tr class="odd">
+<td>Representatividad</td>
+<td>A menudo puede ser un reto garantizar que los datos sean representativos de la población total de PDI, con inclusión de ciertos subgrupos como las mujeres y las minorías lingüísticas, étnicas y religiosas. El acceso suele ser el principal obstáculo, pero las PDI también pueden quedar sistemáticamente excluidas debido a la dificultad de identificar a aquellas que viven entre la población general, o bien, porque sus viviendas o asentamientos temporales no están incluidos en los marcos de muestreo.</td>
+</tr>
+<tr class="even">
+<td>Puntualidad</td>
+<td>En muchos contextos, la población de PDI cambia rápidamente por diversas razones (por ejemplo, nuevos desplazamientos, nuevos movimientos de PDI). Los datos quedan rápidamente obsoletos, por lo que es importante difundir las estadísticas con rapidez, pero sin perder la calidad.</td>
+</tr>
+<tr class="odd">
+<td>Periodicidad</td>
+<td>La utilidad de los datos sobre los flujos de población desplazada dependerá de la frecuencia con la que se recojan y publiquen los datos en comparación con la movilidad de la población; cuanto más a menudo se recojan los datos, más útiles serán para los usuarios.</td>
+</tr>
+<tr class="even">
+<td>Comparabilidad</td>
+<td>Para que los datos sean comparables a lo largo de los contextos y del tiempo, deben utilizarse las mismas definiciones, preguntas y metodología de encuesta. Hasta hace poco no se disponía de normas internacionales, por lo que las distintas organizaciones que participan en la recopilación y el análisis de datos no han normalizado sus definiciones y conceptos.</td>
+</tr>
+<tr class="odd">
+<td>Imparcialidad</td>
+<td>Las estadísticas oficiales deben estar libres de influencias políticas. Los contextos de desplazamiento de las PDI pueden ser muy políticos. Todo el proceso estadístico debe estar bien documentado e incluir metadatos de acceso público. Los informes de garantía de calidad también deben estar a disposición de los usuarios.</td>
+</tr>
+<tr class="even">
+<td>Transparencia</td>
+<td>Las estadísticas ganan credibilidad y confianza si se elaboran mediante un proceso bien documentado y accesible al público en general. Es necesario mejorar los metadatos y la accesibilidad de los resultados sobre las estadísticas de las PDI.</td>
+</tr>
+</tbody>
+</table>
+<pre><code>1.</code></pre>
+<div id="el-censo-de-población-y-vivienda" class="section level3" number="12.0.1">
+<h3><span class="header-section-number">12.0.1</span> El censo de población y vivienda</h3>
+<ol style="list-style-type: decimal">
+<li><h4 id="introducción-5">Introducción</h4></li>
+<li><p>Un censo nacional de población y vivienda (en adelante, censo) es una enumeración completa de la población de un país que suele seguir las normas y recomendaciones internacionales y regionales_._ En los _Principios y recomendaciones para los censos de población y vivienda,__revisión 3_, se afirma que “el censo de población debe incluir a todas las personas presentes y/o residentes en su ámbito de aplicación, según el tipo de recuento de población requerido” (
+# 114
+).</p></li>
+<li><p>Los censos enumeran a toda la población, incluida la que se encuentra temporalmente en un país, aplicando una metodología de enumeración de <em>iure</em> (por lo regular, población residente) o <em>de facto</em> (presente en el momento del censo). Mientras que las encuestas por muestreo de hogares suelen no considerar a quienes viven en campamentos y asentamientos informales y a quienes carecen de un hogar permanente debido a la limitación de los marcos de muestreo, los censos deberían cubrir estos grupos de población. Esto hace que el censo sea la principal fuente de datos completos sobre toda la población.</p></li>
+<li><p>Además, los censos recogen información sobre las características socioeconómicas básicas de la población, así como sus condiciones de vivienda.</p></li>
+<li><p>Los censos suelen realizarse cada 10 años y, por tanto, solo proporcionan una imagen instantánea de la población en un momento determinado.</p></li>
+<li><h4 id="posibilidades-y-dificultades-de-utilizar-el-censo-para-estimar-el-número-de-pdi">Posibilidades y dificultades de utilizar el censo para estimar el número de PDI</h4></li>
+<li><p>La única ventaja de un censo, a pesar de su infrecuente realización, es que “representa todo el universo estadístico, hasta la unidad geográfica más pequeña, de un país o región.” Por lo tanto, los censos son fuentes potencialmente valiosas de datos sobre el desplazamiento y permiten hacer comparaciones entre las PDI y la población general o un subconjunto de la población.</p></li>
+<li><p>Además de proporcionar datos sobre la magnitud de los desplazamientos internos, así como las características socioeconómicas básicas de las poblaciones de PDI, los censos pueden proporcionar un marco de muestreo completo para estudios más profundos. Sin embargo, la utilización de los censos para estimar el número de PDI tiene también varias limitaciones importantes. Este es el caso de la medición tanto del aumento como de la disminución de las cifras de PDI, o, en otras palabras, de la identificación de aquellas personas que se considera que se han convertido en PDI y de aquellas que han superado las principales vulnerabilidades relacionadas con el desplazamiento. Estos retos (que son, en gran medida, una cuestión de coste y disponibilidad de espacio, y en los que también influyen el acceso, los problemas de seguridad y la falta de voluntad para identificarse como PDI) son lo suficientemente importantes como para que las expectativas en torno a la producción de datos sobre las PDI utilizando un censo de población y vivienda deban gestionarse con cuidado.</p></li>
+<li><p><em>Cómo identificar a las personas desplazadas internas</em></p></li>
+<li><p>En el contexto de las PDI, es importante identificar a todas las personas que en algún momento se han visto forzadas u obligadas a huir, como se ha especificado en los capítulos anteriores, y a las que todavía tienen vulnerabilidades clave relacionadas con el desplazamiento. Esto también implica considerar a las personas que han regresado a su lugar de residencia habitual o se han asentado en otro lugar, pero que todavía se enfrentan a vulnerabilidades clave relacionadas con el desplazamiento, así como aquellas que han sido desplazadas por la fuerza dentro de los límites de la zona administrativa más pequeña de su lugar de residencia habitual. Estos puntos hacen que la identificación de las PDI sea más compleja que la de las personas refugiadas.</p></li>
+<li><p>Algunos países ya han dado prioridad a la inclusión de preguntas sobre el desplazamiento interno en los censos de población para identificar a las PDI residentes en el país en el momento del censo, a pesar de que el espacio en el censo es limitado para estas preguntas. Estos ejemplos pueden servir de base para el desarrollo de un conjunto estandarizado de preguntas para identificar la afluencia de PDI en futuros censos; se ofrecen ejemplos en el <em>Informe técnico sobre estadísticas de desplazados internos</em> (
+# 115
+). Sin embargo, estos ejemplos suelen limitarse a añadir respuestas a las preguntas sobre migración existentes, lo que ofrece una oportunidad limitada para identificar plenamente a quienes no se han trasladado de zona administrativa, sino que permanecen en las proximidades de su antiguo hogar (ver capítulo 3, párrafos 114 y 115). En muchos casos, tampoco se considera a quienes se han establecido en otros lugares o han regresado. Estas limitaciones se analizarán más adelante.</p></li>
+<li><p>Algunas de las recomendaciones regionales de las Naciones Unidas sobre los censos ya incluyen guías para la recopilación de datos sobre las PDI; por ejemplo, las _Recomendaciones__ para el Censo de Población y Vivienda de 2020_ de la Comisión Económica de las Naciones Unidas para Europa (UNECE) (
+# 116
+).Estas recomendaciones hacen hincapié en la necesidad de medir la magnitud del desplazamiento y sugieren que las preguntas incluyan la fecha de llegada y el lugar de residencia anterior. Además, la identificación de las PDI se basa en la inclusión de una pregunta sobre el motivo de la migración interna, junto con una opción de respuesta para el desplazamiento forzado. Sin embargo, la definición de la UNECE restringe a las PDI a las personas nacionales o ciudadanas y a las personas a su cargo, con inclusión de la niñez nacida después del desplazamiento. Además, para que una persona sea considerada como PDI en las recomendaciones de la UNECE, debe haber cambiado de zona administrativa (a partir de la división civil más pequeña), lo que excluirá a las personas que hayan sido desplazadas, pero que hayan permanecido dentro de los límites de la zona administrativa más pequeña de su lugar de residencia habitual. Las PDI que se han asentado en otro lugar después de su primer desplazamiento y las que han regresado a su lugar de residencia habitual también podrían no estar cubiertas según este enfoque, porque solo se identificará el traslado más reciente.</p></li>
+<li><p>Aunque algunos países han incorporado preguntas sobre el desplazamiento interno en sus censos, en la mayoría de ellos no es posible identificar a las PDI como un grupo independiente a efectos de análisis de datos. Los <em>Principios y recomendaciones para los censos de población y</em> _vivienda de la ONU, revisión 3,_no incluyen preguntas para identificar a las PDI entre los temas básicos recomendados.</p></li>
+<li><p>Las recomendaciones proponen los siguientes temas centrales para identificar las características de la migración geográfica e interna:</p></li>
+</ol>
+<ol style="list-style-type: decimal">
+<li><p>lugar de residencia usual (párrafos 4.52-4.57);</p></li>
+<li><p>lugar en el que la persona está presente en el momento del censo (párrafos 4.58-4.63);</p></li>
+<li><p>lugar de nacimiento (párrafos 4.64-4.71);</p></li>
+<li><p>tiempo de residencia (párrafos 4.72-4.74);</p></li>
+<li><p>lugar de residencia anterior (párrafos 4.75-4.76);</p></li>
+<li><p>lugar de residencia en una fecha determinada del pasado (párrafos 4.77-4.81).</p></li>
+</ol>
+<ol style="list-style-type: decimal">
+<li><p>Aunque no se especifica en las recomendaciones, las preguntas básicas anteriores sobre el lugar de residencia usual, el tiempo de residencia y el lugar de residencia anterior en una fecha determinada del pasado pueden contribuir a la identificación de las PDI dentro de la población si se combinan con una pregunta sobre el motivo del traslado, dando como opción de respuesta el desplazamiento forzado, de forma similar a lo que recomienda la UNECE. Este enfoque ayudará a identificar a las PDI que declaren haberse trasladado en el periodo especificado en el censo y que su motivo de migración sea el desplazamiento forzado. Sin embargo, la identificación de todas las PDI con este enfoque tiene sus limitaciones, ya que normalmente no capta:</p></li>
+<li><p>el lugar de residencia habitual;</p></li>
+<li><p>aquellas personas que dentro del periodo especificado en el censo han regresado a su lugar de residencia habitual;</p></li>
+<li><p>aquellas personas que dentro del periodo especificado en el censo se han desplazado una o varias veces después de su desplazamiento inicial;</p></li>
+<li><p>aquellas personas que se han desplazado dentro de la zona administrativa utilizada en las especificaciones del censo.</p></li>
+<li><p>Estos puntos muestran que este enfoque podría dar lugar a un recuento insuficiente de las personas desplazadas. Se puede considerar un enfoque alternativo en contextos en los que es importante obtener una visión completa del número de personas que se han desplazado internamente o si se prevé que una gran parte de las PDI ha regresado a su lugar de residencia habitual, se ha establecido en otro lugar o se ha desplazado dentro de la zona administrativa más pequeña de su lugar de residencia habitual. Este enfoque puede implicar preguntar específicamente si una persona ha sido desplazada por la fuerza o no.</p></li>
+<li><p><em>Cómo identificar a las personas que han superado las principales vulnerabilidades relacionadas con el desplazamiento</em></p></li>
+<li><p>Como se ha mostrado anteriormente, no es sencillo identificar a las PDI en los censos. La medición de las vulnerabilidades clave relacionadas con el desplazamiento puede ser aún más difícil, ya que requiere incluir preguntas sobre los 10 subcriterios identificados (ver capítulo 4, Tabla 0.3). Aunque algunos de estos subcriterios se incluyen en los cuestionarios del censo, otros no; y los países deben decidir si incluyen o no preguntas sobre estos temas.</p></li>
+<li><p>En los censos suelen incluirse preguntas relacionadas con algunos aspectos de los criterios 2 (nivel de vida adecuado), 3 (acceso a los medios de vida) y 5 (acceso a la documentación) del IASC. Es menos habitual incluir preguntas sobre los criterios 1 (seguridad y protección) y 4 (restauración de viviendas, terrenos y propiedades). Sin embargo, hay ejemplos de esto último: el censo de Kosovo incluye una serie de preguntas sobre la restauración de la vivienda, la tierra y la propiedad.</p></li>
+<li><h4 id="recomendación-sobre-el-uso-de-censos-para-medir-el-número-de-pdi-en-el-futuro">Recomendación sobre el uso de censos para medir el número de PDI en el futuro</h4></li>
+<li><p>La discusión anterior muestra que no es sencillo identificar todos los aspectos de las situaciones de las PDI; además, añadir una pregunta sobre el motivo del traslado a las preguntas ya existentes en el censo sobre la migración interna no capta necesariamente toda la imagen porque el último traslado de una PDI no es siempre el más relevante. Si es importante considerar a toda la población de PDI, por ejemplo, para crear un marco de muestreo completo, se recomienda formular un conjunto de preguntas específicas sobre el desplazamiento forzado (
+# 117
+). Este es el caso, en particular, si (a) las PDI han comenzado a regresar a sus lugares de residencia habitual y se espera que todavía tengan vulnerabilidades clave relacionadas con el desplazamiento; (b) se espera que las PDI se hayan asentado en otro lugar después de su desplazamiento inicial, pero todavía tienen vulnerabilidades clave relacionadas con el desplazamiento; (c) existe la preocupación de que se produzcan múltiples desplazamientos forzados; (d) se espera que los desplazamientos se hayan producido dentro de la zona administrativa más pequeña propuesta por el censo; o (e) el desplazamiento podría haber ocurrido por una combinación de razones. Se sugiere la siguiente serie de preguntas:</p></li>
+</ol>
+<p>DESPLAZAMIENTO FORZADO</p>
+<p>¿*(NOMBRE) ha tenido que huir en algún momento? (posibilidad de añadir la razón)</p>
+<ul>
+<li>En caso afirmativo, ¿cuándo ocurrió?</li>
+<li>Si la respuesta es afirmativa, ¿de dónde proviene o dónde residía antes del desplazamiento forzado?</li>
+<li>En caso afirmativo, ¿a qué lugar se trasladó? (dentro de las fronteras del país/en el extranjero)</li>
+</ul>
+<ol style="list-style-type: decimal">
+<li>En todos los censos se suele incluir una pregunta sobre la residencia actual, que puede utilizarse en combinación con las preguntas anteriores para identificar los movimientos y la situación actual.</li>
+<li>Si no es posible utilizar este enfoque, de acuerdo con las IRRS, se recomienda incluir una pregunta sobre el ‘motivo de la migración’ como tema básico adicional en los <em>Principios y recomendaciones para los censos de población y vivienda</em> de la División de Estadística de las Naciones Unidas. La pregunta también debería adaptarse para incluir los desplazamientos internos y para incluir a las PDI dentro de la categoría de respuesta de desplazamiento forzado con el fin de identificar a las probables PDI. Se sugieren las siguientes preguntas y opciones de respuesta, pero los países deben adaptarlas según las categorías y el idioma:</li>
+</ol>
+<p>PRINCIPAL MOTIVO PARA MIGRAR</p>
+<p>¿Cuál fue la razón principal* por la que (NOMBRE) vino a vivir a esta localidad?</p>
+<ul>
+<li>empleo (incluido el servicio militar);</li>
+<li>educación o formación;</li>
+<li>matrimonio, reunificación familiar o familia;</li>
+<li>desplazamiento forzado (personas desplazadas internas, refugiadas, solicitantes de asilo, protección temporal, etc.);</li>
+<li>otra razón.</li>
+</ul>
+<ol style="list-style-type: decimal">
+<li><p>El tema ‘principal motivo para migrar’ debe referirse a la razón principal que llevó a la persona encuestada a emprender el movimiento migratorio más reciente. En el contexto de las PDI, esto a menudo no captará a las personas que se han asentado en otro lugar o a las que han regresado a su lugar de residencia habitual, pero puede añadir más hogares a un marco de muestreo y ayudar a comprender mejor la situación, especialmente en lo que respecta a la migración forzada más reciente. Se recomienda registrar solo un motivo principal para migrar. Además, esta pregunta debe ser probada y revisada en consecuencia.</p></li>
+<li><p>Todos los censos deben incluir a las personas que viven en campamentos de PDI, centros de recepción, estructuras temporales y alojamientos colectivos. Los cuestionarios utilizados tanto para las viviendas habituales como para los alojamientos colectivos en los que es probable que se alojen las PDI y las poblaciones relacionadas con ellas deben incluir todas las preguntas recomendadas anteriormente, que pueden ayudar a identificar a las PDI.</p></li>
+<li><p>Para identificar si la totalidad o una parte de las personas que integran un hogar han sido desplazadas por la fuerza, todas ellas deberían dar respuesta a las preguntas. Con frecuencia, no todas las personas que integran una familia responden a las preguntas, sobre todo cuando se trata de niñas y niños; esto limitará la utilidad de las preguntas para estimar los flujos totales de poblaciones de PDI y la población estadística.</p></li>
+<li><p>Si el espacio lo permite y la población de PDI constituye una parte sustancial de la población, debe considerarse si pudieran incluirse las preguntas relacionadas con todas las vulnerabilidades clave relacionadas con el desplazamiento (es decir, los cinco criterios prioritarios, como se muestra en Tabla 0.3).</p></li>
+<li><p>Para garantizar el máximo uso de los datos censales disponibles, deben recogerse y facilitarse datos detallados con referencia geográfica, protegiendo al mismo tiempo la seguridad y la confidencialidad de las personas encuestadas (ver capítulo 7). La información geoespacial permitiría analizar la distribución espacial de las PDI e integrar los datos con otras fuentes.</p></li>
+<li><p>Si los retos aquí expuestos pueden minimizarse adecuadamente, permitiendo que los datos del censo proporcionen una visión general relativamente buena de la población de PDI, entonces los datos del censo pueden utilizarse para actualizar los marcos de muestreo de las encuestas de hogares. Esta actualización debe incluir información sobre el número de personas desplazadas en cada localidad o zona de empadronamiento, con el fin de apoyar el diseño de muestras que mejoren la precisión y exactitud de las estimaciones basadas en la encuesta para las PDI y las poblaciones relacionadas con ellas. Sin embargo, estos marcos deben actualizarse periódicamente utilizando otras fuentes para incluir los movimientos recientes de la población.</p>
+<ol style="list-style-type: decimal">
+<li><h3 id="encuestas-de-hogares-por-muestreo">Encuestas de hogares por muestreo</h3></li>
+</ol></li>
+<li><h4 id="introducción-6">Introducción</h4></li>
+<li><p>Las encuestas por muestreo se realizan con mucha más frecuencia que los censos. La mayoría de los SEN utilizan las encuestas nacionales por muestreo de hogares como herramienta principal para recopilar información estadística detallada sobre personas, hogares y comunidades. Se suele realizar una gran encuesta general de hogares al menos cada 3 o 5 años utilizando una muestra probabilística de la población que vive en los hogares (
+# 118
+).</p></li>
+<li><p>Las encuestas por muestreo permiten realizar estimaciones sobre la población y sobre subconjuntos de la población con una probabilidad de exactitud conocida, y pueden proporcionar amplia información sobre las condiciones socioeconómicas de las personas encuestadas.</p></li>
+<li><h4 id="posibilidades-y-dificultades-de-utilizar-las-encuestas-de-hogares-por-muestreo-para-estimar-el-número-de-pdi">Posibilidades y dificultades de utilizar las encuestas de hogares por muestreo para estimar el número de PDI</h4></li>
+<li><p>Por lo general, en las encuestas se pueden formular preguntas más detalladas sobre los patrones de movimiento del desplazamiento y las características de las situaciones de las PDI que en los censos, lo que permite especificar con mayor precisión el aumento y la disminución de PDI, así como los flujos entre las distintas subcategorías de personas con necesidades de protección y vulnerabilidades relacionadas con el desplazamiento (es decir, quienes aún residen en su lugar de desplazamiento, quienes se han establecido en otro lugar y quienes han regresado a su lugar de residencia habitual).</p></li>
+<li><p>Si la población general y las PDI están incluidas en el alcance de la encuesta, las características de las PDI también pueden compararse con las de la población general o los grupos de comparación. Esto puede ser especialmente importante para medir los progresos realizados para alcanzar soluciones duraderas y para evaluar si se han superado o no las principales vulnerabilidades relacionadas con el desplazamiento.</p></li>
+<li><p>A efectos de las estadísticas oficiales, existen dos posibilidades de recopilar datos de PDI a partir de encuestas. La primera consiste en utilizar una encuesta nacional de hogares de varios temas a la que se añaden preguntas específicas sobre las PDI; de este modo, se considera a las PDI de forma representativa en el diseño de la muestra. Añadir un módulo a una encuesta nacional por muestreo de hogares ya existente tiene varias ventajas: (a) estas encuestas se realizan con regularidad en muchos países y suelen tener preguntas básicas comunes para facilitar las comparaciones internacionales; (b) a menudo son administradas o coordinadas por las ONE; (c) pueden incluir tamaños de muestra relativamente grandes, que pueden arrojar un número suficiente de PDI dependiendo de su prevalencia en la población y del enfoque de muestreo adoptado; (d) tienen cobertura y representación nacional; (e) ya recogen datos clave e incluyen preguntas contextuales; y (f) sus mecanismos de difusión y protocolos de acceso para un uso más amplio de los datos ya están establecidos.</p></li>
+<li><p>La alternativa es diseñar una encuesta especializada para la población desplazada. Sin embargo, la utilización de encuestas por muestreo de hogares, tanto nacionales como específicas para las PDI, para medir los flujos y la población estadística de PDI plantea varios problemas, y el valor de una encuesta como fuente de estadísticas oficiales sobre las PDI depende de su diseño. Esto incluye la cobertura de la encuesta, la capacidad de desarrollar una muestra representativa a nivel nacional de las PDI, los errores de muestreo esperados en torno a las estimaciones, la facilidad de identificación de los miembros elegibles de la población, y el comportamiento y las características de la población desplazada. El diseño también debe tener en cuenta las limitaciones de recursos y las consideraciones de seguridad.</p></li>
+<li><p><em>Cómo identificar a las personas desplazadas internas</em></p></li>
+<li><p>A diferencia del censo, en el que se incluye a todo el país en la cobertura, una encuesta de hogares por muestreo no garantiza, por definición, la inclusión de las PDI, y en muchos contextos debe tenerse especial cuidado en la configuración de la estrategia de muestreo a fin de incluir una muestra suficiente y representativa de la población de PDI para que los resultados sean útiles.</p></li>
+<li><p>Para que las encuestas incluyan a las PDI en su muestra, es fundamental que los expertos en muestreo sepan dónde residen las PDI. Además, es necesario contar con un marco de muestreo actualizado cuando se extrae una muestra probabilística, lo que garantiza que cada persona de la población residente tiene una probabilidad conocida de ser seleccionada. Si las PDI se omiten del marco, estarán infrarrepresentadas en cualquier estimación del tamaño de la población basada en la encuesta. Los campamentos suelen omitirse en los marcos de muestreo y en las encuestas, ya que se tratan como ‘edificios institucionales,’ como si se tratara de hospitales e internados escolares. Deben incluirse en los marcos si se quiere que la población de PDI esté plenamente representada en las estadísticas.</p></li>
+<li><p>Además, es importante tomar en cuenta que, con poblaciones muy móviles, como las PDI y las poblaciones relacionadas con las ellas, en algunos contextos —especialmente en situaciones de crisis en curso—, la distribución de la población objetivo puede cambiar rápidamente. Esto repercute en la adecuación de los marcos de muestreo, ya que el número de hogares de PDI identificados en el momento del diseño y la selección de la muestra y el número en el momento de la entrevista pueden diferir considerablemente.</p></li>
+<li><p>En un escenario ideal, existe un marco de muestreo actualizado que identifica a todos las PDI (y a las tres subcategorías). Puede obtenerse, por ejemplo, a partir de un censo (si está completo; ver párrafo sobre el censo más arriba) o de datos administrativos. Si no existe o si es necesario actualizar el marco de muestreo existente, se podrían combinar las fuentes de datos o se podría realizar un ejercicio previo al muestreo en el que se identifican las PDI. Una última opción, que puede crear un sesgo y dar lugar a una cobertura insuficiente, es identificar a las PDI a través de la propia encuesta.</p></li>
+<li><p>Teniendo en cuenta lo anterior, el ejercicio de incluir preguntas relacionadas con las PDI en una encuesta nacional multitemática no es necesariamente una simple cuestión de añadir preguntas adicionales a una encuesta existente, porque el número de PDI en la población general puede ser bajo y porque las PDI tienden a agruparse en ciertos lugares. Esto implica que los esquemas de muestreo existentes para las encuestas nacionales de hogares pueden no seleccionar una muestra suficientemente grande o pueden omitir ciertos grupos de PDI, como los que están en campamentos o los que residen en asentamientos temporales. Por lo tanto, la metodología de muestreo debe modificarse para garantizar que represente a la población de PDI con la precisión necesaria y tenga en cuenta sus circunstancias. Sin una estrategia de muestreo sensible al desplazamiento, no será posible obtener los resultados deseados. Sin embargo, los organismos internacionales y los países están interesados en hacerlo, y hay un número creciente de ejemplos en los que se han incluido en las encuestas nacionales de hogares preguntas relacionadas con el desplazamiento y enfoques de muestreo sensibles al mismo.</p></li>
+<li><p>Cuando no sea factible o apropiado incluir los temas relacionados con las PDI en las encuestas generales, por ejemplo, si la proporción de PDI en la población es baja, las encuestas específicas para PDI pueden ser una buena alternativa. Un diseño de encuesta dirigida consideraría más muestras de las áreas donde hay mayor número de PDI, utilizando información extraída de otras fuentes, o mediante la enumeración si los datos no son lo suficientemente buenos, para desarrollar un marco de muestreo para las PDI. Además, debe tenerse el cuidado de incluir a las PDI que viven con y entre la población de acogida y que, por tanto, pueden no ser fácilmente identificables.</p></li>
+<li><p><em>Cómo identificar a las personas que han superado las principales vulnerabilidades relacionadas con el desplazamiento</em></p></li>
+<li><p>Para medir el número de personas que han superado las principales vulnerabilidades relacionadas con el desplazamiento utilizando una encuesta por muestreo de hogares, hay dos consideraciones que hay que tener en cuenta, dado que se ha asegurado un número suficiente de PDI en la muestra para proporcionar estimaciones de las PDI con la confianza necesaria (ver la discusión en los párrafos 226- –229). Estas son: (a) la posibilidad de incluir preguntas relacionadas con los cinco criterios sobre la superación de las vulnerabilidades clave relacionadas con el desplazamiento y (b) poder comparar las situaciones de las PDI con las de la población general para proporcionar un punto de referencia para cuando se pueda evaluar estadísticamente que las PDI han superado los criterios específicos (ver capítulo 4).</p></li>
+<li><p>Añadir preguntas a las encuestas por muestreo de hogares ya existentes para identificar a las PDI que han superado las principales vulnerabilidades relacionadas con el desplazamiento podría ser rentable. Además, en teoría, una encuesta nacional tiene el potencial de cubrir otros aspectos del Marco IASC, como los descritos en el debate sobre la evaluación más amplia del progreso de las PDI hacia soluciones duraderas. Sin embargo, es probable que el número de preguntas relacionadas con las PDI se vea limitado por la longitud factible del cuestionario. El diseño detallado del módulo dependerá de las necesidades y prioridades del país y de las características de la población.</p></li>
+<li><p>Una encuesta con cobertura nacional permitirá comparar a las PDI con la población general, lo que es necesario para medir el progreso de las PDI hacia soluciones duraderas y evaluar quién ha superado las principales vulnerabilidades relacionadas con el desplazamiento (ver capítulo 4). En algunos casos, dependiendo del enfoque de muestreo, también es posible la comparación con las comunidades de acogida de las PDI.</p></li>
+<li><p>Una encuesta dirigida específicamente a las PDI a menudo permitirá incluir preguntas más profundas sobre su situación y condiciones de vida, aumentando la posibilidad de evaluar los cinco criterios clave sobre la superación de las vulnerabilidades relacionadas con el desplazamiento, así como la inclusión de otros criterios del IASC para medir el progreso hacia soluciones duraderas. Sin embargo, la realización de encuestas independientes suele ser bastante costosa y requiere mucho tiempo, ya que todos los preparativos, el trabajo de campo y los análisis se llevan a cabo únicamente con este fin. En los países en los que se dispone de recursos financieros y humanos limitados, puede ser más factible combinar dicha encuesta con otras.</p></li>
+<li><p>La realización de una encuesta por muestreo específica para las PDI complica aún más la tarea de comparar su situación con aquella de la población en general para evaluar quiénes han superado las principales vulnerabilidades relacionadas con el desplazamiento, así como medir el progreso hacia soluciones duraderas. Lograr que el contenido de las preguntas sea comparable o se alinee con el utilizado en las encuestas generales nacionales puede facilitar las comparaciones con otros grupos de población. Alternativamente, podría incluirse una muestra separada de personas que no son desplazadas internas como parte del diseño con fines comparativos.</p></li>
+<li><p>Cuando se mide el cambio en un grupo de individuos, como se recomienda para la medición del progreso hacia soluciones duraderas, se suele preferir un enfoque de panel, ya que la estimación del cambio está libre de errores de muestreo, aunque los errores ajenos al muestreo pueden aumentar debido a la complejidad de la operación, ya que hay que seguir a los miembros del hogar a lo largo del espacio y el tiempo y el desgaste del panel puede introducir un sesgo. Cuando las prioridades, la capacidad y las condiciones nacionales lo permitan, debe considerarse la posibilidad de realizar encuestas de panel para recoger información sobre la integración y la absorción de las PDI en las comunidades.</p></li>
+<li><h4 id="recomendación-de-encuestas-por-muestreo-para-medir-el-número-de-pdi-en-el-futuro">Recomendación de encuestas por muestreo para medir el número de PDI en el futuro</h4></li>
+<li><p>Para mejorar la calidad de los datos de la encuesta sobre las PDI, se recomienda la participación de las ONE en el diseño de la encuesta. Las ONE tienen experiencia en la realización de encuestas de hogares, y disponen de una red nacional de oficinas locales y de personal administrativo y en el terreno con la formación adecuada. Las ONE pueden ayudar a garantizar que la encuesta cumpla con las normas de calidad nacionales e internacionales para que los resultados puedan publicarse como estadísticas oficiales y para mejorar la calidad de los datos y su protección en virtud de la legislación estadística correspondiente.</p></li>
+<li><p>Los marcos de muestreo para las encuestas en las que se necesita información sobre las PDI deben incluir campamentos, centros de recepción, asentamientos informales y alojamientos colectivos (instituciones). La cobertura de las poblaciones de PDI en las encuestas puede mejorarse si se consideran más muestras de las zonas donde se agrupan las PDI. Se debe solicitar el asesoramiento de especialistas en muestreo, especialmente cuando se realicen encuestas a PDI por primera vez, para garantizar que la muestra resultante de PDI sea adecuada para producir resultados significativos.</p></li>
+<li><p>Además, con poblaciones altamente móviles como las PDI y las poblaciones relacionadas con ellas en algunos contextos, especialmente en situaciones de crisis en curso, la distribución de la población objetivo puede cambiar rápidamente. Esto repercute en la adecuación de los marcos de muestreo, ya que el número de hogares de PDI identificados en el momento del diseño y la selección de la muestra y el número en el momento de la entrevista pueden diferir considerablemente. Los marcos de muestreo pueden mejorarse utilizando fuentes de datos alternativas, herramientas de seguimiento de los desplazamientos e imágenes por satélite para complementar los marcos existentes, y añadiendo preguntas a los censos nacionales de población para ayudar a identificar las zonas donde se agrupan las PDI. Se recomienda minimizar el tiempo entre la actualización de los listados y la selección de los hogares y la realización del trabajo de campo de la encuesta.</p></li>
+<li><p>Para obtener más información general sobre las PDI e incluirlas como grupo de población en los resultados de las encuestas, podría añadirse un conjunto de preguntas de selección a las encuestas nacionales de hogares. Estas preguntas de detección pueden ser similares a las recomendadas para los censos de población y vivienda (ver los párrafos 211-219). Las IRRS sugieren temas básicos para identificar a las personas refugiadas en las encuestas de hogares y en los censos; las PDI también podrían ser identificadas utilizando una pregunta de selección similar. Esto se desarrollará más en los próximos años (uno o dos años) y, cuando esté listo, estará disponible en el Manual de Compiladores.</p></li>
+<li><p>Para medir las condiciones de vida de las PDI a nivel global y, en particular, para evaluar si han superado o no las principales vulnerabilidades relacionadas con el desplazamiento, se desarrollará un módulo básico y se propondrá como enfoque estándar para su uso periódico en las encuestas nacionales multitemáticas de hogares existentes, como el Estudio de Medición del Nivel de Vida (LSMS), la Encuesta Demográfica y de Salud (DHS), las Encuestas de Indicadores Múltiples por Conglomerados (MICS) y otras encuestas multipropósito.</p></li>
+<li><p>Con el fin de maximizar la calidad, la utilidad y la comparabilidad de los datos recogidos a nivel mundial, se recomienda utilizar el modelo de cuestionario para desarrollar, diseñar y probar los instrumentos de las encuestas nacionales, especialmente en lo que respecta a las preguntas sobre las principales vulnerabilidades relacionadas con el desplazamiento.</p></li>
+<li><p>Mantener la coherencia de las preguntas a lo largo del tiempo también permite crear series temporales para las estadísticas de PDI.</p>
+<ol style="list-style-type: decimal">
+<li><h3 id="datos-y-registros-administrativos">Datos y registros administrativos</h3></li>
+</ol></li>
+<li><h4 id="introducción-7">Introducción</h4></li>
+<li><p>Los datos producidos como subproducto del registro, conocidos como datos administrativos (
+# 119
+), suelen ser recogidos por las autoridades nacionales y, en algunos contextos, por los organismos que prestan ayuda directamente a las personas con derecho a ello. Las fuentes de datos administrativos pueden dividirse en (a) registros civiles, que suelen ser registros separados de los acontecimientos vitales de las personas, como nacimiento, matrimonio, divorcio y muerte; (b) registros de población, que suelen ser una combinación de diferentes registros civiles y que en algunos países también incluyen información sobre los patrones de migración; y (c) otros registros, que en este contexto se refieren a los registros específicos de las PDI.</p></li>
+<li><h4 id="posibilidades-y-dificultades-en-el-uso-de-datos-y-registros-administrativos-para-estimar-el-número-de-pdi">Posibilidades y dificultades en el uso de datos y registros administrativos para estimar el número de PDI</h4></li>
+<li><p>Los registros suelen mantenerse y actualizarse con fines administrativos, pero también pueden ser una buena fuente de datos para la elaboración de estadísticas (
+# 120
+). Los registros civiles y de población suelen ser llevados por los gobiernos nacionales, mientras que los registros específicos de las PDI también pueden ser llevados por organismos de la ONU u ONG. En algunos países en los que es especialmente importante determinar la incidencia de PDI, se han creado registros administrativos especiales que se enfocan solo en las PDI o bases de datos de múltiples fuentes, con el objetivo de obtener una cobertura de datos completa de las poblaciones de PDI. El registro en estos sistemas suele estar vinculado al acceso de los beneficiarios a los servicios y ayudas gubernamentales, y las personas registradas pueden optar a determinados servicios y prestaciones específicos para las PDI. No deben establecerse con el único propósito de producir estadísticas, sino que una vez establecidas deben incluir toda la información posible para que sean útiles para entender las situaciones en las que se encuentran las PDI.</p></li>
+<li><p>El potencial para utilizar los datos administrativos como fuente de estadísticas oficiales sobre las PDI es grande; sin embargo, como se abordará a continuación, surgen varios desafíos cuando se trata de identificar a las PDI y registrar quiénes han superado las principales vulnerabilidades relacionadas con el desplazamiento.</p>
+<ol style="list-style-type: decimal">
+<li><em>Cómo identificar a las personas desplazadas internas</em></li>
+</ol></li>
+<li><p>En la actualidad se están realizando esfuerzos para mejorar la cobertura y la calidad del registro civil en varios países, ya que se considera una forma más rentable de recopilar y mantener la información sobre la población; además, los registros civiles tienen importantes funciones legales. Sin embargo, las PDI no siempre están incluidas en estos registros y, si lo están, a menudo no es posible identificarlas como PDI en los datos porque normalmente no se recogen los patrones de movimiento.</p></li>
+<li><p>En los países en los que los sistemas de registro civil funcionan bien, la mayoría de las PDI habrían registrado sus acontecimientos vitales antes del desplazamiento. Sin embargo, después de un desplazamiento puede ser difícil acceder a los registros y certificados existentes de acontecimientos vitales, así como registrar los nuevos. Si las PDI no pueden acceder al sistema de registro después del desplazamiento, esto afecta la calidad de las estadísticas.</p></li>
+<li><p>Mientras que los registros civiles no suelen dar seguimiento a los movimientos y, por lo tanto, no pueden identificar a las PDI, los registros de población tienen el potencial de incluir los movimientos; en consecuencia, tienen más potencial para identificar a las PDI. Los registros de población bien elaborados suelen registrar los lugares de residencia y los cambios en los mismos, incluidos los registros de cuándo se produjeron los cambios, lo que puede ser útil para identificar los movimientos de las PDI después de un acontecimiento causante en un lugar y momento determinados. Sin embargo, en los casos en que sea posible relacionar los movimientos de una persona de una zona a otra, la viabilidad de evaluar los movimientos por sí solos para identificar a una persona desplazada por la fuerza dependerá del contexto, ya que las personas no desplazadas por la fuerza podrían tener patrones de movimiento similares a los de las personas desplazadas por la fuerza.</p></li>
+<li><p>La posibilidad de identificar a las PDI a partir de sus movimientos registrados en el sistema de población también depende de que el lugar de residencia de una persona u hogar esté registrado y se actualice regularmente. Al igual que con los registros civiles, puede ser difícil acceder a los registros y registrar nuevos lugares de residencia, especialmente si no se ha establecido un nuevo lugar de residencia usual.</p></li>
+<li><p>Además, en la actualidad, muy pocos países mantienen registros de población avanzados que también registren los lugares de residencia y los cambios en los mismos. En la mayoría de los países con poblaciones de PDI no existen este tipo de registros de población.</p></li>
+<li><p>Una tercera fuente posible de datos administrativos sobre las PDI son los registros específicos de PDI, que se mantienen en algunos países. En los países en los que existen registros específicos de PDI, suelen ser la principal fuente de información sobre estas poblaciones, especialmente en lo que respecta al cálculo del número total de PDI. Algunos de estos registros pueden proporcionar datos sobre las características demográficas básicas, como sexo y edad, y también pueden proporcionar información sobre educación, salud, vivienda, medios de vida y otras variables, dependiendo de la finalidad del registro.</p></li>
+<li><p>Como los registros de PDI suelen depender de que la población se presente y se registre, el sesgo de autoselección es un riesgo inherente. También existen prejuicios como consecuencia de las barreras para el registro de ciertos grupos. En algunos casos, las personas desplazadas no quieren o no pueden registrarse, lo que provoca su infrarrepresentación en el sistema. A veces hay implicaciones de protección adversas para las PDI, que pueden no estar dispuestas a presentarse ante las autoridades. Por otro lado, también puede producirse un exceso de cobertura, ya que las personas que no tienen derecho a ello pueden inscribirse para acceder más fácilmente a los servicios y prestaciones asociados a la condición de PDI. La verificación se realiza a menudo, pero no siempre, y es importante para garantizar que no se produzca un uso indebido.</p></li>
+<li><p><em>Cómo identificar a las personas que han superado las principales vulnerabilidades relacionadas con el desplazamiento</em></p></li>
+<li><p>Identificar quién ha superado las principales vulnerabilidades relacionadas con el desplazamiento dependerá del registro y de lo que abarque. Los registros civiles y de población a menudo no cubren estos aspectos, pero un registro específico de PDI puede cubrir algunos de los elementos relevantes, si no todos (
+# 121
+).</p></li>
+<li><p>En los registros específicos para PDI, la legislación nacional puede determinar si alguien ya no es elegible y, por lo tanto, no se le debe incluir en el registro. Puede establecerse y mantenerse una copia estadística del registro administrativo en el que las personas que declaren haber superado las vulnerabilidades clave relacionadas con el desplazamiento puedan ser registradas como tales y, por tanto, se les elimine del recuento de PDI a efectos estadísticos.</p></li>
+<li><h4 id="recomendación-sobre-el-uso-de-datos-administrativos-para-medir-el-número-de-pdi-en-el-futuro">Recomendación sobre el uso de datos administrativos para medir el número de PDI en el futuro</h4></li>
+<li><p>Los registros generales de población y, si es posible, los registros civiles deben ser diseñados o modificados para incluir e identificar a las PDI. Esto se ajusta a los <em>Principios y recomendaciones para un sistema de estadísticas vitales, revisión 3</em>, que establece que, aunque las estadísticas deben referirse a la población residente habitual, es legítimo incluir en el registro de población a personas que no son residentes habituales, pero es necesario identificar a la población de referencia correcta (
+# 122
+). Para garantizar una buena cobertura, los centros de registro deben ser fácilmente accesibles para estas poblaciones. Los sistemas de registro en línea pueden facilitar la recopilación de documentación sobre el estatus legal y la ciudadanía de las PDI si se pueden garantizar las instalaciones de Internet y el acceso a las mismas; sin embargo, basar un sistema únicamente en el acceso en línea puede perjudicar a las PDI.</p></li>
+<li><p>Se debe maximizar el número de bases de datos administrativas en las que se puede identificar a las PDI, ya sea incluyendo una variable específica o autorizando la vinculación entre diferentes bases de datos con una base de datos central que identifique a las PDI con fines estadísticos. Sin embargo, hay que tener en cuenta que cuantos más registros estén vinculados, mayor será la posibilidad de que el momento de su actualización sea un factor de riesgo para la calidad de la información. Es necesario sincronizar la actualización de los registros en todos los registros afectados (
+# 123
+).</p></li>
+<li><p>Con muchos titulares de registros diferentes entre varios actores nacionales e internacionales, es importante el uso de terminología, definiciones, clasificaciones e incluso convenciones de denominación de variables comunes, para permitir la interoperabilidad entre quienes generan las estadísticas.</p></li>
+<li><p>Cada PDI debe recibir un número de identificación personal (NIP), idealmente a nivel nacional, para facilitar el intercambio de información y evitar la duplicación. Estos números de identificación personal deben incluirse en todas las bases de datos que se utilicen para las estadísticas de PDI.</p></li>
+<li><p>Las personas deben ser consideradas como la unidad de registro estándar a efectos estadísticos en las bases de datos administrativas, y los vínculos familiares deben registrarse de forma que permitan que cada familia se construya como una unidad estadística.</p></li>
+<li><p>Las autoridades responsables deben recopilar información socioeconómica adicional sobre las poblaciones de PDI y relacionadas con ellas si su calidad puede garantizarse con los recursos disponibles.</p></li>
+<li><p>Debería haber un intercambio de datos administrativos de PDI entre las agencias y los organismos estadísticos responsables. Los procedimientos de intercambio de datos deben respetar las limitaciones legales de cada país y ser conformes con los UNFPOS. Los acuerdos formales sobre el intercambio de datos, como los memorandos de entendimiento, deben ser refrendados por los organismos pertinentes. En el contexto de las PDI es especialmente importante garantizar la confidencialidad de los datos.</p></li>
+<li><p>Por lo tanto, los datos derivados de los registros de PDI deben utilizarse para las estadísticas respetando la legislación relativa a la privacidad y la protección de datos. Esta protección debe ser garantizada por la autoridad estadística nacional responsable del país, que suele ser una ONE o su equivalente. Puede ser necesario revisar la legislación de algunos países para permitir este acceso. La revisión de la legislación estadística suele tardar varios años en llevarse a cabo y también es necesario tomar medidas para fomentar la confianza y la cooperación entre los organismos, con o sin legislación.</p>
+<ol style="list-style-type: decimal">
+<li><h3 id="fuentes-de-datos-alternativas">Fuentes de datos alternativas</h3></li>
+</ol></li>
+<li><p>En la actualidad se están canalizando importantes esfuerzos metodológicos para el posible uso de fuentes alternativas de datos a gran escala (por ejemplo, macrodatos) para las estadísticas en general. En la web se puede encontrar una cantidad enorme de datos no estructurados; por ejemplo, datos de tráfico de Internet (por ejemplo, de Google, Facebook y otras redes sociales), además de los datos del Sistema de Posicionamiento Global (GPS) de los teléfonos móviles. Estos datos pueden, si se descargan y sistematizan legalmente, proporcionar una rica fuente de datos que puede utilizarse para la validación o la triangulación con otras fuentes de datos. Pueden utilizarse para inferir el desplazamiento y producir métricas de desplazamiento mediante inferencia e indicadores indirectos, utilizando datos de tarjetas SIM, datos de localización de usuarios de redes sociales, análisis de imágenes por satélite, datos modelados estadísticamente, etc. Tienen el potencial de proporcionar, en futuras aplicaciones, información o estimaciones de apoyo sobre características, hábitos, necesidades, ubicaciones y tendencias de movimiento de grupos e individuos. Además, pueden identificar tendencias y correlaciones que no son inmediatamente evidentes en las fuentes de datos tradicionales.</p></li>
+<li><p>Muchas ONE están investigando ahora cómo se puede acceder a los macrodatos y utilizarlos como fuente de estadísticas oficiales. Tras las dificultades legales para acceder a los datos, uno de los principales retos es garantizar que aquellos que se utilicen sean representativos del grupo objetivo real. No solo las PDI tienen potencialmente menos probabilidades que la población general de tener acceso a la tecnología que genera los macrodatos, como las tarjetas de crédito o los teléfonos móviles, sino que, si un subgrupo de PDI tiene más probabilidades de tener acceso a la tecnología que otro (por ejemplo, las mujeres frente a los hombres, la juventud frente a las personas adultas mayores, o algunas minorías étnicas/religiosas), la cobertura de los datos puede estar sesgada hacia las experiencias de un determinado grupo.</p></li>
+<li><p>Uno de los principales obstáculos es que los datos están controlados por operaciones comerciales globales, que pueden no permitir el acceso a los datos ni proporcionar metadatos que expliquen la información recogida. Además, las fuentes pueden no ser sostenibles, ya que podrían volverse inaccesibles o ser retiradas con poco tiempo de antelación por consideraciones comerciales o quiebras. Sin embargo, algunos datos electrónicos están en manos de los gobiernos; por ejemplo, si estos proporcionan tarjetas bancarias a las PDI que reciben asistencia financiera. La información sobre dónde se retira este dinero puede ser una fuente útil de datos sobre los movimientos de las PDI.</p></li>
+<li><p>Asimismo, existen importantes preocupaciones legales sobre cómo se obtienen y comparten los macrodatos, por y entre las empresas privadas y entre las empresas y los organismos gubernamentales.</p></li>
+<li><p>Se espera que los macrodatos puedan mejorar la rentabilidad de la producción de estadísticas, reducir la carga sobre las personas encuestadas y dar lugar al desarrollo de nuevos productos estadísticos. Los experimentos con macrodatos demuestran que los costes incurridos pueden ser mayores que los beneficios. El potencial que tiene el uso de macrodatos se está desarrollando rápidamente, y las innovaciones en este campo deben ser monitoreadas para identificar las áreas que pueden beneficiar el desarrollo de las estadísticas de PDI.</p></li>
+<li><p>El uso de macrodatos data depende de la fuente de datos y de la información disponible, así como de la calidad de los metadatos. Cierto tipo de macrodatos proporciona buena información metodológica y tiene la calidad suficiente para su uso en estadísticas oficiales. Por ejemplo, las imágenes por satélite podrían ser útiles para medir los patrones de migración, para identificar nuevos asentamientos con fines de muestreo, mientras que los registros de los operadores telefónicos podrían utilizarse para seguir los movimientos, siempre que todos o la mayoría de los hogares tengan acceso a un teléfono personal. Como tercera forma útil, el geoetiquetado puede servir para identificar si una vivienda se encuentra en una zona de riesgo o para comprobar su acceso a los servicios públicos cuando se examina el nivel de vida.</p></li>
+<li><p>Los sistemas de seguimiento de los movimientos de población, aunque a menudo no forman parte de las estadísticas oficiales, son pertinentes y esenciales para proporcionar cifras de afluencia en algunas circunstancias, siempre que se cumplan las condiciones de calidad. También pueden contribuir a los marcos de muestreo de las poblaciones de PDI de una región.</p></li>
+<li><h2 id="datos-operativos-recogidos-con-fines-humanitarios">Datos operativos recogidos con fines humanitarios</h2></li>
+<li><h3 id="diferencias-entre-los-datos-operativos-y-las-estadísticas-oficiales">Diferencias entre los datos operativos y las estadísticas oficiales</h3></li>
+<li><p>Las estadísticas oficiales se elaboran con métodos científicos y profesionales, basados en los UNFPOS(ver recuadro 7.2_)_. Las estadísticas son publicadas por las ONE o por las unidades estadísticas de los ministerios que forman parte de los SEN. Los SEN comprenden organismos regulados por las leyes nacionales de estadística, y otros reglamentos y normas estadísticos pertinentes.</p></li>
+<li><p>Los datos operativos son recogidos por una serie de organizaciones, incluidos los ministerios gubernamentales y los agentes humanitarios y de desarrollo, principalmente para fundamentar las decisiones relativas a la programación, las respuestas y la asignación de recursos asociados a la acción humanitaria. Algunos, pero no todos, utilizan métodos profesionales y científicos. Los datos operativos suelen ser más oportunos que las estadísticas oficiales, pero pueden no estar sujetos al mismo rigor y validación. Si bien los datos operativos pueden no cumplir a veces con los más altos estándares de calidad, pueden ser el único tipo de datos sobre PDI disponibles cuando ha habido un evento de desplazamiento reciente o cuando los SEN no están funcionando o carecen de una capacidad significativa. Los datos operativos no siempre se hacen públicos y, si lo hacen, es probable que haya incoherencias respecto a las estadísticas oficiales. Sin embargo, a veces se utilizan como base para las estadísticas internacionales y las estimaciones globales cuando no existe ninguna otra alternativa.</p></li>
+<li><p>En situaciones de violaciones de los derechos humanos, puede que no sea posible compartir los datos operativos con las autoridades gubernamentales, para proteger a las personas vulnerables o evitar la identificación de las personas ante las autoridades. Deben observarse requisitos de confidencialidad similares a los de los UNFPOS (ver recuadro 7.2). Esto puede limitar la utilidad de los datos como posibles estadísticas oficiales o entradas para proyectos de integración de datos. Actualmente también existe una tendencia a la colaboración entre los productores de estadísticas oficiales y los productores de estadísticas operativas (ver capítulo 7 para más información).</p></li>
+</ol>
+<p><em>Tabla 0.2 Diferencias entre los datos operativos y las estadísticas oficiales (
+<strong># 124</strong> )</em></p>
+<div class="line-block"></div>
+<table>
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Estadísticas oficiales</th>
+<th>Estadísticas operativas</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Base</td>
+<td>Legislación; cumplimiento forzosoReglamento, Convenio, Directrices técnicas</td>
+<td>Acuerdo de trabajo; cumplimiento a través del valor añadido y el beneficio comúnManual, definiciones operativas, guías, práctica</td>
+</tr>
+<tr class="even">
+<td>Cualidades</td>
+<td>Armonización mediante normas; ciclo de revisiónValidado, preciso, fiable: La verdad sobre el terrenoPeriodicidad/plazo: Variable, desfase de provisiones</td>
+<td>Armonización mediante la cooperación y la coordinaciónActuable, granularidad basada en la necesidadPeriodicidad/coordinación: Común, frecuente, puntual</td>
+</tr>
+<tr class="odd">
+<td>Práctica</td>
+<td>Grupos de trabajo; centrarse en los puntos comunesActividades no esenciales del proveedor (NSO/NSI para la UE)Aplicado con retraso</td>
+<td>Redes; reuniones de coordinación; intercambio en líneaEl proveedor es el principal interesado: su actividad diariaAplicación flexible; evolución sobre la marcha</td>
+</tr>
+<tr class="even">
+<td>Resultados</td>
+<td>Reseñas estadísticas / Anuarios / Bases de datos oficialesBase empírica para la formulación y evaluación de políticas</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Conocimiento de la situación / Instantáneas / Portales en líneaPruebas para la alerta temprana y la preparación; información procesable entregada a los principales interesados</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<ol style="list-style-type: decimal">
+<li><h3 id="descripción-de-las-fuentes-de-datos-operativos-cuantitativos">Descripción de las fuentes de datos operativos cuantitativos</h3></li>
+<li><p>Los datos operativos, al igual que los datos administrativos, no se recopilan principalmente para elaborar estadísticas oficiales, sino que se recogen para orientar mejor la ayuda. No están disponibles para todos los usuarios ni se difunden en las mismas condiciones que las estadísticas oficiales. Su objetivo principal es la toma de decisiones en el ámbito humanitario; sin embargo, pueden utilizarse en la elaboración de estadísticas oficiales, en función de la metodología empleada y de otras consideraciones de calidad (ver capítulo 7); por ejemplo, para aumentar los marcos de muestreo y para la triangulación con otras fuentes. Los mecanismos de recogida de datos más utilizados son los sistemas de seguimiento de los movimientos de la población, las encuestas y los sistemas de registro/matriculación.</p></li>
+<li><p>A falta de otras opciones, los sistemas de seguimiento de los movimientos de la población suelen ser la principal fuente de datos operativos en los contextos de PDI. Se elaboran en situaciones de emergencia, cuando las condiciones no son adecuadas para la elaboración de estadísticas oficiales. La metodología utilizada para elaborarlos variará en función de las necesidades y posibilidades, pero puede incluir los métodos tradicionales de recogida de datos descritos anteriormente. Si la metodología utilizada está disponible y se cumplen las normas de calidad de las estadísticas oficiales, pueden ser fuentes potenciales de estadísticas oficiales, siempre que los datos puedan ser compartidos. Un ejemplo clave de sistema de seguimiento es la Matriz de Seguimiento de Desplazamientos (DTM) de la OIM (
+# 125
+). Otros actores humanitarios, como el ACNUR, despliegan otras iniciativas de seguimiento de los movimientos de la población. La OCHA también desempeña un papel en la gestión de los sistemas de seguimiento de los movimientos con el fin de crear un consenso sobre las estimaciones de las PDI para las respuestas humanitarias. Estos sistemas están diseñados para detectar los casos de desplazamiento por movimientos físicos de la población, y especialmente cuando se trata de grandes poblaciones fácilmente identificables. Estos sistemas pueden proporcionar datos sobre la magnitud de los principales desplazamientos.</p></li>
+<li><p>Las encuestas son otro tipo de mecanismo de recogida de datos utilizado por las agencias humanitarias como fuente de datos sobre las PDI. Las encuestas —a menudo denominadas ‘evaluación de necesidades’ o realizadas en el marco de un ‘ejercicio de elaboración de perfiles’ más amplio— son ejercicios de recopilación de datos que suelen llevarse a cabo en un único momento para conocer a la población de PDI o la situación más amplia, es decir, proporcionan una ‘imagen instantánea.’ Pueden captar datos para identificar la magnitud del desplazamiento y las necesidades relacionadas con el mismo, las vulnerabilidades y los riesgos de protección, así como las intenciones de la población en relación con las opciones de solución. En muchos casos, las encuestas también recogen datos sobre poblaciones no desplazadas que viven en lugares similares, lo que permite comparar grupos de población. Dependiendo de su alcance, las encuestas pueden basarse en una muestra e incluir una evaluación de referencia o aspirar a una cobertura completa. Las encuestas pueden realizarse periódicamente y después de cambios sustanciales en el contexto, y se utilizan tanto en situaciones de emergencia cíclica como de crisis prolongada. Ejemplos clave de encuestas son las apoyadas por JIPS (
+# 126
+). Al igual que los sistemas de seguimiento de los movimientos de población, si la metodología utilizada está disponible y se cumplen las normas de calidad de las estadísticas oficiales, pueden ser fuentes potenciales de estadísticas oficiales, siempre que los datos puedan compartirse.</p></li>
+<li><p>Los sistemas de registro/matriculación también se utilizan como fuente de datos operativos en contextos de PDI y a menudo se integran en los sistemas de prestación de ayuda. Estos sistemas registran datos básicos sobre las características y las necesidades de asistencia de las PDI para informar sobre la selección de programas y la prestación de asistencia humanitaria. Un ejemplo clave de sistema de registro es la plataforma SCOPE del Programa Mundial de Alimentos (PMA) (
+# 127
+), vinculada a la entrega de asistencia alimentaria.</p></li>
+<li><h3 id="descripción-de-las-fuentes-cualitativas-de-datos-operativos">Descripción de las fuentes cualitativas de datos operativos</h3></li>
+<li><p>En los contextos de PDI, los datos cualitativos suelen incluir entrevistas a informantes clave y debates en grupos de discusión. A veces también se recurre a evaluaciones rápidas o a la recopilación de información comunitaria. Sin embargo, normalmente no se puede demostrar que las respuestas sean representativas de la población desplazada. Los resultados pueden ser útiles para el diseño de metodologías de recogida de datos y para la elaboración del contenido de los cuestionarios. También se utilizan a menudo con fines operativos, ya que pueden ofrecer una imagen instantánea de una situación concreta. De igual manera, son un enfoque útil en zonas a las que no se puede acceder por motivos de seguridad o por otras razones.</p></li>
+<li><p>Los datos cualitativos no se utilizan para elaborar estadísticas oficiales por su carácter no representativo, pero pueden ser una valiosa fuente de control y verificación. Pueden aportar mayor respaldo a los resultados obtenidos de otras fuentes oficiales. En contextos de PDI, pueden poner a prueba las respuestas a cuestiones delicadas y complementar la información cuantitativa sobre problemas de seguridad, condiciones de vida e integración. Estos conocimientos pueden utilizarse en el diseño y la comprobación de futuros cuestionarios. Los datos cualitativos también pueden explicar los resultados estadísticos y añadir valor al análisis de los datos.</p></li>
+<li><h3 id="consideraciones-sobre-la-calidad-de-los-datos-operativos">Consideraciones sobre la calidad de los datos operativos</h3></li>
+<li><p>Muchas fuentes de datos operativos pueden utilizarse potencialmente como insumos adicionales para las estadísticas oficiales. Por ejemplo, los datos cuantitativos pueden complementar o mejorar la información de las encuestas. Sin embargo, es posible que los datos no sean accesibles para las autoridades estadísticas ni se tengan en cuenta para la elaboración de las estadísticas oficiales nacionales, ya que no se producen a través de un organismo encargado por los SEN para este fin.</p></li>
+<li><p>Para que los datos operativos sean útiles para las estadísticas oficiales, es necesario compartirlos con el organismo nacional encargado de elaborar las estadísticas oficiales. Para que puedan publicarse como estadísticas oficiales, deben ser aprobadas tras una evaluación de calidad por parte de las autoridades estadísticas competentes. La ONE suele ser el organismo gubernamental que lo avala. Para que estos datos puedan ser evaluados deben ir acompañados, entre otras cosas, de buenos metadatos que muestren cómo se llevó a cabo la recopilación, las metodologías utilizadas, las clasificaciones empleadas y cómo se procesaron los resultados.</p></li>
+<li><h2 id="integración-de-datos">Integración de datos</h2></li>
+<li><h3 id="consideraciones-sobre-las-estadísticas-de-pdi">Consideraciones sobre las estadísticas de PDI</h3></li>
+<li><p>Los datos recogidos de diferentes maneras tienden a presentar distintas partes de la historia de las PDI. Cuando es posible combinar datos de diferentes fuentes, los datos integrados pueden ofrecer una imagen más completa. Por lo regular, los datos administrativos pueden combinarse con datos de encuestas, o bien, pueden combinarse dos fuentes administrativas (
+# 128
+).</p></li>
+<li><p>El método de integración aplicado depende del entorno de datos específico que prevalece en un país determinado. En algunos países, las PDI pueden ser identificadas y cotejadas de forma determinista en las bases de datos a través de NIP únicos para obtener una imagen detallada de sus características socioeconómicas. A falta de una infraestructura integrada de datos administrativos, la vinculación probabilística y el cotejo estadístico ofrecen soluciones alternativas.</p></li>
+<li><p>El emparejamiento probabilístico puede considerarse bajo tres condiciones. En primer lugar, las series de datos que se van a integrar deben contener registros sobre los mismos individuos. En segundo lugar, que el emparejamiento probabilístico produzca o no emparejamientos fiables a nivel individual depende del poder discriminatorio de las variables disponibles y utilizadas con fines estadísticos. En tercer lugar, es necesario resolver la base legal y cualquier problema de privacidad.</p></li>
+<li><p>En el caso de las estadísticas sobre PDI, quizás sea posible integrar los datos administrativos sobre la situación de residencia con los datos de las encuestas sobre las características socioeconómicas, incluso cuando las series de datos solo comparten una pequeña fracción de las observaciones. Se espera que el emparejamiento estadístico proporcione una solución práctica en un futuro próximo. Esto es menos problemático con respecto a los problemas de confidencialidad, ya que solo se transfiere la información distributiva, sin que se intente identificar unidades idénticas utilizando información sensible.</p></li>
+<li><p>Sin embargo, con base en el supuesto de independencia condicional, el poder explicativo con respecto a la variable objetivo es crucial y requiere una evaluación cuidadosa en cada caso.</p></li>
+<li><h3 id="enfoques-para-el-cotejo-de-datos">Enfoques para el cotejo de datos</h3></li>
+<li><p>Existen varios enfoques para el cotejo de datos según el nivel de acceso y el tipo de variables involucradas. El método más avanzado y preciso es la vinculación directa entre individuos u hogares contenidos en dos o más series de datos. Utilizando una o varias variables de identificación comunes, las personas o los hogares pueden relacionarse uno por uno. Se utiliza sobre todo en los registros administrativos, ya que las encuestas y los censos rara vez contienen variables de identificación. Este tipo de vinculación se puede realizar en los países en los que existe un NIP único para la población y se utiliza el mismo número en muchos registros.</p></li>
+<li><p>Los números de identificación se incluyen a veces en las encuestas (
+# 129
+). Sin embargo, es necesario actuar con cautela, ya que esto puede repercutir en la disposición de las personas a responder y puede socavar las garantías de confidencialidad.</p></li>
+<li><p>Alternativamente, cuando se disponga de ellos, se pueden utilizar los nombres de los individuos y otras características para vincularlos entre sí. Este tipo de vinculación suele llevar mucho tiempo y suponer un reto, ya que los nombres no siempre están bien registrados o escritos de forma unificada. Se pueden utilizar métodos probabilísticos para mejorar el porcentaje de vinculación con éxito, pero esto es técnicamente exigente. Este enfoque debe considerarse solo si la vinculación a nivel individual es realmente necesaria. Un ejemplo podría ser cuando dos registros deben estar vinculados permanentemente. Los acuerdos de confidencialidad también deben ser respetados cuando se utiliza este enfoque.</p></li>
+<li><p>Un enfoque menos exigente, que no se lleva a cabo a nivel individual, consiste en comparar los resúmenes de los resultados de los análisis de las diferentes fuentes de datos disponibles. En este método hay que tener en cuenta los tipos de interrogatorio utilizados para obtener datos de los encuestados. Cuando se comparan encuestas, por ejemplo, si se ha utilizado una redacción diferente de las preguntas, es probable que las personas encuestadas hayan entendido las preguntas de forma diferente, lo que influirá en los resultados.</p></li>
+<li><p>A la hora de planificar una encuesta específica para las PDI, para poder realizar comparaciones, resulta útil emplear formatos de preguntas idénticos a los utilizados en una encuesta realizada recientemente. Del mismo modo, si se pretende dar seguimiento a los cambios a lo largo del tiempo en la misma población, es necesario que los formatos de las preguntas sean idénticos (al menos parte del contenido).</p></li>
+<li><h2 id="seleccionar-entre-diferentes-fuentes-de-datos">Seleccionar entre diferentes fuentes de datos</h2></li>
+<li><h3 id="cómo-evaluar-las-ventajas-e-inconvenientes-de-las-fuentes-de-datos">Cómo evaluar las ventajas e inconvenientes de las fuentes de datos</h3></li>
+<li><p>En la tabla 6.3 se presentan las principales fuentes de datos relacionadas con los desplazamientos que pueden utilizarse para la elaboración y difusión de estadísticas oficiales, así como el sistema de seguimiento de movimientos. Para cada una de las fuentes, la tabla indica si pueden o no proporcionar estimaciones de la población estadística o de los flujos de poblaciones de PDI y en qué circunstancias. Otras fuentes de datos operativos, ‘macrodatos’ y datos cualitativos no se incluyen en la tabla, ya sea porque su contenido es demasiado diverso para evaluarlo adecuadamente en su conjunto o porque rara vez se utilizan para la elaboración de estadísticas oficiales.</p></li>
+<li><p>De ser necesario, se debe recurrir a la triangulación y a las comparaciones entre las fuentes al evaluar la idoneidad de su uso; al seleccionar las fuentes de datos se debe tener en cuenta la cobertura probable de los mismos, el momento de la recopilación y los errores estimados de muestreo y ajenos a este.</p></li>
+</ol>
+<p><em>Tabla 0.3 Resumen de las principales fuentes de datos relacionados con el desplazamiento</em></p>
+<table>
+<colgroup>
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Fuente</strong></th>
+<th><strong>Cobertura</strong></th>
+<th><strong>Proporciona cifras del aumento de PDI</strong></th>
+<th><strong>Proporciona cifras de la disminución de PDI</strong></th>
+<th><strong>Proporciona cifras la población estadística</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Censo</td>
+<td>Completo (toda la población); solo cada 10 años</td>
+<td>Sí, si se incluyen las preguntas especificadas (es necesario indicar el periodo en que se dio el aumento)</td>
+<td>No es el único; se cubrirán algunos de los criterios clave de vulnerabilidad relacionados con el desplazamiento, pero normalmente no todos</td>
+<td>No, a menos que esté vinculado con otras fuentes</td>
+</tr>
+<tr class="even">
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr class="odd">
+<td>Encuesta general de hogares a nivel nacional</td>
+<td>Proporciona estimaciones para la población nacional y para las regiones y subregiones en función del tamaño de la muestra. Los campamentos pueden quedar excluidos de la cobertura</td>
+<td>Sí, con un marco muestral representativo y preguntas de identificación en la encuesta</td>
+<td>Sí, si se incluyen todas las vulnerabilidades clave relacionadas con el desplazamiento</td>
+<td>Sí, es posible si el diseño y el tamaño de la muestra son adecuados para captar a las PDI con suficiente precisión</td>
+</tr>
+<tr class="even">
+<td>Encuesta específica para PDI</td>
+<td>Suele ser por zonas. Solo es posible cubrir toda la población de PDI si el tamaño de la muestra y el marco utilizado son adecuados</td>
+<td>Sí, con un marco muestral representativo y preguntas de identificación en la encuesta</td>
+<td>Sí, si se incluyen todas las vulnerabilidades clave relacionadas con el desplazamiento y si hay una población de referencia con la cual comparar</td>
+<td>Sí, es posible si el diseño y el tamaño de la muestra son adecuados para captar a las PDI con suficiente precisión y si las preguntas sobre las PDI pueden compararse con las de la población en general o de acogida</td>
+</tr>
+<tr class="odd">
+<td>Registro de población</td>
+<td>Completo para la población nacional elegible en cuestión</td>
+<td>Parcialmente si las PDI son identificables y si la migración interna se incluye de forma fiable con fechas</td>
+<td>No, normalmente no cubrirá la disminución de las cifras</td>
+<td>Solo si se combina con otras fuentes que proporcionen la información faltante</td>
+</tr>
+<tr class="even">
+<td>Registro específico para PDI</td>
+<td>Completo si todas las personas se presentan a registrarse</td>
+<td>Sí, si se actualiza regularmente y se completa</td>
+<td>Potencialmente sí, si se incluyen todas las vulnerabilidades clave relacionadas con el desplazamiento</td>
+<td>Sí, si se completa y si se indica quiénes han superado las vulnerabilidades clave relacionadas con el desplazamiento</td>
+</tr>
+<tr class="odd">
+<td>Sistema de seguimiento de los movimientos de la población (</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="capítulo-5-variables-y-tabulaciones.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="section-5.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["irises.pdf", "irises.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

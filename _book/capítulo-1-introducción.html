@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 7 CAPÍTULO 1 INTRODUCCIÓN | A Minimal Book Example</title>
+  <meta name="description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 7 CAPÍTULO 1 INTRODUCCIÓN | A Minimal Book Example" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 7 CAPÍTULO 1 INTRODUCCIÓN | A Minimal Book Example" />
+  
+  <meta name="twitter:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  
+
+<meta name="author" content="Yihui Xie" />
+
+
+<meta name="date" content="2021-06-23" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="section-2.html"/>
+<link rel="next" href="capítulo-2-políticas-públicas-y-marco-jurídico.html"/>
+<script src="libs/header-attrs-2.7/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A Minimal Book Example</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Prerequisites</a></li>
+<li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> Introduction</a></li>
+<li class="chapter" data-level="3" data-path="literature.html"><a href="literature.html"><i class="fa fa-check"></i><b>3</b> Literature</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="literature.html"><a href="literature.html#recomendaciones-internacionales-para-la-generación-de-estadísticas-sobre-pdi-iris"><i class="fa fa-check"></i><b>3.1</b> <strong>Recomendaciones internacionales para la generación de estadísticas sobre PDI (IRIS)</strong></a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="section.html"><a href="section.html"><i class="fa fa-check"></i><b>4</b> </a></li>
+<li class="chapter" data-level="5" data-path="section-1.html"><a href="section-1.html"><i class="fa fa-check"></i><b>5</b> </a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="section-1.html"><a href="section-1.html#agradecimientos"><i class="fa fa-check"></i><b>5.1</b> AGRADECIMIENTOS</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="section-2.html"><a href="section-2.html"><i class="fa fa-check"></i><b>6</b> </a></li>
+<li class="chapter" data-level="7" data-path="capítulo-1-introducción.html"><a href="capítulo-1-introducción.html"><i class="fa fa-check"></i><b>7</b> CAPÍTULO 1 INTRODUCCIÓN</a></li>
+<li class="chapter" data-level="8" data-path="capítulo-2-políticas-públicas-y-marco-jurídico.html"><a href="capítulo-2-políticas-públicas-y-marco-jurídico.html"><i class="fa fa-check"></i><b>8</b> CAPÍTULO 2. POLÍTICAS PÚBLICAS Y MARCO JURÍDICO</a></li>
+<li class="chapter" data-level="9" data-path="capítulo-3-desarrollo-de-un-marco-estadístico.html"><a href="capítulo-3-desarrollo-de-un-marco-estadístico.html"><i class="fa fa-check"></i><b>9</b> CAPÍTULO 3. DESARROLLO DE UN MARCO ESTADÍSTICO</a></li>
+<li class="chapter" data-level="10" data-path="capítulo-4-soluciones-duraderas-y-principales-vulnerabilidades-relacionadas-con-el-desplazamiento.html"><a href="capítulo-4-soluciones-duraderas-y-principales-vulnerabilidades-relacionadas-con-el-desplazamiento.html"><i class="fa fa-check"></i><b>10</b> CAPÍTULO 4. SOLUCIONES DURADERAS Y PRINCIPALES VULNERABILIDADES RELACIONADAS CON EL DESPLAZAMIENTO</a>
+<ul>
+<li class="chapter" data-level="10.0.1" data-path="capítulo-4-soluciones-duraderas-y-principales-vulnerabilidades-relacionadas-con-el-desplazamiento.html"><a href="capítulo-4-soluciones-duraderas-y-principales-vulnerabilidades-relacionadas-con-el-desplazamiento.html#section-4"><i class="fa fa-check"></i><b>10.0.1</b> </a></li>
+<li class="chapter" data-level="10.0.2" data-path="capítulo-4-soluciones-duraderas-y-principales-vulnerabilidades-relacionadas-con-el-desplazamiento.html"><a href="capítulo-4-soluciones-duraderas-y-principales-vulnerabilidades-relacionadas-con-el-desplazamiento.html#usos-de-la-medida-del-progreso"><i class="fa fa-check"></i><b>10.0.2</b> Usos de la medida del progreso</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="capítulo-5-variables-y-tabulaciones.html"><a href="capítulo-5-variables-y-tabulaciones.html"><i class="fa fa-check"></i><b>11</b> CAPÍTULO 5. VARIABLES Y TABULACIONES</a></li>
+<li class="chapter" data-level="12" data-path="capítulo-6-fuentes-de-datos-para-la-recopilación-de-estadísticas-sobre-las-pdi.html"><a href="capítulo-6-fuentes-de-datos-para-la-recopilación-de-estadísticas-sobre-las-pdi.html"><i class="fa fa-check"></i><b>12</b> CAPÍTULO 6. FUENTES DE DATOS PARA LA RECOPILACIÓN DE ESTADÍSTICAS SOBRE LAS PDI</a>
+<ul>
+<li class="chapter" data-level="12.0.1" data-path="capítulo-6-fuentes-de-datos-para-la-recopilación-de-estadísticas-sobre-las-pdi.html"><a href="capítulo-6-fuentes-de-datos-para-la-recopilación-de-estadísticas-sobre-las-pdi.html#el-censo-de-población-y-vivienda"><i class="fa fa-check"></i><b>12.0.1</b> El censo de población y vivienda</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="section-5.html"><a href="section-5.html"><i class="fa fa-check"></i><b>13</b> 130</a></li>
+<li class="chapter" data-level="14" data-path="capítulo-7-coordinación-de-las-estadísticas-sobre-pdi.html"><a href="capítulo-7-coordinación-de-las-estadísticas-sobre-pdi.html"><i class="fa fa-check"></i><b>14</b> CAPÍTULO 7 COORDINACIÓN DE LAS ESTADÍSTICAS SOBRE PDI</a></li>
+<li class="chapter" data-level="15" data-path="methods.html"><a href="methods.html"><i class="fa fa-check"></i><b>15</b> Methods</a></li>
+<li class="chapter" data-level="16" data-path="applications.html"><a href="applications.html"><i class="fa fa-check"></i><b>16</b> Applications</a>
+<ul>
+<li class="chapter" data-level="16.1" data-path="applications.html"><a href="applications.html#example-one"><i class="fa fa-check"></i><b>16.1</b> Example one</a></li>
+<li class="chapter" data-level="16.2" data-path="applications.html"><a href="applications.html#example-two"><i class="fa fa-check"></i><b>16.2</b> Example two</a></li>
+</ul></li>
+<li class="chapter" data-level="17" data-path="final-words.html"><a href="final-words.html"><i class="fa fa-check"></i><b>17</b> Final Words</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">A Minimal Book Example</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="capítulo-1-introducción" class="section level1" number="7">
+<h1><span class="header-section-number">Chapter 7</span> CAPÍTULO 1 INTRODUCCIÓN</h1>
+<ol style="list-style-type: decimal">
+<li><h2 id="sobre-la-necesidad-de-contar-con-recomendaciones-para-la-generación-de-estadísticas-sobre-personas-desplazadas-internas">Sobre la necesidad de contar con recomendaciones para la generación de estadísticas sobre personas desplazadas internas</h2></li>
+<li><p>El objetivo de este capítulo introductorio es contextualizar las recomendaciones, así como presentar la justificación y el alcance del propio informe. Por tanto, en este capítulo se presentan brevemente los antecedentes, se identifican los vínculos clave entre estas recomendaciones y otros esfuerzos, incluidas las <em>Recomendaciones internacionales para la generación de estadísticas sobre personas refugiadas</em> (IRRS, por sus siglas en inglés) (
+# 1
+), y se resumen la estructura de las recomendaciones y el proceso a través del cual se desarrollaron.</p></li>
+<li><p>El término ‘personas desplazadas internas’ (en adelante, “PDI”) se refiere a “las personas o grupos de personas que se han visto forzadas u obligadas a escapar o huir de su hogar o de su lugar de residencia habitual —en particular, como resultado o para evitar los efectos de un conflicto armado, de situaciones de violencia generalizada, de violaciones de los derechos humanos o de catástrofes naturales o provocadas por el ser humano—, y que no han cruzado una frontera estatal internacionalmente reconocida” (
+# 2
+). Esta definición sirve de base para la recopilación de estadísticas oficiales y para las recomendaciones contenidas en este informe.</p></li>
+<li><p>En la actualidad, las PDI representan la mayor parte de las poblaciones desplazadas en el mundo. Los datos y las estadísticas sobre las PDI se requieren para fundamentar las políticas públicas que se generan en respuesta al desplazamiento interno. Los datos sobre las PDI son especialmente útiles porque proporcionan un punto de referencia a partir del cual se puede monitorear la situación de las poblaciones de PDI, así como medir los logros de las políticas y los programas relacionados. Sin embargo, al día de hoy siguen siendo escasas las guías internacionales sobre la mejor manera de generar estadísticas oficiales de buena calidad sobre las PDI; además, en lugar de basarse en estadísticas oficiales, muchos de los datos disponibles parten de los datos operativos que recaban las agencias humanitarias como parte de sus programas de asistencia. En vista de que los datos sobre las PDI se recaban con respecto a las personas afectadas por conflictos, catástrofes o violencia, en la fase inicial del desplazamiento puede ser difícil o imposible recopilar estadísticas oficiales, y los datos operativos suelen ser la mejor opción disponible. Estas recomendaciones analizan las funciones de ambos tipos de datos.</p></li>
+<li><p>Las normas internacionales de calidad (
+# 3
+) exigen que las estadísticas oficiales sean consistentes entre sí y en el transcurso del tiempo; además, deben ser comparables entre regiones y países. De igual manera, es importante que las estadísticas oficiales permitan que las organizaciones del sistema estadístico de un país utilicen conjuntamente datos relacionados que proceden de distintas fuentes. Como parte de su evaluación de las estadísticas sobre PDI, el Grupo de expertos en estadísticas sobre personas refugiadas y desplazadas internas (EGRIS, por sus gilas en inglés) presentó un informe sobre asuntos de calidad estadística. Las estadísticas sobre PDI se presentaron en el <em>Informe técnico sobre estadísticas de personas desplazadas internas</em> (
+# 4
+), en el 49º período de sesiones de la Comisión de Estadística de las Naciones Unidas (UNSC) en 2018, donde se adoptaron formalmente.</p></li>
+<li><p>Las estadísticas de buena calidad sobre el desplazamiento constituyen un requisito para el seguimiento y la aplicación de una serie de programas y acuerdos internacionales. Entre ellos se encuentran:</p></li>
+<li><p>La Agenda 2030 para el Desarrollo Sostenible y el compromiso de no dejar a nadie atrás, incluidas las PDI (
+# 5
+);</p></li>
+<li><p>Marco de Sendai para la Reducción del Riesgo de Desastres 2015-2030 (
+# 6
+);</p></li>
+<li><p>Acuerdo de París de la Convención Marco de las Naciones Unidas sobre el Cambio Climático (
+# 7
+);</p></li>
+<li><p>Programa de protección de la Iniciativa Nansen para las personas desplazadas a través de las fronteras por catástrofes (
+# 8
+);</p></li>
+<li><p>Agenda para la Humanidad (
+# 9
+);</p></li>
+<li><p>Agenda 2063 para África (
+# 10
+);</p></li>
+<li><p>Plan de acción de la Cumbre de La Valeta (
+# 11
+); y</p></li>
+<li><p>Nueva Agenda Urbana (
+# 12
+).</p></li>
+<li><p>Aunado a lo anterior, se necesitan estadísticas confiables e integrales sobre los desplazamientos internos para monitorear los avances hacia el ambicioso llamado del Secretario General de la ONU en cuanto a la reducción de desplazamientos internos —nuevos y prolongados— en al menos 50% para el año 2030 (
+# 13
+). De igual manera, las estadísticas serán necesarias para fundamentar acciones en el marco del <em>Pacto Mundial para una Migración Segura, Ordenada y Regular</em> (
+# 14
+) y el <em>Pacto Mundial sobre los Refugiados</em> (
+# 15
+), aunque ninguno aborda explícitamente el desplazamiento interno, así como otros procesos políticos en la materia (
+# 16
+). Si bien varias iniciativas internacionales que cuentan con el apoyo de socios de desarrollo se relacionan con la elaboración de estadísticas sobre PDI, la responsabilidad última siempre recaerá en los gobiernos nacionales.</p></li>
+<li><p>Son variadas las prácticas nacionales e internacionales para traducir la definición internacional de PDI en un concepto estadístico medible. Esta diversidad refleja diferencias de interpretación y respuestas <em>ad hoc</em> a los retos prácticos, técnicos y de política pública que surgen en contextos de desplazamiento. Aunque las estadísticas en muchos contextos se apartan de la definición global de PDI que versa en los <em>Principios Rectores de los Desplazamientos Internos</em>, existen puntos importantes en común. La UNSC ha reconocido la necesidad de mejorar la práctica utilizando un marco estadístico acordado internacionalmente para esta población; además, ha solicitado recomendaciones que esclarezcan los retos conceptuales y permitan una mejor comparabilidad de los datos.</p></li>
+<li><h2 id="proceso-de-elaboración-de-las-recomendaciones">Proceso de elaboración de las recomendaciones</h2></li>
+<li><p>A raíz de los debates que tuvieron lugar en 2015 en relación con un documento sobre estadísticas de personas refugiadas (
+# 17
+), el 46º periodo de sesiones de la UNSC solicitó que se organizara una conferencia de expertos para profundizar en el asunto. Sobre la base de los resultados de esta conferencia de expertos, se presentó un informe técnico a la UNSC en el que se recomendaba la elaboración de un manual de estadísticas oficiales sobre personas refugiadas (
+# 18
+). Además, algunas conversaciones sobre el tema durante el 47º período de sesiones de 2016 dieron lugar a otra decisión relativa a la creación de un Grupo internacional de expertos en estadísticas sobre personas refugiadas y desplazadas internas (EGRIS, por su siglas en inglés), cuya integración incluiría representantes de autoridades nacionales y de organizaciones estadísticas regionales e internacionales, así como otros expertos técnicos.</p></li>
+<li><p>Estadísticas de Noruega, el Instituto Turco de Estadística, Eurostat, la Agencia de las Naciones Unidas para los Refugiados (ACNUR), el Servicio conjunto de perfiles de personas desplazadas internas (JIPS), el Banco Mundial y la División de Estadística de las Naciones Unidas (UNSD) copresiden el EGRIS. En particular, la UNSC solicitó que el alcance del trabajo del EGRIS incluyera tanto a las PDI como a las personas refugiadas. Aunado a ello, se creó un subgrupo del EGRIS para trabajar en la elaboración del informe técnico sobre las estadísticas de las PDI.</p></li>
+<li><p>La UNSC comisionó al EGRIS la elaboración de dos documentos para el 49º período de sesiones de la UNSC en 2018, tras una consulta mundial (
+# 19
+). Estos dos documentos, las IRRS y el <em>Informe Técnico sobre Estadísticas de Personas Desplazadas Internas</em>, fueron acogidos con satisfacción (
+# 20
+) y aprobados por la Comisión:</p></li>
+<li><p>En el 49º período de sesiones de la UNSC en 2018 se determinó lo siguiente con respecto a estos dos documentos y con relación a los pasos propuestos en el <em>Informe del Grupo de Expertos en Estadísticas sobre Refugiados y Desplazados Internos</em> (Decisiones señaladas a la atención del Consejo: 49/115 (
+# 21
+)):</p></li>
+<li><p>“Apoyó la propuesta de actualizar el informe técnico relativo a las estadísticas sobre los desplazados internos mediante una serie de recomendaciones” (es decir, las <em>Recomendaciones internacionales para la generación de estadísticas sobre PDI, IRIS).</em></p></li>
+<li><p>“Reconoció las dificultades en la aplicación de las recomendaciones sobre las estadísticas relativas a los refugiados y los desplazados internos, y expresó su apoyo a la elaboración de un manual de compiladores para proporcionar orientación práctica y una metodología perfeccionada en la recopilación de estadísticas sobre los refugiados y los desplazados internos.” (Esto se convertirá en el <em>Manual para compiladores de estadísticas sobre las personas refugiadas y desplazadas internas.)</em></p></li>
+<li><p>Solicitó que las recomendaciones en materia de estadísticas sobre los desplazados internos y el manual del compilador se presentaran a la Comisión en su 51º período de sesiones, en 2020.</p></li>
+<li><p>Además, la membresía de la UNSC:</p></li>
+<li><p>"Reconoció la importancia de un marco de estadísticas armonizadas sobre los refugiados y los desplazados internos para la comparabilidad de los datos en el interior de un país y entre países y organismos internacionales, e hizo hincapié en que se utilizaran todas las fuentes de datos, incluidos los censos de población, las encuestas por muestreo y las fuentes administrativas;</p></li>
+<li><p>Expresó la necesidad de establecer definiciones claras de los refugiados, los migrantes y los desplazados internos, y la necesidad de desarrollar la capacidad estadística en el plano nacional para apoyar a los Estados Miembros en el mejoramiento de la calidad y disponibilidad de estadísticas sobre los refugiados y los desplazados internos, e invitó a las organizaciones internacionales y regionales a apoyar a los Estados Miembros en este sentido, cuando estos lo solicitaran; y</p></li>
+<li><p>Puso de relieve la necesidad de mejorar la coordinación de las diferentes necesidades de datos entre las Naciones Unidas, Eurostat y otras organizaciones internacionales pertinentes" (
+# 22
+).</p></li>
+<li><p>La redacción de las IRIS es el resultado de esta decisión. Las recomendaciones fueron elaboradas por el subgrupo del EGRIS sobre estadísticas de PDI, dirigido por JIPS con el apoyo de Estadísticas de Noruega, la División de Estadística de las Naciones Unidas y el Centro de Seguimiento de los Desplazamientos Internos (IDMC). La integración del subgrupo comprendía representantes de organismos gubernamentales, incluidas las oficinas nacionales de estadística (ONE) y organismos responsables de las estadísticas sobre personas desplazadas internas (
+# 23
+). Estas personas participaron formalmente en dos sesiones presenciales después de que todos los países recibieron las invitaciones correspondientes durante y después del 47º período de sesiones de la UNSC en 2016. En conjunto, representan una variedad de regiones y tipos de situaciones de desplazamiento.</p></li>
+<li><p>El subgrupo se benefició también de las aportaciones de expertos técnicos del ACNUR, de la Representación de la Relatoría Especial sobre los Derechos Humanos de los Desplazados Internos, de la Organización Internacional para las Migraciones (OIM), de la Oficina de Coordinación de Asuntos Humanitarios de las Naciones Unidas (OCHA), del Centro Africano de Estadística de la Comisión Económica de las Naciones Unidas para África (UNECA), del Banco Africano de Desarrollo, del Banco Mundial, del Centro Internacional de Seguridad y Desarrollo (ISDC) y de la Plataforma sobre Desplazamiento por Desastres (PDD).</p></li>
+<li><p>Las IRIS son el resultado de un amplio y profundo proceso colaborativo que se ha basado en la experiencia y los conocimientos de quienes integran el subgrupo de PDI. Tras las consultas sobre el primer borrador —el cual se elaboró a partir del <em>Informe técnico sobre estadísticas de desplazados internos</em>, que fue revisado y debatido en Kampala en diciembre de 2018 y en Ankara en febrero de 2019— se crearon dos subgrupos de trabajo para abordar temas más complejos. Entre ellos se incluyen recomendaciones en torno a la coordinación global de las estadísticas sobre PDI y recomendaciones para medir la disminución de la población estadística para completar el marco estadístico de los desplazamientos internos (
+# 24
+). Los resultados de estos subgrupos de trabajo se incorporaron al borrador, y fueron revisados y finalizados por el subgrupo de PDI y el grupo directivo del EGRIS. Por último, antes de su presentación a la UNSC en 2020, las recomendaciones se sometieron a una consulta mundial, facilitada por la División de Estadística de las Naciones Unidas.</p></li>
+<li><h2 id="justificación-y-alcance">Justificación y alcance</h2></li>
+<li><p>El objetivo de este informe es ofrecer recomendaciones sobre la elaboración y difusión de estadísticas sobre desplazamientos internos. Esto contribuirá a reforzar las políticas públicas basadas en datos, así como las respuestas nacionales a largo plazo frente al desplazamiento:</p></li>
+<li><p>aumentando la visibilidad del desplazamiento interno por medio de pruebas más sólidas;</p></li>
+<li><p>mejorando la calidad, comparabilidad, accesibilidad y coherencia de las estadísticas sobre las PDI;</p></li>
+<li><p>informando mejor sobre los esfuerzos de las autoridades nacionales para garantizar la protección y la asistencia que reciben las PDI, así como permitiendo que se concreten soluciones duraderas;</p></li>
+<li><p>apoyando los análisis del impacto de los desplazamientos internos y los avances hacia soluciones duraderas para las poblaciones afectadas;</p></li>
+<li><p>sistematizando los análisis de los datos de vulnerabilidad relativos a los desplazamientos y seleccionando mejor a las poblaciones que necesitan intervenciones humanitarias y de desarrollo como respuesta;</p></li>
+<li><p>apoyando la inclusión del desplazamiento interno en los planes de desarrollo locales y nacionales, así como la presentación de informes sobre los Objetivos de Desarrollo Sostenible (ODS).</p></li>
+<li><p>El enfoque principal de este informe es la preparación de estadísticas oficiales sobre las PDI; sin embargo, algunos elementos son también aplicables a los datos operativos sobre las PDI que se generan en el desarrollo de una respuesta humanitaria. Los datos operativos no suelen cumplir con los requisitos de las estadísticas oficiales; no obstante, debido a la falta de estadísticas oficiales sobre las PDI, los datos operativos podrían informar la producción de nuevas estadísticas oficiales o podrían facilitar la transición a las mismas. Estas recomendaciones también deberían contribuir a mejorar la calidad y la coherencia de los datos operativos, tanto para mejorar su accesibilidad en favor del público usuario como para facilitar su sustitución con estadísticas oficiales elaboradas por autoridades nacionales, o bien, para facilitar su transición a las estadísticas oficiales.</p></li>
+<li><p>Por lo general, se consideran estadísticas oficiales aquellas elaboradas y publicadas por dependencias gubernamentales u otros organismos públicos, como las organizaciones internacionales. La Organización para la Cooperación y el Desarrollo Económico (OCDE) define las estadísticas oficiales como “las estadísticas difundidas por el sistema estadístico nacional, salvo las que se declaran explícitamente no oficiales.” Eurostat tiene una definición similar, pero añade la base legal para la recopilación de datos y las normas profesionales (
+# 25
+). La ONU no cuenta con una definición formal, pero ofrece diez <em>Principios fundamentales de las estadísticas oficiales</em>, adoptados por la Asamblea General de la ONU en 2014 (UNFPOS; ver capítulo 7 para conocer más detalles).</p></li>
+<li><p>Con base en el <em>Informe técnico sobre estadísticas de desplazados internos</em> presentado en el 49º período de sesiones de la UNSC en 2018, el presente documento ofrece recomendaciones sobre cómo mejorar la calidad y la disponibilidad de las estadísticas sobre PDI para su consideración en el 51º período de sesiones de la UNSC en 2020.</p></li>
+<li><h2 id="vínculos-con-otros-productos-del-grupo-de-expertos-en-estadísticas-sobre-personas-refugiadas-y-desplazadas-internas">Vínculos con otros productos del grupo de expertos en estadísticas sobre personas refugiadas y desplazadas internas</h2></li>
+<li><p>Aunque se trata de un producto independiente, el presente informe se apega a las IRRS, las cuales, en la medida de lo posible, fueron también desarrolladas por el EGRIS. El vínculo entre estos dos documentos es importante debido a las similitudes entre la generación de estadísticas sobre las poblaciones en cuestión, que a menudo son relevantes en los mismos países, y, en particular, cuando la reintegración de personas refugiadas que regresan puede darse junto con las PDI. Además, es necesario alinear las recomendaciones estadísticas para ambas poblaciones con el fin de recoger datos de forma eficiente y producir estadísticas interoperables sobre las diferentes poblaciones desplazadas para nutrir las respuestas y la elaboración de políticas. Aunque son diferentes en cuanto a objetivos y alcance, ambos documentos siguen una estructura similar y procuran armonizar los conceptos y definiciones en la medida de lo posible. De igual manera, este documento hace referencia a las <em>Recomendaciones sobre las estadísticas de las migraciones internacionales</em> (
+# 26
+) y a otras directrices técnicas ampliamente aprobadas sobre normas y definiciones estadísticas.</p></li>
+<li><p>Estas recomendaciones se basan en el <em>Informe técnico sobre las estadísticas de los desplazados internos</em>, aprobado por la UNSC en su 49º período de sesiones en 2018. Además, en las recomendaciones se hace referencia a los vínculos entre ambos documentos; en particular, con respecto a las prácticas de los países.</p></li>
+<li><p>Estas recomendaciones se relacionan también con el <em>Manual para compiladores de estadísticas sobre las personas refugiadas y desplazadas internas</em>, que se presenta simultáneamente ante la UNSC. La orientación que ofrezca el Manual de Compiladores será aún más específica con respecto a la recopilación de estadísticas sobre personas refugiadas y desplazadas internas.</p></li>
+<li><h2 id="disposición-de-las-recomendaciones">Disposición de las recomendaciones</h2></li>
+<li><p>Las Recomendaciones internacionales para la generación de estadísticas sobre PDI (IRIS) abarcan todos los elementos principales de un marco estadístico y sugieren cómo mejorar los marcos. En la medida de lo posible, las recomendaciones se adhieren a las IRRS. La estructura del resto de los capítulos es la siguiente:</p></li>
+<li><p><strong>El</strong> <strong>Capítulo 2</strong> (<strong>Políticas públicas y marco jurídico)</strong> resume los marcos internacionales y regionales actuales y relevantes para la protección e identificación de las PDI. En este capítulo se revisan las leyes y políticas pertinentes; además, se abordan los retos y las desviaciones de las definiciones de PDI que se utilizan comúnmente.</p></li>
+<li><p><strong>El</strong> <strong>Capítulo 3</strong> (<strong>Desarrollo de un marco estadístico)</strong> se basa en el capítulo 2 para definir las poblaciones de interés en el ámbito de las recomendaciones, clasificaciones y medición de los suministros y flujos que son pertinentes para la elaboración de estadísticas sobre PDI.</p></li>
+<li><p><strong>El</strong> <strong>Capítulo 4</strong> ( <strong>Soluciones duraderas y principales vulnerabilidades relacionadas con el desplazamiento</strong> ) se centra en el análisis de las vulnerabilidades de las PDI y propone una medida estadística para evaluar los avances hacia las soluciones duraderas y para determinar si las PDI han superado o no las principales vulnerabilidades relacionadas con el desplazamiento.</p></li>
+<li><p><strong>El</strong> <strong>Capítulo 5</strong> (<strong>Variables y tabulaciones)</strong> describe las variables y tabulaciones recomendadas para las diferentes categorías de personas que entran en el marco estadístico de los desplazamientos internos que deberían adoptarse en el contexto nacional.</p></li>
+<li><p><strong>El</strong> <strong>Capítulo 6</strong> ( <strong>Fuentes de datos para la recopilación de estadísticas sobre las PDI</strong> ) describe los principales tipos de fuentes de datos disponibles para la generación de estadísticas sobre las PDI y detalla algunas cuestiones relacionadas con la calidad de los datos y las limitaciones inherentes a cada fuente.</p></li>
+<li><p><strong>El</strong> <strong>Capítulo 7</strong> (<strong>La coordinación de las estadísticas sobre PDI)</strong> describe cómo los distintos productores y usuarios de estadísticas sobre PDI pueden trabajar en colaboración para mejorar la calidad y accesibilidad de las estadísticas sobre PDI; además, el capítulo analiza medidas de calidad y gobernanza de estadísticas sobre PDI.</p></li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="section-2.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="capítulo-2-políticas-públicas-y-marco-jurídico.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["irises.pdf", "irises.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

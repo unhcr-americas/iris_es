@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 9 CAPÍTULO 3. DESARROLLO DE UN MARCO ESTADÍSTICO | A Minimal Book Example</title>
+  <meta name="description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 9 CAPÍTULO 3. DESARROLLO DE UN MARCO ESTADÍSTICO | A Minimal Book Example" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 9 CAPÍTULO 3. DESARROLLO DE UN MARCO ESTADÍSTICO | A Minimal Book Example" />
+  
+  <meta name="twitter:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  
+
+<meta name="author" content="Yihui Xie" />
+
+
+<meta name="date" content="2021-06-23" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="capítulo-2-políticas-públicas-y-marco-jurídico.html"/>
+<link rel="next" href="capítulo-4-soluciones-duraderas-y-principales-vulnerabilidades-relacionadas-con-el-desplazamiento.html"/>
+<script src="libs/header-attrs-2.7/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A Minimal Book Example</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Prerequisites</a></li>
+<li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> Introduction</a></li>
+<li class="chapter" data-level="3" data-path="literature.html"><a href="literature.html"><i class="fa fa-check"></i><b>3</b> Literature</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="literature.html"><a href="literature.html#recomendaciones-internacionales-para-la-generación-de-estadísticas-sobre-pdi-iris"><i class="fa fa-check"></i><b>3.1</b> <strong>Recomendaciones internacionales para la generación de estadísticas sobre PDI (IRIS)</strong></a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="section.html"><a href="section.html"><i class="fa fa-check"></i><b>4</b> </a></li>
+<li class="chapter" data-level="5" data-path="section-1.html"><a href="section-1.html"><i class="fa fa-check"></i><b>5</b> </a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="section-1.html"><a href="section-1.html#agradecimientos"><i class="fa fa-check"></i><b>5.1</b> AGRADECIMIENTOS</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="section-2.html"><a href="section-2.html"><i class="fa fa-check"></i><b>6</b> </a></li>
+<li class="chapter" data-level="7" data-path="capítulo-1-introducción.html"><a href="capítulo-1-introducción.html"><i class="fa fa-check"></i><b>7</b> CAPÍTULO 1 INTRODUCCIÓN</a></li>
+<li class="chapter" data-level="8" data-path="capítulo-2-políticas-públicas-y-marco-jurídico.html"><a href="capítulo-2-políticas-públicas-y-marco-jurídico.html"><i class="fa fa-check"></i><b>8</b> CAPÍTULO 2. POLÍTICAS PÚBLICAS Y MARCO JURÍDICO</a></li>
+<li class="chapter" data-level="9" data-path="capítulo-3-desarrollo-de-un-marco-estadístico.html"><a href="capítulo-3-desarrollo-de-un-marco-estadístico.html"><i class="fa fa-check"></i><b>9</b> CAPÍTULO 3. DESARROLLO DE UN MARCO ESTADÍSTICO</a></li>
+<li class="chapter" data-level="10" data-path="capítulo-4-soluciones-duraderas-y-principales-vulnerabilidades-relacionadas-con-el-desplazamiento.html"><a href="capítulo-4-soluciones-duraderas-y-principales-vulnerabilidades-relacionadas-con-el-desplazamiento.html"><i class="fa fa-check"></i><b>10</b> CAPÍTULO 4. SOLUCIONES DURADERAS Y PRINCIPALES VULNERABILIDADES RELACIONADAS CON EL DESPLAZAMIENTO</a>
+<ul>
+<li class="chapter" data-level="10.0.1" data-path="capítulo-4-soluciones-duraderas-y-principales-vulnerabilidades-relacionadas-con-el-desplazamiento.html"><a href="capítulo-4-soluciones-duraderas-y-principales-vulnerabilidades-relacionadas-con-el-desplazamiento.html#section-4"><i class="fa fa-check"></i><b>10.0.1</b> </a></li>
+<li class="chapter" data-level="10.0.2" data-path="capítulo-4-soluciones-duraderas-y-principales-vulnerabilidades-relacionadas-con-el-desplazamiento.html"><a href="capítulo-4-soluciones-duraderas-y-principales-vulnerabilidades-relacionadas-con-el-desplazamiento.html#usos-de-la-medida-del-progreso"><i class="fa fa-check"></i><b>10.0.2</b> Usos de la medida del progreso</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="capítulo-5-variables-y-tabulaciones.html"><a href="capítulo-5-variables-y-tabulaciones.html"><i class="fa fa-check"></i><b>11</b> CAPÍTULO 5. VARIABLES Y TABULACIONES</a></li>
+<li class="chapter" data-level="12" data-path="capítulo-6-fuentes-de-datos-para-la-recopilación-de-estadísticas-sobre-las-pdi.html"><a href="capítulo-6-fuentes-de-datos-para-la-recopilación-de-estadísticas-sobre-las-pdi.html"><i class="fa fa-check"></i><b>12</b> CAPÍTULO 6. FUENTES DE DATOS PARA LA RECOPILACIÓN DE ESTADÍSTICAS SOBRE LAS PDI</a>
+<ul>
+<li class="chapter" data-level="12.0.1" data-path="capítulo-6-fuentes-de-datos-para-la-recopilación-de-estadísticas-sobre-las-pdi.html"><a href="capítulo-6-fuentes-de-datos-para-la-recopilación-de-estadísticas-sobre-las-pdi.html#el-censo-de-población-y-vivienda"><i class="fa fa-check"></i><b>12.0.1</b> El censo de población y vivienda</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="section-5.html"><a href="section-5.html"><i class="fa fa-check"></i><b>13</b> 130</a></li>
+<li class="chapter" data-level="14" data-path="capítulo-7-coordinación-de-las-estadísticas-sobre-pdi.html"><a href="capítulo-7-coordinación-de-las-estadísticas-sobre-pdi.html"><i class="fa fa-check"></i><b>14</b> CAPÍTULO 7 COORDINACIÓN DE LAS ESTADÍSTICAS SOBRE PDI</a></li>
+<li class="chapter" data-level="15" data-path="methods.html"><a href="methods.html"><i class="fa fa-check"></i><b>15</b> Methods</a></li>
+<li class="chapter" data-level="16" data-path="applications.html"><a href="applications.html"><i class="fa fa-check"></i><b>16</b> Applications</a>
+<ul>
+<li class="chapter" data-level="16.1" data-path="applications.html"><a href="applications.html#example-one"><i class="fa fa-check"></i><b>16.1</b> Example one</a></li>
+<li class="chapter" data-level="16.2" data-path="applications.html"><a href="applications.html#example-two"><i class="fa fa-check"></i><b>16.2</b> Example two</a></li>
+</ul></li>
+<li class="chapter" data-level="17" data-path="final-words.html"><a href="final-words.html"><i class="fa fa-check"></i><b>17</b> Final Words</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">A Minimal Book Example</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="capítulo-3.-desarrollo-de-un-marco-estadístico" class="section level1" number="9">
+<h1><span class="header-section-number">Chapter 9</span> CAPÍTULO 3. DESARROLLO DE UN MARCO ESTADÍSTICO</h1>
+<ol style="list-style-type: decimal">
+<li><h2 id="introducción-1">Introducción</h2></li>
+<li><p>Como se comentó en el capítulo 2, los instrumentos jurídicos nacionales y regionales tienden a seguir la definición de PDI utilizada en los <em>Principios Rectores de los desplazamientos internos</em> de la ONU. Sin embargo, la aplicación práctica de la definición internacional (
+# 87
+) a menudo varía; en particular, para determinar soluciones duraderas. Esto tiene un impacto perjudicial en la coherencia de las estadísticas sobre desplazamiento interno. Mientras que los Principios Rectores proporcionan un marco jurídico, que es necesariamente complejo y matizado para su aplicación en cada caso, las definiciones estadísticas requieren una explicación clara y definitiva para grupos de población amplios. Es necesario que tales definiciones puedan aplicarse con facilidad y que quienes recaban los datos puedan comprenderlas en una amplia variedad de situaciones; además, deben ser inequívocas para garantizar la comparabilidad global. Esto requiere necesariamente una simplificación de las complejidades expuestas en el capítulo 2.</p></li>
+<li><p>Este capítulo presenta el marco estadístico del desplazamiento interno. En la parte B se definen los grupos de población que entran en el ámbito de aplicación de las recomendaciones y los grupos que quedan fuera de él. En la parte C se resumen la población estadística, así como el aumento y la disminución de los flujos en el marco estadístico. La parte D desarrolla con más detalle los elementos necesarios para definir el flujo que se integra a la población de PDI, aplicables a los sistemas estadísticos nacionales e internacionales, a efectos de medición estadística. Este capítulo se basa en los elementos básicos expuestos en el capítulo 2, que a su vez se basan en la definición de desplazamiento interno de los Principios Rectores de la ONU. En el capítulo 4 se ofrece una descripción más detallada para medir estadísticamente los avances hacia las soluciones duraderas e identificar cuándo se han superado las vulnerabilidades clave relacionadas con el desplazamiento y los grupos de PDI pueden eliminarse de la población estadística.</p></li>
+<li><h2 id="marco-estadístico-del-desplazamiento-interno">Marco estadístico del desplazamiento interno</h2>
+<ol style="list-style-type: decimal">
+<li><h3 id="categorías-incluidas-en-el-marco-estadístico-del-desplazamiento-interno">Categorías incluidas en el marco estadístico del desplazamiento interno</h3></li>
+</ol></li>
+<li><p>En esta sección se describen las diferentes categorías de personas que se incluyen en el marco estadístico de desplazamiento interno y que, por tanto, entran en el ámbito de aplicación de estas recomendaciones. Estas recomendaciones se centran principalmente en:</p></li>
+<li><p>PDI (o las personas que tienen necesidades de protección y vulnerabilidades relacionadas con el desplazamiento); y</p></li>
+<li><p>Poblaciones relacionadas con las PDI.</p></li>
+</ol>
+<p>Hay otras dos categorías que entran en el marco estadístico; sin embargo, debido a sus características específicas, no son el objetivo principal de estas recomendaciones:</p>
+<ol style="list-style-type: decimal">
+<li>otros familiares no desplazados de las PDI; y</li>
+<li>personas que han superado las principales vulnerabilidades relacionadas con el desplazamiento.</li>
+</ol>
+<p>Estas categorías y su interrelación se visualizan en la figura 3.1. En el capítulo 4 se describen las necesidades de protección y las vulnerabilidades que derivan del desplazamiento y su relación con el marco estadístico de desplazamiento interno. Otra categoría de personas, que no se incluye en el marco estadístico como tal, se menciona en estas recomendaciones (ver capítulo 4, párrafos 138 a 144) como grupo de población comparativo, ya sea a nivel nacional (población general de un país o región) o como subgrupo de este, para demostrar características opuestas a las PDI (es decir, la población no desplazada o de acogida).</p>
+<p><em>Figura 0.1Categorías de población en el marco estadístico de desplazamiento interno</em></p>
+<p><img src="RackMultipart20210623-4-1m1d3f_html_f2833cb05d847c8f.png" /></p>
+<ol style="list-style-type: decimal">
+<li><h4 id="personas-que-tienen-necesidades-de-protección-y-vulnerabilidades-relacionadas-con-el-desplazamiento">Personas que tienen necesidades de protección y vulnerabilidades relacionadas con el desplazamiento</h4></li>
+<li>Como se ha descrito anteriormente, una PDI se define como una persona que ha sido forzada u obligada a abandonar su lugar de residencia habitual (es decir, su residencia habitual cuando se produce el desplazamiento) y que se encuentra dentro de las fronteras internacionalmente reconocidas del país (ver recuadro 3.1 para una descripción general de la definición de PDI). Todas las causas de los desplazamientos, como se indica en los Principios Rectores (ver capítulo 2), deben incluirse y distinguirse adecuadamente entre sí (
+# 88
+). Una PDI seguirá siéndolo si salió al extranjero tras el desplazamiento por un periodo temporal menor a 12 meses y/o si no estableció un nuevo país de residencia habitual. La población estadística total de personas que tienen necesidades de protección y vulnerabilidades relacionadas con el desplazamiento se divide en tres subcategorías. Estas subcategorías corresponden a diferentes lugares de residencia cuando se recaban los datos y reflejan el contenido de los Principios Rectores y del Marco IASC; a pesar de su ubicación física, estas personas pueden seguir sufriendo necesidades y vulnerabilidades relacionadas con el desplazamiento (ver párrafos 65-67):</li>
+<li>PDI que permanecen en lugares de desplazamiento (PDI en lugares de desplazamiento);</li>
+<li>PDI que han regresado a su lugar de residencia habitual (PDI en lugares de retorno);</li>
+<li>PDI que se han asentado en otros lugares del país (PDI en otros lugares de asentamiento).</li>
+<li>Para medir la población estadística total de personas con necesidades de protección y vulnerabilidades relacionadas con el desplazamiento, es necesario realizar una evaluación estadística del grado en que estas poblaciones han logrado una solución duradera. Como se describirá con más detalle en el capítulo 4, se sugiere utilizar el Marco IASC como punto de partida para medir el avance hacia las soluciones duraderas y si se han superado o no las vulnerabilidades clave relacionadas con el desplazamiento, como se indica en el Marco IASC.</li>
+</ol>
+<p><em>Recuadro 0.1 Definición de PDI (o personas que tienen necesidades de protección y vulnerabilidades relacionadas con el desplazamiento)</em></p>
+<p>Una persona debe cumplir los siguientes criterios para ser incluida en esta categoría:</p>
+<ul>
+<li>solía residir en el lugar donde se produjo un acontecimiento causante, en el momento del suceso;</li>
+<li>ha sido desplazada por la fuerza, lo que incluye movimientos preventivos, por:
+<ul>
+<li>conflicto armado;</li>
+<li>violencia generalizada;</li>
+<li>violaciones de los derechos humanos;</li>
+<li>catástrofes naturales o provocadas por el ser humano;</li>
+<li>otros desplazamientos forzados o desalojos;</li>
+</ul></li>
+<li>después de esto, ha estado viviendo físicamente fuera del lugar donde residía cuando se suscitó el acontecimiento causante;</li>
+<li>se encuentra dentro de las fronteras internacionalmente reconocidas del país en el que fue desplazada (incluso si viajó al extranjero por un periodo menor a 12 meses después del acontecimiento causante); y</li>
+<li>no se han evaluado las vulnerabilidades clave relacionadas con el desplazamiento (según el <em>Marco de soluciones duraderas para los desplazados internos</em> del IASC), o bien, tras la evaluación, se establece que no se han superado.</li>
+</ul>
+<ol style="list-style-type: decimal">
+<li>La población estadística total se divide en tres subcategorías que corresponden a los diferentes lugares donde pueden residir las PDI:</li>
+</ol>
+<ul>
+<li>PDI que permanecen en lugares de desplazamiento (PDI en lugares de desplazamiento);</li>
+<li>PDI que han regresado a su lugar de residencia habitual (PDI en lugares de retorno);</li>
+<li>PDI que se han asentado en otros lugares del país (PDI en otros lugares de asentamiento).</li>
+</ul>
+<ol style="list-style-type: decimal">
+<li><p><img src="RackMultipart20210623-4-1m1d3f_html_36f4ca739c386880.gif" /></p></li>
+<li><p>En algunos contextos, las familias no siempre se desplazan como una sola unidad. Algunos miembros de la familia pueden quedarse tras el suceso que provocó el desplazamiento, pero, posteriormente, siguen a los miembros del hogar originalmente desplazados. En casos como este, aunque puede ser difícil de capturar, estas personas deben incluirse también en la categoría estadística de personas con necesidades de protección y vulnerabilidades relacionadas con el desplazamiento, ya que se vieron afectadas por el acontecimiento causante sin importar que su movimiento físico se retrasara.</p></li>
+<li><h4 id="poblaciones-relacionadas-con-las-pdi">Poblaciones relacionadas con las PDI</h4></li>
+<li><p>Si una PDI tiene descendencia después de que se haya producido el desplazamiento, su descendencia no debe incluirse en el recuento global, ya que no fue víctima directa de desplazamiento. Sin embargo, dado que la descendencia de las PDI suele verse afectada o expuesta a necesidades de protección y vulnerabilidades que se relacionan directamente con el desplazamiento de su familia, merece que se le observe y contabilice como una categoría estadística independiente pero relacionada: Poblaciones relacionadas con las PDI (ver la figura 3.1).</p></li>
+<li><p>El grupo de población relacionado con las PDI comprende a las personas nacidas después de producirse el desplazamiento, de un padre o una madre que es o fue PDI. En la práctica puede ser difícil identificar a la niñez que ya no vive con sus progenitores. En el caso de la niñez, la edad es irrelevante para definir la población, y la descendencia puede tener más de 18 años. Aunque algunos países amplían la condición jurídica como PDI y/o proporcionan beneficios específicos a la descendencia de las PDI, para efectos de las estadísticas oficiales, la definición no se aplica a generaciones posteriores. Esta categoría independiente permite identificar a este grupo de población para fines de programación y de políticas públicas; además, es necesario distinguirlo de las PDI para fines estadísticos.</p></li>
+<li><h4 id="otros-familiares-no-desplazados-de-las-pdi">Otros familiares no desplazados de las PDI</h4></li>
+<li><p>Otros miembros de la familia de las PDI que no hayan sufrido afectaciones directas por el acontecimiento causante no deben incluirse en la población estadística de PDI. Sin embargo, se reconoce que la disponibilidad de estadísticas oficiales sobre este grupo (especialmente sobre personas que son dependientes y que cohabitan o reciben su apoyo de una PDI) es a menudo relevante para fines de programación y de política pública; por lo tanto, se incluyen como una categoría en el marco, pero no forman parte del enfoque principal de estas recomendaciones. A menudo se recoge información sobre estas personas como parte de las encuestas que se enfocan en PDI y en otro tipo de ejercicios de recopilación de datos, ya que pueden ser difíciles de distinguir de las PDI, y esta información puede estar disponible de ser necesario. Estos datos podrían comunicarse de manera independiente, sin considerar los datos sobre las poblaciones relacionadas con PDI, como se indica en estas recomendaciones (ver la figura 3.1).</p></li>
+<li><h4 id="personas-que-han-superado-las-principales-vulnerabilidades-relacionadas-con-el-desplazamiento">Personas que han superado las principales vulnerabilidades relacionadas con el desplazamiento</h4></li>
+<li><p>A menos que fallezcan o a menos que se establezca un nuevo país de residencia, las personas desplazadas seguirán formando parte de las poblaciones de interés y de la población estadística de PDI hasta que hayan superado definitivamente las principales vulnerabilidades relacionadas con el desplazamiento. Para determinar si estas vulnerabilidades se han superado o no, es necesario evaluar las circunstancias de cada una de las tres subcategorías de PDI (ver capítulo 4). Aunque ya no forman parte de la categoría estadística de PDI por haber superado las principales vulnerabilidades relacionadas con el desplazamiento, quienes integran este grupo siguen siendo de interés, y se recomienda incluirles en los informes como una categoría independiente (ver la figura 3.1). Esto se debe a que, para el diseño de políticas públicas, sigue siendo relevante comprender cómo cambian sus circunstancias después de haber superado las principales vulnerabilidades relacionadas con el desplazamiento. De igual manera, es necesario reconocer que, a pesar de que ya no se consideran PDI para efectos estadísticos, en ciertos contextos, algunas personas seguirán autoidentificándose como tal. Además, teniendo en cuenta que el alcance de la medición recomendada de vulnerabilidades se ha reducido para centrarse únicamente en las aquellas que son <em>clave</em> en relación con el desplazamiento (ver capítulo 4, párrafo 164), y considerando que puede haber imprecisiones en la aplicación de la medida, el seguimiento de aquellas personas que recientemente han superado las vulnerabilidades clave relacionadas con el desplazamiento también puede tener valor en este sentido.</p>
+<ol style="list-style-type: decimal">
+<li><h3 id="categorías-de-personas-desplazadas-no-incluidas-en-el-marco-estadístico-del-desplazamiento-interno">Categorías de personas desplazadas no incluidas en el marco estadístico del desplazamiento interno</h3></li>
+</ol></li>
+<li><p>En esta sección se describen otros grupos de población desplazada que no están incluidos en el marco estadístico del desplazamiento interno y que, por tanto, quedan fuera del alcance de las presentes recomendaciones. Entre ellas se encuentran:</p></li>
+<li><p>personas desplazadas por la fuerza a través de una frontera internacionalmente reconocida;</p></li>
+<li><p>personas que regresan del extranjero tras solicitar protección internacional;</p></li>
+<li><p>otras personas desplazadas que regresan del extranjero después de un período de 12 meses.</p></li>
+</ol>
+<p>Se entiende que las personas de las categorías 2 y 3, por diferentes motivos, establecieron su residencia habitual en otro país antes de su regreso (ver párrafos 85-89). La figura 3.2 pretende visualizar las relaciones entre estos grupos.</p>
+<p><em>Figura 0.2 Personas desplazadas por la fuerza que cruzan una frontera internacionalmente reconocida y su relación con la población estadística de PDI</em></p>
+<p><img src="RackMultipart20210623-4-1m1d3f_html_b6f3e31d15ec06fc.png" /></p>
+<ol style="list-style-type: decimal">
+<li><h4 id="personas-desplazadas-por-la-fuerza-a-través-de-una-frontera-internacionalmente-reconocida">Personas desplazadas por la fuerza a través de una frontera internacionalmente reconocida</h4></li>
+<li>Las personas desplazadas que cruzan una frontera internacionalmente reconocida están sujetas a diferentes marcos en función de la causa de su desplazamiento. Según la Convención sobre el Estatuto de los Refugiados de 1951 y el Protocolo sobre el Estatuto de los Refugiados de 1967,una persona refugiadaes alguien que, “debido a fundados temores de ser perseguida por motivos de raza, religión, nacionalidad, pertenencia a determinado grupo social u opiniones políticas, se encuentre fuera del país de su nacionalidad y no puede o no quiere acogerse a la protección de tal país a causa de dichos temores.” Estas personas entran en el ámbito de aplicación de las IRRS, sin importar que hayan solicitado o no asilo (
+# 89
+).</li>
+<li>Las personas desplazadas que cruzan una frontera internacionalmente reconocida por otros motivos, como catástrofes naturales o provocadas por el ser humano, no están cubiertas por las convenciones sobre refugiados y, por tanto, su situación jurídica es distinta (
+# 90
+). Esta categoría de personas desplazadas difiere de las PDI, ya que no han permanecido dentro de la frontera del país, sino que fijan su residencia fuera de él. Estadísticamente, en las <em>Recomendaciones sobre las estadísticas de las migraciones internacionales</em>, este grupo se considera población migrante en la taxonomía del aumento y la disminución de las cifras internacionales, aunque sin marcar ninguna diferencia entre las personas desplazadas por la fuerza y aquellas que voluntariamente decidieron abandonar su lugar de residencia habitual (ver recuadro 3.2).</li>
+</ol>
+<p><em>Recuadro 0.2Definición estadística de la migración</em></p>
+<p>Según las <em>Recomendaciones sobre estadísticas de las migraciones internacionales de las Naciones Unidas</em>, <em>Revisión 1</em>, un migrante internacional es ‘toda persona que cambia de país de residencia habitual’ (Naciones Unidas, 1998). Las recomendaciones distinguen entre los migrantes internacionales por corto o largo plazo en función de su ‘país de residencia habitual.’ En concreto, se define a un migrante por largo plazo como:</p>
+<p>"<em>Toda persona que se traslada, por un periodo de al menos un año (12 meses), a un país distinto de aquel en que tiene su residencia habitual, de modo que el país de destino se convierte efectivamente en su nuevo país de residencia habitual. Desde la perspectiva del país de partida, la persona será emigrante por largo plazo y, desde la perspectiva del país de llegada, la persona será un inmigrante por largo plazo" (Naciones Unidas, 1998, pp. 7-10).</em></p>
+<p>Para ayudar a aclarar la definición de las Naciones Unidas, el <em>Manual sobre la medición de la migración internacional a través de los censos de población</em> ofrece una definición operativa del término ‘migrante internacional’:</p>
+<p>"<em>Una persona debe cumplir con las siguientes condiciones para ser considerada inmigrante de un país:</em></p>
+<pre><code>- _entrar en el país cruzando la frontera,_
+- _haber sido residente habitual de otro país antes de entrar o no ser residente habitual del país al entrar, y_
+
+- _permanecer o tener la intención de permanecer en el país durante al menos un año._</code></pre>
+<ol style="list-style-type: decimal">
+<li><em>Una persona debe cumplir con las siguientes condiciones para ser considerada emigrante de un país:</em></li>
+</ol>
+<ul>
+<li><em>dejar el país cruzando la frontera,</em></li>
+<li><em>haber sido residente habitual del país, y</em></li>
+<li><em>permanecer o tener la intención de permanecer en otro país o en el extranjero durante al menos un año".</em></li>
+</ul>
+<ol style="list-style-type: decimal">
+<li><p>No se hace referencia al motivo o la causa (forzada o voluntaria) del desplazamiento transfronterizo en esta definición o en las orientaciones de apoyo.
+<img src="RackMultipart20210623-4-1m1d3f_html_4a05164711a5ce4f.gif" /></p></li>
+<li><h4 id="personas-que-regresan-del-extranjero-tras-solicitar-protección-internacional">Personas que regresan del extranjero tras solicitar protección internacional</h4></li>
+<li><p>Las personas que, tras ser desplazadas por la fuerza debido a un temor fundado de persecución, alteración del orden público o violencia, cruzan una frontera para buscar protección internacional y establecen su residencia habitual en otro país son personas refugiadas o solicitantes de asilo (ver párrafo 83). Si posteriormente regresan al país del que fueron desplazadas, se les considera personas refugiadas retornadas o “personas que regresan del extranjero tras haber solicitado protección internacional”_ _(
+# 91
+). ACNUR u otros actores pueden identificarlas como “personas de interés,” y a menudo se distinguen de otras personas retornadas del extranjero por recibir ayuda de organismos humanitarios o gubernamentales.</p></li>
+<li><p>Las personas refugiadas que regresan y las PDI pueden tener características muy similares, especialmente en contextos en los que su regreso tras buscar protección internacional no se produce en condiciones de seguridad y dignidad. A su regreso, pueden seguir enfrentando las vulnerabilidades relacionadas con el desplazamiento o la discriminación; sin embargo, no se cuentan automáticamente como PDI. Estas personas entran en el ámbito de aplicación de las IRRS, las cuales sugieren contabilizarlas como flujo cuando regresan a su país de origen y, cuando sea posible, como población estadística (
+# 92
+). Para evitar el doble recuento en las estadísticas oficiales, independientemente del periodo de tiempo que hayan estado en el extranjero, no se contabilizan como PDI a su regreso. En el Manual de Compiladores se incluyen otros ejemplos de recopilación de datos sobre personas refugiadas que regresan (ver la figura 3.2). Tras su regreso, si estas personas vuelven a ser desplazadas como consecuencia de un nuevo suceso, se convertirán en PDI y, por tanto, entrarán en el ámbito de aplicación de estas recomendaciones.</p></li>
+<li><p>La reintegración de las personas refugiadas que regresan a su país de origen se denomina ‘restablecimiento’ (ver capítulo 2, párrafo 58). Cabe señalar que la recopilación de datos sobre el restablecimiento de las personas refugiadas que regresan a la comunidad tras su desplazamiento al extranjero se analiza en el Manual de Compiladores y sigue una evaluación similar a la descrita en el capítulo 4 de las presentes recomendaciones. Quienes se encargan de la toma de decisiones se interesan por ambos grupos, y a menudo se aplicarán muchas de las mismas vulnerabilidades. Los análisis que permiten hacer comparaciones entre PDI, personas refugiadas retornadas y poblaciones locales no desplazadas aportan pruebas sólidas para las políticas y respuestas integrales al desplazamiento. Por lo tanto, en contextos en los que pueden encontrarse ambos grupos de población, se recomienda incluirlos cuando se realicen encuestas u otros ejercicios de recopilación de datos sobre el desplazamiento con especial enfoque en la vulnerabilidad (
+# 93
+).</p></li>
+<li><h4 id="otras-personas-desplazadas-que-regresan-del-extranjero-después-de-un-periodo-de-12-meses">Otras personas desplazadas que regresan del extranjero después de un periodo de 12 meses</h4></li>
+<li><p>Las personas desplazadas por una catástrofe que se encuentran temporalmente en el extranjero durante menos de 12 meses y que no establecen un nuevo país de residencia habitual deben incluirse en el ámbito de las estadísticas sobre PDI (ver párrafo 117). Sin embargo, quienes se trasladan al extranjero y permanecen ahí más de 12 meses —y, por lo tanto, se entiende que han establecido un nuevo país de residencia habitual— pueden regresar más tarde a su país de origen, mas no pueden volver a su lugar de residencia habitual en ese país como consecuencia del acontecimiento original o de otro acontecimiento (por ejemplo, ciudad destruida por un terremoto). Dado que la migración las llevó a adoptar un nuevo país de residencia habitual, a estas personas no se les puede considerar PDI, ya que han cambiado su país de residencia habitual y no han sido desplazadas desde su regreso a su país de residencia habitual.</p></li>
+<li><p>Al igual que las personas refugiadas, otras personas desplazadas internacionalmente que regresan del extranjero después de más de 12 meses solo pueden contarse como desplazadas internas si sufren un nuevo desplazamiento después de haber regresado a su país de residencia habitual. Sin embargo, estos grupos de población pueden sufrir vulnerabilidades similares a aquellas que enfrentan las PDI y vivir en situaciones similares, por lo que pueden ser evaluadas de forma coordinada con las comunidades de PDI y las comunidades de personas refugiadas retornadas, aunque no se incluyan estadísticamente en la población estadística de PDI.</p></li>
+<li><h2 id="definición-de-la-población-estadística-y-de-flujos-de-pdi">Definición de la población estadística y de flujos de PDI</h2></li>
+<li><p>Las estadísticas de población se elaboran normalmente como flujos y poblaciones estadísticas. La población estadística indica el tamaño de membresía de la población en un momento determinado; esto se conoce como fecha de referencia. Un flujo es una medida del cambio en la composición de la población durante un periodo de tiempo definido. Como señaló el EGRIS en un informe que presentó ante la UNSC en 2016: “La generación de estadísticas sobre [personas desplazadas] requiere una clara distinción entre flujos y población estadística” (
+# 94
+). La confusión entre los datos de la población estadística y los flujos es habitual y puede dar lugar a errores significativos que resulten en una evaluación inexacta de la escala de los desplazamientos dentro de un país. Por ejemplo, las poblaciones pueden ser desplazadas más de una vez y, por lo tanto, la suma de las diversas estadísticas de flujos derivadas de uno o varios eventos sucesivos no produce el número total de desplazados internos ni el flujo total. En consecuencia, es importante comprender las diferencias entre estos tipos de datos, y cómo pueden interpretarse y utilizarse.</p></li>
+<li><h3 id="población-estadística">Población estadística</h3></li>
+<li><p>En el contexto de los desplazamientos internos, la población estadística de personas con necesidades de protección y vulnerabilidades relacionadas con el desplazamientose refiere al número total de PDI en un lugar específico, en un momento determinado. Una persona pertenece a esta población cuando cumple con los criterios definidos anteriormente (ver recuadro 3.1) en una fecha de referencia precisa, independientemente de cuándo haya adquirido esas características y sin importar la frecuencia con la que se haya desplazado en el marco temporal. A nivel nacional, esta población estadística total se divide en tres subcategorías que corresponden a los diferentes lugares donde pueden residir las PDI en un país:</p></li>
+</ol>
+<ul>
+<li>PDI que permanecen en lugares de desplazamiento (PDI en lugares de desplazamiento);</li>
+<li>PDI que han regresado a su lugar de residencia habitual (PDI en lugares de retorno);</li>
+<li>PDI que se han asentado en otros lugares del país (PDI en otros lugares de asentamiento).</li>
+</ul>
+<p>Esta subdivisión de la población estadística en tres partes sirve para obtener cifras de trabajo/operación con respecto al desplazamiento interno en situaciones en las que es importante distinguir, por ejemplo, entre las PDI en lugares de desplazamiento y las que se encuentran en lugares de retorno.</p>
+<p>Esto se visualiza en la Figura 3.3, junto con el aumento y la disminución de PDI que se describen en los siguientes párrafos.</p>
+<p><em>Figura 0.3Aumento y disminución de flujos de la población estadística de PDI</em></p>
+<p><img src="RackMultipart20210623-4-1m1d3f_html_8d59ae4dba69547a.png" /></p>
+<ol style="list-style-type: decimal">
+<li><h3 id="flujos">Flujos</h3></li>
+<li><p>Por el contrario, un flujo de poblaciónes una medida dinámica de cuántas personas adquirieron (o perdieron) determinadas características en un periodo de tiempo concreto. El factor importante es el periodo de tiempo que abarca: Se utiliza 1 mes o (más a menudo) 1 año. Los flujos tienen un componente direccional: pueden contabilizarse como aumento (personas que se incorporan a la población estadística de interés) y disminución (personas que dejan de formar parte de la población estadística de interés). La diferencia entre el aumento y la disminución en el número de PDI se denomina flujo neto, y puede tener un valor positivo (el número de PDI aumenta más de lo que disminuye) o negativo (el número de PDI disminuye más de lo que aumenta).</p></li>
+<li><p>Por lo tanto, la población estadística de PDI aumentará o disminuirá a lo largo del tiempo en función del flujo neto obtenido al comparar el aumento de PDI (personas que se convierten en desplazadas) y la disminución de PDI (personas cuyo desplazamiento puede considerarse finalizado o que han abandonado la población por fallecimiento o por emigración).</p></li>
+<li><p><em>Aumento de PDI</em></p></li>
+<li><p>El aumento de PDI en un periodo de tiempo determinado se refiere al número de personas que se convierten en PDI y que no lo eran anteriormente. Un flujo de nuevos desplazamientos puede darse después de un evento de desplazamiento específico, pero, como los flujos se refieren a un periodo de información específico, también pueden reflejar una serie de eventos de desplazamiento que ocurrieron en un país o región dentro del periodo de referencia establecido. Como se describe con más detalle en la parte D de este capítulo, el aumento en el número de PDI consiste en personas que se vieron forzadas u obligadas a desplazarse de su lugar de residencia habitual por un acontecimiento causante, que han residido habitualmente en el lugar donde se produjo el acontecimiento causante, que se encuentran físicamente fuera de su vivienda y que actualmente se encuentran dentro de las fronteras internacionalmente reconocidas del país.</p></li>
+<li><p>Si las personas desplazadas tienen descendencia, no se considera un aumento en la población estadística de PDI. Como se ha explicado anteriormente (párrafo 78), la niñez cuya madre o padre es una PDI debe colocarse en la categoría de población relacionada con las PDI. No se recomienda incorporar los nacimientos a los registros de la población estadística de PDI, ya que aumenta las cifras de la población estadística aunque ya no se produzcan nuevos desplazamientos (
+# 95
+).</p></li>
+<li><p><em>Disminución de PDI</em></p></li>
+<li><p>La disminución del número de personas que tienen necesidades de protección y vulnerabilidades relacionadas con el desplazamiento suele deberse a la migración, la muerte o el hecho de que se superaron dichas vulnerabilidades. Cabe señalar que esta definición hace que sea más complejo medir la disminución que el aumento de las cifras de desplazamiento interno, lo que podría dar lugar a sesgos en las cifras que se reporten sobre la población estadística de PDI (ver capítulo 4, párrafo 160). Aunado a lo anterior, cuando disminuyen también las subcategorías de PDI en lugares de desplazamiento, tal hecho sugiere que las PDI han regresado a su lugar de residencia habitual (PDI en lugares de retorno) o han decidido asentarse en otros lugares del país (PDI en otros lugares de asentamiento).</p></li>
+</ol>
+<p><em>Muerte:</em></p>
+<ol style="list-style-type: decimal">
+<li>La muerte de una persona con necesidades de protección y vulnerabilidades relacionadas con el desplazamiento o de una persona relacionada con las PDI llevaría a una disminución en las cifras de la población estadística en cuestión.</li>
+</ol>
+<p><em>Abando del país de desplazamiento:</em></p>
+<ol style="list-style-type: decimal">
+<li>La emigración de personas con necesidades de protección y vulnerabilidades relacionadas con el desplazamiento o de personas relacionadas con las PDI también conduciría a una disminución en la población estadística en cuestión. La salida del país de desplazamiento debe ajustarse a la definición estadística de migración (ver recuadro 3.2).</li>
+<li>Esta emigración puede ocurrir con la intención de solicitar asilo en otro país; por tanto, estas personas formarán parte de la población estadística de personas refugiadas si el motivo de la migración fue escapar de un “temor fundado de persecución” (
+# 96
+). Alternativamente, las PDI pueden emigrar para establecer un lugar de residencia habitual en otro país por otros motivos, como la migración económica o la reunificación familiar; en cuyo caso, se considerará que han emigrado (ver los párrafos 83 y 84).</li>
+</ol>
+<p><em>Superación de las principales vulnerabilidades relacionadas con el desplazamiento:</em></p>
+<ol style="list-style-type: decimal">
+<li><p>Cuando una persona con necesidades de protección y vulnerabilidades relacionadas con el desplazamiento las ha superado, tal hecho conducirá a una disminución de la población estadística total. Es necesario realizar una evaluación para determinarlo y debe aplicarse a las personas independientemente de su lugar de residencia (es decir, a las personas en las tres subcategorías: PDI en lugares de desplazamiento, PDI en lugares de retorno y PDI en otros lugares de asentamiento). A efectos de las estadísticas oficiales, la evaluación se agrega al nivel de población/grupo sobre la base de los datos recabados a nivel persona/familia (ver capítulo 4, párrafo 162); solo quienes han superado las vulnerabilidades clave relacionadas con el desplazamiento segúnla medición no se considerarán en el conjunto de personas que tienen necesidades de protección y vulnerabilidades relacionadas con el desplazamiento (ver capítulo 4). La evaluación también debe realizarse con respecto a personas relacionadas con las PDI y, del mismo modo, conduciría a una posible disminución de la población estadística total.</p></li>
+<li><h2 id="cómo-determinar-el-aumento-cuatro-condiciones">Cómo determinar el aumento: cuatro condiciones</h2></li>
+<li><p>Debe haber una clara distinción entre la población que ha sido desplazada internamente por la fuerza y otras personas que se han desplazado de manera voluntaria dentro de las fronteras de un país, para poder elaborar estadísticas inequívocas sobre ellas. Con base en la definición de los Principios Rectores y sus anotaciones, hay cuatro condiciones necesarias para que una persona se convierta en PDI (ver capítulo 2, párrafos 37-58).</p></li>
+<li><p>La nacionalidad es irrelevante para identificar a las PDI. Las personas incluidas en las estadísticas de PDI pueden ser nacionales, apátridas o extranjeras siempre que el lugar del que huyeron en el momento del desplazamiento fuera su lugar de residencia habitual y sigan residiendo dentro de las fronteras internacionalmente reconocidas del país. Su estatus de ciudadanía legal en el país es irrelevante para su identificación como PDI a efectos de medición estadística.</p></li>
+<li><p>La fecha en que se produjo el acontecimiento causante del desplazamiento tampoco es relevante a efectos de determinar la población estadística de PDI, aunque sí lo es para calcular los flujos medidos a lo largo de un periodo de tiempo definido y, por este motivo, suele recogerse en las estadísticas operativas (ver capítulo 2, párrafo 59).</p></li>
+<li><p>Las condiciones para la inclusión de una persona en la población estadística de aquellas que tienen necesidades de protección y vulnerabilidades relacionadas con el desplazamiento (ver párrafo 94) se describen detalladamente a continuación. Por diferentes razones, cada una de ellas requiere una mayor elaboración aquí con fines estadísticos:</p></li>
+<li><p>han sido forzadas u obligadas a desplazarse de su lugar de residencia habitual por un acontecimiento causante;</p></li>
+<li><p>residían en el lugar y en el momento en que se produjo el acontecimiento causante;</p></li>
+<li><p>han estado viviendo físicamente fuera de la vivienda en la que vivían en el momento del acontecimiento causante; y</p></li>
+<li><p>se encuentran dentro de las fronteras internacionalmente reconocidas del país.</p></li>
+<li><h3 id="han-sido-forzadas-u-obligadas-a-desplazarse-de-su-lugar-de-residencia-habitual-por-un-acontecimiento-causante">Han sido forzadas u obligadas a desplazarse de su lugar de residencia habitual por un acontecimiento causante</h3></li>
+<li><p>La persona se vio forzada u obligada a abandonar su lugar de residencia habitual como consecuencia o para evitar los efectos de uno o varios acontecimientos causantes. A continuación se enumeran los principales acontecimientos causantes, cada uno de los cuales cuenta con una lista de desencadenantes específicos (esta lista no es exhaustiva y debe leerse junto con el esquema legal del capítulo 2, párrafos 45-54).</p></li>
+<li><p>conflicto armado;</p></li>
+<li><p>violencia generalizada;</p></li>
+<li><p>violaciones de los derechos humanos;</p></li>
+<li><p>catástrofes naturales o provocadas por el ser humano; u</p></li>
+<li><p>otros desalojos o desplazamientos forzados.</p></li>
+<li><p>Una persona puede ser considerada PDI siempre que haya estado en riesgo directo de sufrir el acontecimiento causante, independientemente de que haya experimentado o no el suceso en sí. Los desplazamientos preventivos, como las evacuaciones, también constituyen desplazamientos internos (ver capítulo 2, párrafo 43).</p></li>
+<li><p>Algunas causas son difíciles de verificar de forma objetiva. Para capturar los desplazamientos preventivos (es decir, “para evitar los efectos de” un acontecimiento), o los desplazamientos por causas que son más difíciles de verificar, como ciertas violaciones de los derechos humanos, la recomendación general para identificar a las PDI a efectos de las estadísticas oficiales es utilizar la percepción subjetiva de las PDI del acontecimiento causante, basada en la autodeclaración. En la práctica, la parte de la definición de los Principios Rectores que se refiere a “con el fin de evitar un acontecimiento que provoque un desplazamiento” no suele ser de interés estadístico, ya que el acontecimiento pudo haber ocurrido ya en el momento en que se recogen los datos y las personas ya habrían tenido que desplazarse en ese momento.</p></li>
+<li><p>Las personas que se desplazan voluntariamente de un lugar a otro únicamente para mejorar su situación económica o familiar no deben incluirse en las estadísticas de PDI. Sin embargo, en algunas circunstancias puede ser difícil identificar la causa principal de los desplazamientos; por ejemplo, en situaciones de catástrofes de aparición lenta, como la subida del nivel del mar y las sequías (
+# 97
+). Para las estadísticas oficiales sobre PDI, es necesario considerar la causa general del desplazamiento. Por ejemplo, en las zonas afectadas por catástrofes de aparición lenta, la privación económica y los movimientos de población asociados pueden ser inducidos por la catástrofe y, en estos casos, se considera que la catástrofe de aparición lenta es la causa principal del desplazamiento. En vista de que puede ser difícil identificar la causa principal del desplazamiento cuando hay múltiples factores en juego y en consideración de que se necesita más investigación en esta área, es preferible que los países se equivoquen al identificar los desplazamientos causados por desastres de aparición lenta. Para minimizar la incertidumbre en torno a la definición de las causas generales de los desplazamientos, los organismos estadísticos responsables deben identificar las zonas del país que se han visto afectadas por catástrofes de aparición lenta, como las sequías, el aumento del nivel del agua y la pérdida de medios de vida inducida por el cambio climático. Las autoridades cartográficas nacionales (con el apoyo de las autoridades estadísticas regionales si es necesario) pueden proporcionar imágenes satelitales como pruebas adicionales de las catástrofes de aparición lenta. Estas zonas afectadas deben ser claramente identificadas y declaradas como zonas afectadas por catástrofes de aparición lenta antes de recoger las estadísticas de las PDI, y deben ser actualizadas de forma rutinaria.</p></li>
+<li><h3 id="residían-en-el-lugar-y-en-el-momento-en-que-se-produjo-el-acontecimiento">Residían en el lugar y en el momento en que se produjo el acontecimiento</h3></li>
+<li><p>Las personas desplazadas deben haber residido en el lugar del país en el que se produjo el acontecimiento causante o la amenaza del mismo, en el momento en que se produjo tal acontecimiento. Esto se denomina, en términos jurídicos, lugar de residencia habitual (ver capítulo 2, párrafo 40). Las personas pueden convertirse en desplazadas durante un acontecimiento causante o en respuesta a él al no poder regresar o no tener acceso a su lugar de residencia habitual en el momento del desplazamiento (ver capítulo 2, párrafo 43). Esto significa que una persona puede convertirse en PDI como consecuencia de un acontecimiento causante si intenta regresar a su lugar de residencia habitual, pero no puede hacerlo, aunque no estuviera físicamente presente en el momento en que se produjo el hecho.</p></li>
+<li><p>A efectos estadísticos, el lugar de residencia habitual se define como el lugar en el que vive la persona en el momento en que se recaban los datos, que corresponde al lugar en el que ha vivido o tiene intención de vivir durante al menos un periodo de 12 meses (ver recuadro 3.3) (
+# 98
+). Por lo tanto, el lugar de residencia habitual de una persona puede cambiar. En situaciones de desplazamiento interno, esto puede ser difícil de aplicar, especialmente cuando las personas se han visto forzadas u obligadas a desplazarse repetidamente y/o con frecuencia en un periodo de tiempo relativamente corto. La intención de permanecer en el lugar en el que se encuentran cuando se recaban los datos es el factor clave para determinar la residencia habitual en términos estadísticos y se basará en las respuestas subjetivas de las personas encuestadas (
+# 99
+). Por lo tanto, las PDI que viven en alojamientos temporales o albergues deben asignarse al lugar geográfico en el que viven en el momento de la recopilación de datos.</p></li>
+<li><p><img src="RackMultipart20210623-4-1m1d3f_html_c21602ca07c33b43.gif" />
+El ‘lugar de residencia usual’ y el ‘lugar de residencia habitual’ son términos distintos y deben distinguirse claramente a efectos estadísticos.En el contexto estadístico, el <strong>lugar de residencia usual</strong> en el país es aquel en el que la persona vive en el momento de la recogida de datos. La definición del término <strong>lugar de residencia usual</strong> , según los <em>Principios y recomendaciones para los censos de población y vivienda</em> de la ONU, debe utilizarse para cumplir con las normas internacionales.Esta definición se utiliza generalmente para distinguir a las personas que usualmente residen en determinado lugar de quienes visitan y se alojan en él en el momento de la enumeración."_En general, la residencia usual se define […] como el lugar en el que la persona vive […] y ha estado allí durante algún tiempo o tiene la intención de permanecer allí durante algún tiempo. Se recomienda que los países apliquen un umbral de 12 meses al considerar el lugar de residencia usual según alguno de los siguientes criterios:__(a) El lugar en el que la persona ha vivido de forma continuada durante la mayor parte de los últimos 12 meses (es decir, durante al menos seis meses y un día), sin incluir las ausencias temporales por vacaciones o por motivos de trabajo, o en el que pretende vivir durante al menos seis meses;__b) El lugar en el que la persona ha vivido de forma continuada durante al menos los últimos 12 meses, sin incluir las ausencias temporales por vacaciones o por motivos de trabajo, o en el que tiene intención de vivir durante al menos 12 meses"._La definición del <strong>lugar de residencia habitual</strong> se trata en el capítulo 2 (párrafo 40). Según la definición internacional, el lugar de residencia habitual es aquel en el que la persona residía en el momento de su desplazamiento inicial (es decir, su lugar de residencia usual antes del desplazamiento). El lugar de residencia habitual de las PDI es, por tanto, estático, mientras que el lugar de residencia usual, al igual que para otros grupos de población, está sujeto a cambios.</p></li>
+</ol>
+<p>Los conceptos de lugar de residencia usual y habitual son distintos. Una PDI puede ser desplazada en múltiples ocasiones y puede haber tenido varias residencias usuales durante un periodo de tiempo determinado, pero su lugar de residencia habitual es el lugar donde residía usualmente en el momento de su desplazamiento inicial, lo que sirve como definición estadística de residencia habitual (ver recuadro 3.3). Los datos deben recabarse con fines estadísticos tanto para el lugar de residencia usual en el momento de la recopilación de datos como para el lugar de residencia habitual.</p>
+<p><img src="RackMultipart20210623-4-1m1d3f_html_6c8ec1475841d71a.gif" /></p>
+<p><em>Recuadro 0.3Residencia usual y residencia habitual</em></p>
+<ol style="list-style-type: decimal">
+<li><p>Si una persona ha estado ausente de su lugar de residencia habitual durante más de un año antes del acontecimiento causante, a efectos estadísticos no se le habrá identificado como residente usual en ese lugar en el momento del acontecimiento. En consecuencia, la persona no se consideraría como PDI. Sin embargo, si una persona ha estado ausente de su lugar de residencia habitual durante menos de un año antes del acontecimiento causante, estadísticamente se entenderá que reside usualmente en ese lugar en el momento del acontecimiento y, por tanto, se contabiliza como PDI.</p></li>
+<li><p>En el caso de los pastores o nómadas, el concepto de lugar de residencia habitual debe sustituirse por el de espacio vital habitual o zona de la que obtienen su sustento o donde pastan sus animales. En el caso del desplazamiento de una población nómada, la residencia habitual son las tierras tradicionales a las que ya no se puede acceder debido al acontecimiento/fenómeno causante. Por lo tanto, los pastores y nómadas que ya no pueden acceder a sus tierras tradicionales debido a un acontecimiento que provoca el desplazamiento deben ser considerados como PDI.</p></li>
+<li><h3 id="han-estado-viviendo-físicamente-fuera-de-la-vivienda-en-la-que-vivían-en-el-momento-del-acontecimiento-causante">Han estado viviendo físicamente fuera de la vivienda en la que vivían en el momento del acontecimiento causante</h3></li>
+<li><p>Como consecuencia o para evitar el impacto del acontecimiento causante, las personas se habrán visto forzadas u obligadas a huir físicamente o a no poder regresar a su hogar o lugar de residencia habitual. Por lo tanto, el mero hecho de sufrir daños o la pérdida de bienes no constituye un motivo para que una persona sea considerada PDI; también es necesario que huya del lugar. Sin embargo, no se especifica la distancia que debe recorrer una persona para convertirse en PDI y ser incluida en el aumento de las cifras de PDI; basta con que se vea forzada u obligada a abandonar su hogar.</p></li>
+<li><p>Las estadísticas de migración interna suelen referirse a las personas que se han trasladado de una zona administrativa a otra, pero las personas pueden ser desplazadas por la fuerza de sus hogares y propiedades y posteriormente encontrar albergue en la misma zona local. Pueden alojarse en albergues de evacuación, en tiendas de campaña o con vecinos de la misma zona administrativa. Por lo tanto, el criterio geográfico del concepto de desplazamiento va más allá del de la migración interna para incluir a las personas desplazadas que permanecen en la misma zona administrativa e incluso a los que están muy cerca de su antiguo hogar. Una persona desplazada tendría que haberse visto forzada u obligada a abandonar la vivienda en la que vivía en el momento del desplazamiento. El rasgo distintivo importante es que la mudanza de la vivienda se debe a un desplazamiento forzado y no a una mudanza voluntaria. Las implicaciones de las diferentes fuentes de datos se describen en el capítulo 6.</p></li>
+<li><h3 id="se-encuentran-dentro-de-las-fronteras-internacionalmente-reconocidas-del-país">Se encuentran dentro de las fronteras internacionalmente reconocidas del país</h3></li>
+<li><p>Una PDIse encuentra dentro de las fronteras estatales internacionalmente reconocidas del país en el que se produjo el desplazamiento, es decir, el país de residencia habitual. Estadísticamente, esto significa que el país de residencia habitual (ver recuadro 3.4) de la PDI sigue siendo el país en cuestión.</p></li>
+<li><p>En algunas circunstancias, el acontecimiento causante puede dar lugar a que las PDI crucen una frontera internacionalmente reconocida en busca de albergue, pero estos cruces de frontera pueden no dar lugar a que esas personas establezcan un nuevo país de residencia usual. En vista de la incertidumbre de sus circunstancias y en consonancia con las definiciones estadísticas existentes (ver recuadro 3.4), las PDI que cruzan una frontera internacionalmente reconocida pero que posteriormente regresan en un periodo de 12 meses sin establecer una nueva residencia usual en el extranjero deben seguir siendo consideradas como PDI; su país de residencia habitual seguirá siendo su país de residencia usual (ver capítulo 2, párrafo 56). Alternativamente, las PDI que cruzan una frontera internacionalmente reconocida, que regresan solo después de 12 meses y/o que han establecido un nuevo país de residencia usual no deben ser consideradas automáticamente como PDI.</p></li>
+<li><p>Se considera que las poblaciones pastoras o nómadas que se desplazan a través de las fronteras internacionales no han establecido un nuevo país de residencia usual debido a la propia naturaleza de su modo de vida, por lo que se aplica la misma norma que para los nómadas y pastores dentro del país de residencia (párrafo 113), es decir, si ya no pueden acceder a sus tierras tradicionales debido a un acontecimiento causante del desplazamiento y se ven obligados a cruzar una frontera, deben seguir siendo considerados como PDI. Es significativo que para las poblaciones pastoras y nómadas el criterio clave siga siendo el acceso a sus tierras/rutas tradicionales, y no la duración del cruce de una frontera reconocida internacionalmente.</p></li>
+</ol>
+<p><img src="RackMultipart20210623-4-1m1d3f_html_d6633a251a656361.gif" /></p>
+<p>_Recuadro 0.4__Definición estadística del país de residencia usual_</p>
+<p>Según las <em>Recomendaciones sobre las estadísticas de las migraciones internacionales de las Naciones Unidas, Revisión 1</em>, una persona que se traslada a otro país durante un periodo de al menos un año (12 meses) adopta un nuevo país de residencia usual, de modo que el país de destino se convierte efectivamente en su nuevo país de residencia usual.</p>
+<p>El <em>Manual sobre la medición de la migración internacional a través de los censos de población</em> de la ONU ofrece algunos ejemplos de excepciones a esta recomendación y establece los casos en los que no se ha producido ningún cambio en el país de residencia usual o en los que es necesario tener en cuenta criterios adicionales para determinar efectivamente el país de residencia usual. Estos casos incluyen:</p>
+<ul>
+<li>personas que han residido en varios países antes del último traslado a otro país (párrafo 25);</li>
+<li>personas cuyo país de residencia usual no puede establecerse inequívocamente, por ejemplo, diplomáticos, fuerzas armadas, nómadas y trabajadores fronterizos (párrafo 33);</li>
+<li>personas que mantienen dos o más residencias en diferentes países en un año determinado, por ejemplo, estudiantes y trabajadores de temporada (párrafo 34), o que pasan la misma cantidad de tiempo en dos países (párrafo 35).</li>
+</ul>
+<ol style="list-style-type: decimal">
+<li><p>Según las recomendaciones aquí expuestas, las PDI que cruzan temporalmente una frontera y no establecen un nuevo país de residencia usual también entran en estas excepciones.</p></li>
+<li><p><img src="RackMultipart20210623-4-1m1d3f_html_c415cbc1a800c797.gif" /></p>
+<ol style="list-style-type: decimal">
+<li><h2 id="resumen-de-recomendaciones">Resumen de recomendaciones</h2></li>
+</ol></li>
+<li><p>En este capítulo se ha esbozado el marco estadístico del desplazamiento interno, describiendo las diferentes categorías de personas incluidas. Además, presenta las definiciones estadísticas de la población estadística, el aumento y la disminución de las cifras de PDI, basadas en los <em>Principios Rectores de los desplazamientos internos</em> y en el <em>Marco de soluciones duraderas para los desplazados internos del IASC</em>; además, el capítulo detalla los diferentes elementos incluidos en la medición estadística del influjo a la población de PDI.</p></li>
+<li><p>Un aspecto importante de estas recomendaciones es la relación entre las definiciones de las estadísticas correspondientes al aumento y la disminución de cifras, así como la población estadística en el marco. La medición estadística del aumento de PDI se ajusta estrictamente a la definición de PDI de los Principios Rectores; la población estadística de personas con necesidades de protección y vulnerabilidades relacionadas con el desplazamiento se divide en tres subcategorías basadas en la ubicación (PDI en lugares de desplazamiento, PDI en lugares de retorno y PDI en otros lugares de asentamiento); y la determinación de la disminución de PDI (con lo cual se completa la medición de la población estadística) tendría que incluir una evaluación de las vulnerabilidades clave relacionadas con el desplazamiento a las que se enfrenta la población en cuestión, junto con otras categorías de disminución más directas (muerte y emigración).</p></li>
+<li><p>Se recomienda que los sistemas estadísticos nacionales e internacionales sigan el marco y las definiciones estadísticas proporcionadas en este capítulo para la producción de estadísticas oficiales sobre el desplazamiento interno.</p></li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="capítulo-2-políticas-públicas-y-marco-jurídico.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="capítulo-4-soluciones-duraderas-y-principales-vulnerabilidades-relacionadas-con-el-desplazamiento.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["irises.pdf", "irises.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
